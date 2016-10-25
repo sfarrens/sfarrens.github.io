@@ -1,0 +1,7 @@
+examples.first_hello module
+===========================
+
+.. automodule:: examples.first_hello
+    :members:
+    :undoc-members:
+    :show-inheritance:

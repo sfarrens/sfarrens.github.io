@@ -1,0 +1,17 @@
+image package
+=============
+
+Submodules
+----------
+
+.. toctree::
+
+   image.shape
+
+Module contents
+---------------
+
+.. automodule:: image
+    :members:
+    :undoc-members:
+    :show-inheritance:
