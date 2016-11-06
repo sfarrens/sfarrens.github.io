@@ -1,7 +1,0 @@
-examples.first_code module
-==========================
-
-.. automodule:: examples.first_code
-    :members:
-    :undoc-members:
-    :show-inheritance:

@@ -1,7 +1,0 @@
-image.shape module
-==================
-
-.. automodule:: image.shape
-    :members:
-    :undoc-members:
-    :show-inheritance:
