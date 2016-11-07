@@ -9,18 +9,22 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>SamSpace</title>
+        <title>SF Space</title>
       
       
       
+      
+        <meta name="author" content="Samuel Farrens">
       
     
     <meta property="og:url" content="None">
-    <meta property="og:title" content="SamSpace">
-    <meta property="og:image" content="None/./">
-    <meta name="apple-mobile-web-app-title" content="SamSpace">
+    <meta property="og:title" content="SF Space">
+    <meta property="og:image" content="None/./images/mythosaur.jpg">
+    <meta name="apple-mobile-web-app-title" content="SF Space">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="./images/mythosaur.jpg">
     
     
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon-e565ddfa3b.ico">
@@ -43,17 +47,19 @@
     </style>
     <link rel="stylesheet" href="./assets/stylesheets/application-a422ff04cc.css">
     
+      <link rel="stylesheet" href="./assets/stylesheets/palettes-05ab2406df.css">
+    
     
       
       
       
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Roboto+Mono">
       <style>
         body, input {
-          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+          font-family: 'Oxygen', Helvetica, Arial, sans-serif;
         }
         pre, code {
-          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+          font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
         }
       </style>
     
@@ -64,7 +70,7 @@
   
   
   
-  <body class=" ">
+  <body class="palette-primary-red palette-accent-blue">
     
     <div class="backdrop">
       <div class="backdrop-paper"></div>
@@ -87,10 +93,20 @@
             
           </span>
         
-        SamSpace
+        SF Space
       </div>
     </div>
     
+      
+      <div class="button button-twitter" role="button" aria-label="Twitter">
+        <a href="https://twitter.com/Sam_Farrens" title="@Sam_Farrens on Twitter" target="_blank" class="toggle-button icon icon-twitter"></a>
+      </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/sfarrens" title="@sfarrens on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
     
     <div class="button button-search" role="button" aria-label="Search">
       <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
@@ -119,9 +135,13 @@
   <a href="/" class="project">
     <div class="banner">
       
+        <div class="logo">
+          <img src="./images/mythosaur.jpg">
+        </div>
+      
       <div class="name">
         <strong>
-          SamSpace
+          SF Space
           <span class="version">
             
           </span>
@@ -149,20 +169,20 @@
         <ul>
           
             <li class="anchor">
-              <a title="About" href="#about">
-                About
+              <a title="About Me" href="#about-me">
+                About Me
               </a>
             </li>
           
             <li class="anchor">
-              <a title="Software" href="#software">
-                Software
+              <a title="Research Interests" href="#research-interests">
+                Research Interests
               </a>
             </li>
           
             <li class="anchor">
-              <a title="Publications" href="#publications">
-                Publications
+              <a title="Contact Information" href="#contact-information">
+                Contact Information
               </a>
             </li>
           
@@ -174,14 +194,53 @@
           
             
   <li>
-    <a class="" title="About" href="about/">
-      About
+    <a class="" title="CV" href="CV/">
+      CV
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Publications" href="publications/">
+      Publications
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Software" href="software/">
+      Software
     </a>
     
   </li>
 
           
         </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+              
+              <li>
+                <a href="https://twitter.com/Sam_Farrens" target="_blank" title="@Sam_Farrens on Twitter">
+                  @Sam_Farrens on Twitter
+                </a>
+              </li>
+            
+            
+              
+              <li>
+                <a href="https://github.com/sfarrens" target="_blank" title="@sfarrens on GitHub">
+                  @sfarrens on GitHub
+                </a>
+              </li>
+            
+          </ul>
         
       </div>
     </div>
@@ -191,21 +250,43 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="welcome-to-sam-space">Welcome to Sam Space</h1>
-<h2 id="about">About</h2>
+          <h1 id="sf-space">SF Space</h1>
+<p><img style="float: left; height: 150px; margin-right: 40px" src="./images/me.jpg"></p>
+<h2 id="about-me">About Me</h2>
 <ul>
-<li>Postdoctoral researcher in the CosmoStat group at CEA-Saclay.</li>
+<li>
+<p>Cosmologist and Python enthusiast.</p>
+</li>
+<li>
+<p>Postdoctoral researcher in the <a href="http://www.cosmostat.org/" target="_blank">CosmoStat</a> group at CEA-Saclay. Currently working on deconvolution of galaxy images.</p>
+</li>
 </ul>
-<h2 id="software">Software</h2>
+<h2 id="research-interests">Research Interests</h2>
+<p>Prior to joining the CosmoStat team my work was primarily focused on the optical detection and analysis of clusters of galaxies using photometric redshifts. During my PhD I developed a prototype friends-of-friends optical cluster detection algorithm that was further developed and optimised during postdoc positions in Barcelona and Trieste. I also developed serval metrics and analysis codes designed to compare the relative performance of various different cluster detection codes on Euclid mock galaxy simulations.</p>
+<p>I am currently working on galaxy image deconvolution using regularization techniques such as sparsity and low-rank approximation.
+The idea being to remove the effects of a point spread function (PSF) that varies as function of position on the sky. This is beneficial for projects like Euclid that aim to measure galaxy shapes to good accuracy.</p>
+<p>Check out my <a href="CV/">CV</a> to find out more.</p>
+<h2 id="contact-information">Contact Information</h2>
 <ul>
-<li>CreePy : Multipurpose Python library</li>
-<li>SFoF (Super Friends-of-Friends) : Galaxy cluster detection algorithm.</li>
-</ul>
-<h2 id="publications">Publications</h2>
-<ul>
-<li>Link to ADS</li>
+<li>
+<p>Email: samuel [<em>dot</em>] farrens [<em>at</em>] cea [<em>dot</em>] fr</p>
+</li>
+<li>
+<p>Phone: +33 01 69 08 83 77</p>
+</li>
+<li>
+<p>Fax: +33 01 69 08 65 77</p>
+</li>
+<li>
+<p>Address:<br />
+  Service d'Astrophysique, CEA Saclay,<br />
+  Orme des Merisiers, Building 709<br />
+  F-91191 Gif-sur-Yvette, France</p>
+</li>
 </ul>
           <aside class="copyright" role="note">
+            
+              Copyright (c) 2016 Samuel Farrens &ndash;
             
             Documentation built with
             <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
@@ -224,14 +305,14 @@
     </div>
     <div class="next">
       
-        <a href="about/" title="About">
+        <a href="CV/" title="CV">
           <span class="direction">
             Next
           </span>
           <div class="page">
             <div class="stretch">
               <div class="title">
-                About
+                CV
               </div>
             </div>
             <div class="button button-next" role="button" aria-label="Next">
