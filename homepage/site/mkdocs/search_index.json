@@ -2,23 +2,28 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome My Webpage\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Welcome to Sam Space\n\n\nAbout\n\n\n\n\nPostdoctoral researcher in the CosmoStat group at CEA-Saclay.\n\n\n\n\nSoftware\n\n\n\n\nCreePy : Multipurpose Python library\n\n\nSFoF (Super Friends-of-Friends) : Galaxy cluster detection algorithm.\n\n\n\n\nPublications\n\n\n\n\nLink to ADS", 
             "title": "Home"
         }, 
         {
-            "location": "/#welcome-my-webpage", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "Welcome My Webpage"
+            "location": "/#welcome-to-sam-space", 
+            "text": "", 
+            "title": "Welcome to Sam Space"
         }, 
         {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
+            "location": "/#about", 
+            "text": "Postdoctoral researcher in the CosmoStat group at CEA-Saclay.", 
+            "title": "About"
         }, 
         {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "location": "/#software", 
+            "text": "CreePy : Multipurpose Python library  SFoF (Super Friends-of-Friends) : Galaxy cluster detection algorithm.", 
+            "title": "Software"
+        }, 
+        {
+            "location": "/#publications", 
+            "text": "Link to ADS", 
+            "title": "Publications"
         }, 
         {
             "location": "/about/", 
