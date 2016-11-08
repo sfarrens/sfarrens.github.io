@@ -8,7 +8,7 @@
 
 * Postdoctoral researcher in the <a href="http://www.cosmostat.org/" target="_blank">CosmoStat</a> group at CEA-Saclay.
 
-* Currently working on deconvolution of galaxy images and funded by <a href="http://dedale.cosmostat.org/">DEDALE</a>.
+* Currently working on deconvolution of galaxy images and funded by <a href="http://dedale.cosmostat.org/" target="_blank">DEDALE</a>.
 
 ## Research Interests
 
