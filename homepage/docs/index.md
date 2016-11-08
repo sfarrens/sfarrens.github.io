@@ -6,7 +6,9 @@
 
 * Cosmologist and Python enthusiast.
 
-* Postdoctoral researcher in the <a href="http://www.cosmostat.org/" target="_blank">CosmoStat</a> group at CEA-Saclay. Currently working on deconvolution of galaxy images.
+* Postdoctoral researcher in the <a href="http://www.cosmostat.org/" target="_blank">CosmoStat</a> group at CEA-Saclay.
+
+* Currently working on deconvolution of galaxy images and funded by <a href="http://dedale.cosmostat.org/">DEDALE</a>.
 
 ## Research Interests
 
