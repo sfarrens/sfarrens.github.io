@@ -2,7 +2,7 @@
 
 ## Work Experience
 
-* Oct 2015 - Present: **Commissariat à l’Énergie Atomique (<a href="http://www.cea.fr" target="_blank">CEA</>) Saclay**, France  
+* Oct 2015 - Present: **Commissariat à l’Énergie Atomique (<a href="http://www.cea.fr" target="_blank">CEA</a>) Saclay**, France  
   Position: Postdoctoral Research Assistant  
   Funding: DEDALE FET H2020    
   Project Involvement: DEDALE, Euclid
@@ -12,14 +12,14 @@
   Funding: ASI - Euclid  
   Project Involvement: Euclid
 
-* Dec 2010 - Oct 2013: **Institut de Ciències de L’Espai (<a href="http://www.ice.cat/" taget="_blank">ICE-IEEC</a>)**, Spain  
+* Dec 2010 - Oct 2013: **Institut de Ciències de L’Espai (<a href="http://www.ice.cat/" target="_blank">ICE-IEEC</a>)**, Spain  
   Position: Postdoctoral Research Assistant  
   Funding: CosmoComp FP7 ITN Fellowship (Marie Curie Actions)  
   Project Involvement: DES, Euclid, PAU
 
 ## Education
 
-* Oct 2007 - Nov 2010: **University College London (<a href="https://www.ucl.ac.uk/" taget="_blank">UCL</a>)**, UK  
+* Oct 2007 - Nov 2010: **University College London (<a href="https://www.ucl.ac.uk/" target="_blank">UCL</a>)**, UK  
   Award: PhD in Astrophysics    
   Thesis Title: *“Optical Detection of Galaxy Clusters”*   
   Supervisor: Dr. Filipe Abdalla  
@@ -57,4 +57,4 @@
 
 * Dec 2015: Workshop on Galaxy Zoo at <a href="http://les-savanturiers.cri-paris.org" target="_blank">Les Savanturiers</a> event for teachers
 
-* Mar 2010: Demonstrator at <a href="https://www.ucl.ac.uk/youruniverse" taget="_blank">Your Universe</a>, UCL festival of astronomy
+* Mar 2010: Demonstrator at <a href="https://www.ucl.ac.uk/youruniverse" target="_blank">Your Universe</a>, UCL festival of astronomy
