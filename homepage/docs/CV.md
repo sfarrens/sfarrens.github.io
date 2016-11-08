@@ -29,7 +29,7 @@
   Thesis Title: *"Finding Clusters with 106 Luminous Red Galaxies”*   
   Supervisor: Dr. Filipe Abdalla
 
-* Sep 2002 - Jun 2003: **<a href="http://www.bbk.ac.uk" target="_blank">Birkbeck College</a> (University of London)**, UK  
+* Sep 2002 - Jun 2003: **<a href="http://www.bbk.ac.uk" target="_blank">Birkbeck College</a> (<a href="http://www.london.ac.uk" target="_blank">University of London</a>)**, UK  
   Award: Foundation Degree in Mathematics and Physics - *Distinction*
 
 * Jan 1999 - Dec 2001: **Liceo de Atenas**, Costa Rica  
