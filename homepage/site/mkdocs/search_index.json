@@ -72,7 +72,7 @@
         }, 
         {
             "location": "/software/", 
-            "text": "Software\n\n\nClutser Profile Code (CPC)\n\n\n\n\nCPC GitHub Page\n\n\n\n\nPython code that fits a projected density profile (at present NFW or Beta Model) to the members of a cluster of galaxies.\n\n\nCreePy\n\n\n\n\nCreePy GitHub Page\n\n\nCreePy Documentation\n\n\n\n\nA series of Python packages with applications to astrophysics, cosmology, signal processing and statistics.\n\n\nPycymatch\n\n\n\n\nPycymatch GitHub Page\n\n\n\n\nPycymatch is a cylindrical matching code for identifying matches between a catalogue of simulated dark matter haloes populated with galaxies and the results of a cluster detection algorithm run on said catalogue. The code defines the \"cylinder\" as the R200 distance from the halo centre and 2 x dz(1 + z) (where dz is the expected photometric redshift error). The code additionally requires that any potential matches be within the boundaries defined by the members of the mock halo (i.e. the farthest extent in RA and Dec of the members).\n\n\nSuper Friends-of-Friends (SFoF)\n\n\n\n\nSFoF GitHub Page\n\n\n\n\nSFoF is a friends-of-friends galaxy cluster detection algorithm that operates in either spectroscopic or photometric redshift space. The linking parameters, both transverse and along the line-of-sight, change as a function of redshift to account for selection effects.\n\n\nThe code is written in C++ and implements OMP to loop through the photometric redshift bins.", 
+            "text": "Software\n\n\nClutser Profile Code (CPC)\n\n\n\n\nCPC GitHub Page\n\n\n\n\nPython code that fits a projected density profile (at present NFW or Beta Model) to the members of a cluster of galaxies.\n\n\nCreePy\n\n\n\n\nCreePy GitHub Page\n\n\nCreePy Documentation\n\n\n\n\nA series of Python packages with applications to astrophysics, cosmology, signal processing and statistics.\n\n\nPSF-Tools\n\n\n\n\nPSF-Tools GitHub Page\n\n\n\n\nA series of Python codes and scripts designed for PSF analysis.\n\n\nPycymatch\n\n\n\n\nPycymatch GitHub Page\n\n\n\n\nPycymatch is a cylindrical matching code for identifying matches between a catalogue of simulated dark matter haloes populated with galaxies and the results of a cluster detection algorithm run on said catalogue. The code defines the \"cylinder\" as the R200 distance from the halo centre and 2 x dz(1 + z) (where dz is the expected photometric redshift error). The code additionally requires that any potential matches be within the boundaries defined by the members of the mock halo (i.e. the farthest extent in RA and Dec of the members).\n\n\nSuper Friends-of-Friends (SFoF)\n\n\n\n\nSFoF GitHub Page\n\n\n\n\nSFoF is a friends-of-friends galaxy cluster detection algorithm that operates in either spectroscopic or photometric redshift space. The linking parameters, both transverse and along the line-of-sight, change as a function of redshift to account for selection effects.\n\n\nThe code is written in C++ and implements OMP to loop through the photometric redshift bins.", 
             "title": "Software"
         }, 
         {
@@ -89,6 +89,11 @@
             "location": "/software/#creepy", 
             "text": "CreePy GitHub Page  CreePy Documentation   A series of Python packages with applications to astrophysics, cosmology, signal processing and statistics.", 
             "title": "CreePy"
+        }, 
+        {
+            "location": "/software/#psf-tools", 
+            "text": "PSF-Tools GitHub Page   A series of Python codes and scripts designed for PSF analysis.", 
+            "title": "PSF-Tools"
         }, 
         {
             "location": "/software/#pycymatch", 
