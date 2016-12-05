@@ -4,7 +4,7 @@ site_author: 'Samuel Farrens'
 copyright: 'Copyright (c) 2016 Samuel Farrens'
 
 docs_dir: 'docs'
-theme: 'material'
+theme: 'mkdocs'
 
 extra:
   logo: 'images/mythosaur.jpg'
