@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SF Space</title><link href="/" rel="alternate"></link><link href="/feeds/samuel-farrens.atom.xml" rel="self"></link><id>/</id><updated>2016-12-09T16:39:00+01:00</updated><entry><title>New Website!</title><link href="/new-website.html" rel="alternate"></link><published>2016-12-09T16:39:00+01:00</published><updated>2016-12-09T16:39:00+01:00</updated><author><name>Samuel Farrens</name></author><id>tag:,2016-12-09:new-website.html</id><summary type="html">&lt;h1&gt;Welcome to SF Space!&lt;/h1&gt;
+&lt;p&gt;I will be using this website to share thoughts and ideas about various topics. I have not decided on an absolute format yet, but I will mainly focus on sharing some of the interesting things I have learned regarding Python, image analysis, cosmology and astrophysics.&lt;/p&gt;
+&lt;p&gt;Stay tuned for future posts!&lt;/p&gt;</summary></entry></feed>
