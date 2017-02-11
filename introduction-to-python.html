@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Introduction to coding in Python Contents Getting Started Documentation Maths Operations This objective of this post is to provide the reader with an overview of how to start developing in Python ...">
+        <meta name="description" content="Introduction to coding in Python Contents Getting Started Documentation Operations This objective of this post is to provide the reader with an overview of how to start developing in Python and ...">
         <meta name="keywords" content="">
         <link rel="icon" href="/favicon.ico">
 
@@ -93,7 +93,7 @@
 <ul class="simple">
 <li><a class="reference internal" href="#getting-started" id="id1">Getting Started</a></li>
 <li><a class="reference internal" href="#documentation" id="id2">Documentation</a></li>
-<li><a class="reference internal" href="#maths-operations" id="id3">Maths Operations</a></li>
+<li><a class="reference internal" href="#operations" id="id3">Operations</a></li>
 </ul>
 </div>
 <p>This objective of this post is to provide the reader with an overview of how
@@ -102,7 +102,8 @@ personally find useful.</p>
 <div class="section" id="getting-started">
 <h3><a class="toc-backref" href="#contents">Getting Started</a></h3>
 <p>A nice way to get a feeling for philisophy behind Python is to run the
-following command in an interactive Python session (see {python-setup.rst}./).</p>
+following command in an interactive Python session (see
+{Python Set-up for OSX}./python-setup.rst).</p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">this</span>
 </pre></div>
 </div>
@@ -118,98 +119,42 @@ begin with a hash (<tt class="docutils literal">#</tt>).</p>
 <div class="highlight"><pre><span></span><span class="c1"># This is an example of a comment.</span>
 </pre></div>
 </div>
-<div class="section" id="maths-operations">
-<h3><a class="toc-backref" href="#contents">Maths Operations</a></h3>
+<div class="section" id="operations">
+<h3><a class="toc-backref" href="#contents">Operations</a></h3>
 <p>Native python supports various mathematic operators (e.g. addition,
 subtraction, multiplication, division, etc.) and logic operators (e.g. and, or,
 not, etc.). These operators do not require any declaration of variables. In
 fact, one can easily treat a given Python session like a sophisticated
-calculator.</p>
-<p>The following table lists the basic mathematical operations in Python. These
-are the operations that most people will be familiar with and one simply needs
-to learn the appropriate symbols to perform these operations in Python.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="42%" />
-<col width="34%" />
-<col width="24%" />
-</colgroup>
-<thead valign="bottom">
-<tr><th class="head">Operation</th>
-<th class="head">Mathematical Operator</th>
-<th class="head">Python Operator</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr><td>Addition</td>
-<td><span class="math">\(+\)</span></td>
-<td><cite>+</cite></td>
-</tr>
-</tbody>
-</table>
+calculator. See <a href="https://docs.python.org/2/library/stdtypes.html"
+target="_blank">here</a> for more details.</p>
 <p>Here are a few examples:</p>
+<p><strong>Addition</strong></p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="mi">2</span>
 </pre></div>
+<p><strong>Subtraction</strong></p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">7</span> <span class="o">-</span> <span class="mi">2</span>
+<span class="mi">5</span>
+</pre></div>
+<p><strong>Multiplication</strong></p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="mi">15</span>
+</pre></div>
+<p><strong>Divison</strong></p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">12</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="mi">4</span>
+</pre></div>
+<p><strong>Exponentiation</strong></p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">**</span> <span class="mi">2</span>
+<span class="mi">9</span>
+</pre></div>
+<p><strong>Comparison</strong></p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
+<span class="bp">True</span>
+</pre></div>
 </div>
 </div>
-<script type='text/javascript'>if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
 
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
 
 
         
