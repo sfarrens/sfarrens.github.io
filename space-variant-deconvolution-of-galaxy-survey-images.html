@@ -122,25 +122,26 @@ telescopes include aberrations from various sources such as:</p>
 <p>In order to recover the true image properties it is necessary to remove PSF
 effects from observations. If the PSF is known (which is certainly not
 trivial) one can attempt to deconvolve the PSF from the image. In the absence
-of noise this is simple. We can model the observed image <span class="math">\(y\)</span> as follows</p>
+of noise this is simple. We can model the observed image <span class="math">\(mathbf{y}\)</span> as
+follows</p>
 <div class="math">
 \begin{equation*}
-y = Hx
+\mathbf{y} = \mathbf{H}\mathbf{x}
 \end{equation*}
 </div>
-<p>where <span class="math">\(x\)</span> is the true image and <span class="math">\(H\)</span> is an operator that represents
-the convolution with the PSF. Thus, to recover the true image, one would simply
-invert <span class="math">\(H\)</span> as follows</p>
+<p>where <span class="math">\(\mathbf{x}\)</span> is the true image and <span class="math">\(\mathbf{H}\)</span> is an
+operator that represents the convolution with the PSF. Thus, to recover the
+true image, one would simply invert <span class="math">\(\mathbf{H}\)</span> as follows</p>
 <div class="math">
 \begin{equation*}
-x = H^{-1}y
+\mathbf{x} = \mathbf{H}^{-1}\mathbf{y}
 \end{equation*}
 </div>
 <p>Unfortunately, the images we observe also contain noise (<em>e.g.</em> from the CCD
 readout) and this complicates the problem.</p>
 <div class="math">
 \begin{equation*}
-y = Hx + n
+\mathbf{y} = \mathbf{H}\mathbf{x} + \mathbf{n}
 \end{equation*}
 </div>
 <p>This problem is ill-posed as even the tiniest amount of noise will have a large
