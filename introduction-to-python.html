@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Introduction to coding in Python Contents Getting Started Documentation Native Python This objective of this post is to provide the reader with an overview of how to start developing in Python and ...">
+        <meta name="description" content="Introduction to coding in Python Contents Getting Started Documentation Native Python Numpy Matplotlib This objective of this post is to provide the reader with an overview of how to start ...">
         <meta name="keywords" content="">
         <link rel="icon" href="/favicon.ico">
 
@@ -94,6 +94,8 @@
 <li><a class="reference internal" href="#getting-started" id="id1">Getting Started</a></li>
 <li><a class="reference internal" href="#documentation" id="id2">Documentation</a></li>
 <li><a class="reference internal" href="#native-python" id="id3">Native Python</a></li>
+<li><a class="reference internal" href="#numpy" id="id4">Numpy</a></li>
+<li><a class="reference internal" href="#matplotlib" id="id5">Matplotlib</a></li>
 </ul>
 </div>
 <p>This objective of this post is to provide the reader with an overview of how
@@ -127,6 +129,11 @@ functions (methods) and classes, but this will be discussed later.</p>
 </div>
 <div class="section" id="native-python">
 <h3><a class="toc-backref" href="#contents">Native Python</a></h3>
+<p>Check out <a href="http://nbviewer.jupyter.org/github/sfarrens/notebooks/blob/master/Python/Native.ipynb"
+target="_blank">this notebook</a> for some an introduction to some of the basic
+properties of native Python.</p>
+<p>Here are a few highlights.</p>
+<p><strong>Operators</strong></p>
 <p>Native python supports various mathematic operators (e.g. addition,
 subtraction, multiplication, division, etc.) and logic operators (e.g. and, or,
 not, etc.). These operators do not require any declaration of variables. In
@@ -143,9 +150,208 @@ target="_blank">here</a> for more details.</p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">9</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
 <span class="mi">42</span>
 </pre></div>
-<p>Check out <a href="http://nbviewer.jupyter.org/github/sfarrens/notebooks/blob/master/Python/Native.ipynb"
-target="_blank">this notebook</a> for some an introduction to some of the basic
-properties of native Python.</p>
+<p>You can also define variables to store values for calculations.</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
+<span class="mi">8</span>
+</pre></div>
+<p><strong>Arrays</strong></p>
+<p>The are various ways to store multiple values in a single object. Some of the
+most basic types are <tt class="docutils literal">list</tt>, <tt class="docutils literal">tuple</tt> and <tt class="docutils literal">dict</tt>.</p>
+<p>Lists are <em>mutable</em> (can be changed)</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span>
+<span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+</pre></div>
+<p>while tuples are <em>immutable</em> (cannot be changed).</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">&quot;&lt;input&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="s1">&#39;tuple&#39;</span> <span class="nb">object</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">support</span> <span class="n">item</span> <span class="n">assignment</span>
+</pre></div>
+<p>Both objects allow <em>concatenation</em>.</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+<p>Dictionaries are used for storing <em>key : value</em> pairs.</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;day&#39;</span> <span class="p">:</span> <span class="mi">14</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span> <span class="p">:</span> <span class="s1">&#39;March&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span> <span class="p">:</span> <span class="mi">2017</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span>
+<span class="mi">14</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span>
+<span class="s1">&#39;March&#39;</span>
+</pre></div>
+<p><strong>Loops</strong></p>
+<p>Loops can be implemented in a fairly familiar way (for those who have some
+coding experience in another language) using a <tt class="docutils literal">for</tt> statement.</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)):</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="o">...</span>
+<span class="o">...</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+</pre></div>
+<p>Here <tt class="docutils literal">len</tt> provides the length of the list <tt class="docutils literal">a</tt> and <tt class="docutils literal">range</tt> produces a
+list of integers from 0 to 3 (<em>i.e.</em> the indices of the list).</p>
+<p>A more elegant way of doing this would be to simply iterate through the list.
+Fortunately Python allows this.</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="n">value</span>
+<span class="o">...</span>
+<span class="o">...</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+</pre></div>
+<p>Here <tt class="docutils literal">value</tt> is simply a dummy variable. Note: This also works for tuples.</p>
+<p>Another elegant option provided in Python is <em>list comprehension</em>, which
+converts one list into another.</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">a</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
+</pre></div>
+<p>In this example the operation iterates through the elements in the list <tt class="docutils literal">a</tt>,
+stores each element in a dummy variable <tt class="docutils literal">value</tt> and finally adds the square
+of the variable to a new list <tt class="docutils literal">b</tt>.</p>
+<p><strong>Functions</strong></p>
+<p>Functions are an essential part of any programming language and should be used
+as often as possible to avoid repeating lines of code (which can lead to bugs).</p>
+<p>Functions (or methods) are defined using the <tt class="docutils literal">def</tt> statement and results are
+returned with the <tt class="docutils literal">return</tt> statement. For example to define a function that
+adds two values you would do the following</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="o">...</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="mi">8</span>
+</pre></div>
+<p>Virtually all Python objects can be passed to functions including other
+functions. For example we can pass the <tt class="docutils literal">add</tt> function we just defined to a
+new function as follows</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">operate</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">func</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">operate</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">add</span><span class="p">)</span>
+<span class="mi">10</span>
+</pre></div>
+<p><strong>Classes</strong></p>
+<p>Classes can be an extremely powerful tool when used correctly in your code. As
+a basic rule of thumb you should not create a class unless you actually need a
+class. Most of the time functions will be sufficient.</p>
+<p>Classes are defined using the <tt class="docutils literal">class</tt> statement. A simple example of a class
+(which need not be a class) is given below</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">exampleClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="o">...</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="o">...</span>
+<span class="o">...</span>     <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="o">...</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<span class="o">...</span>
+<span class="o">...</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">exampleClass</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="mi">12</span>
+</pre></div>
+<p>In this example a class called <tt class="docutils literal">exampleClass</tt> is defined. Then a special
+<tt class="docutils literal">__init__</tt> method is defined that takes two arguments: the class instance
+<tt class="docutils literal">self</tt> and an input value <tt class="docutils literal">a</tt>. This method sets the value of the instance
+variable <tt class="docutils literal">self.a</tt>. The other two methods return operations on the instance
+variable. <tt class="docutils literal">x</tt> is a class instance with <tt class="docutils literal">self.a=3</tt>.</p>
+</div>
+<div class="section" id="numpy">
+<h3><a class="toc-backref" href="#contents">Numpy</a></h3>
+<p><a href="http://www.numpy.org/" target="_blank">Numpy</a> is a numerical python packing for scientific computing. If you
+only ever install one Python package this should be it.</p>
+<p>To install numpy simply run the following command in a terminal (providing you
+have already set up pip)</p>
+<div class="highlight"><pre><span></span>$ pip install numpy
+</pre></div>
+<p>The most essential numpy object is the numpy array (<tt class="docutils literal">numpy.ndarray</tt>).</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;list&#39;</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;numpy.ndarray&#39;</span><span class="o">&gt;</span>
+</pre></div>
+<p>In this example the numpy package is imported with the <tt class="docutils literal">import</tt> command. The
+<tt class="docutils literal">as</tt> assigns the numpy package contents to the object <tt class="docutils literal">np</tt> (otherwise we
+would have to write <tt class="docutils literal">numpy.array</tt>). The <tt class="docutils literal">np.array()</tt> command converts the
+list <tt class="docutils literal">a</tt> to a numpy array <tt class="docutils literal">b</tt>.</p>
+<p>Numpy arrays have several fantastic properties. Some basic examples are the
+following</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span>
+<span class="n">array</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">size</span>
+<span class="mi">20</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="mf">4.0499999999999998</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="mf">2.1788758569500923</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
+<span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</pre></div>
+<p>In this example a numpy array of twenty random integers with values between 0
+and 9 is created. The size of the array is displayed using the <tt class="docutils literal">size</tt>
+command. The mean and standard deviation of the array elements are calculated
+using the <tt class="docutils literal">mean()</tt> and <tt class="docutils literal">std()</tt> commands, respectively.</p>
+<p>Numpy also handles linear algebra. For example to take the dot product of two
+matrices</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">ranf</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="n">array</span><span class="p">([[</span> <span class="mf">0.6261871</span> <span class="p">,</span>  <span class="mf">0.71889385</span><span class="p">,</span>  <span class="mf">0.17439468</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.19782067</span><span class="p">,</span>  <span class="mf">0.05696277</span><span class="p">,</span>  <span class="mf">0.60367111</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.64407532</span><span class="p">,</span>  <span class="mf">0.23033306</span><span class="p">,</span>  <span class="mf">0.45920846</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">ranf</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
+<span class="n">array</span><span class="p">([[</span> <span class="mf">0.64828158</span><span class="p">,</span>  <span class="mf">0.58614609</span><span class="p">,</span>  <span class="mf">0.05702741</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.02461247</span><span class="p">,</span>  <span class="mf">0.61484314</span><span class="p">,</span>  <span class="mf">0.10994705</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.98543645</span><span class="p">,</span>  <span class="mf">0.83008403</span><span class="p">,</span>  <span class="mf">0.56223184</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">array</span><span class="p">([[</span> <span class="mf">0.59549419</span><span class="p">,</span>  <span class="mf">0.95380631</span><span class="p">,</span>  <span class="mf">0.21280033</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.72452501</span><span class="p">,</span>  <span class="mf">0.65207273</span><span class="p">,</span>  <span class="mf">0.35694721</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.87573199</span><span class="p">,</span>  <span class="mf">0.90032254</span><span class="p">,</span>  <span class="mf">0.32023601</span><span class="p">]])</span>
+</pre></div>
+</div>
+<div class="section" id="matplotlib">
+<h3><a class="toc-backref" href="#contents">Matplotlib</a></h3>
+<p>Finally, to get started with your research you will most likely want to be able
+to plot your results. After installing numpy, the second package you will want
+to install is <a href="http://matplotlib.org/" target="_blank">Matplotlib</a>.</p>
+<p>To install numpy simply run the following command in a terminal</p>
+<div class="highlight"><pre><span></span>$ pip install matplotlib
+</pre></div>
+<p>To plot <span class="math">\(x^2\)</span> you would do the following</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;b-&#39;</span><span class="p">)</span>
+<span class="p">[</span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">lines</span><span class="o">.</span><span class="n">Line2D</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x107be4190</span><span class="o">&gt;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$x$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Text</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x111977dd0</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$x^2$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Text</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x107bff110</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+<img alt="x^2" class="align-center" src="images/x_2.png" style="width: 400.0px; height: 300.0px;" />
 </div>
 </div>
 <script type='text/javascript'>if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
