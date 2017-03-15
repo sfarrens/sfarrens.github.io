@@ -105,7 +105,7 @@ personally find useful.</p>
 <h3><a class="toc-backref" href="#contents">Getting Started</a></h3>
 <p>A nice way to get a feeling for philisophy behind Python is to run the
 following command in an interactive Python session (see
-<a class="reference external" href="{python-setup.rst}/python-setup.rst)">Python Set-up for OSX</a>).</p>
+<a class="reference external" href="{filename}/python-setup.rst)">Python Set-up for OSX</a>).</p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">this</span>
 </pre></div>
 </div>
@@ -134,7 +134,7 @@ target="_blank">this notebook</a> for some an introduction to some of the basic
 properties of native Python.</p>
 <p>Here are a few highlights.</p>
 <p><strong>Operators</strong></p>
-<p>Native python supports various mathematic operators (e.g. addition,
+<p>Native python supports various mathematical operators (e.g. addition,
 subtraction, multiplication, division, etc.) and logic operators (e.g. and, or,
 not, etc.). These operators do not require any declaration of variables. In
 fact, one can easily treat a given Python session like a sophisticated
@@ -159,13 +159,13 @@ target="_blank">here</a> for more details.</p>
 <p><strong>Arrays</strong></p>
 <p>The are various ways to store multiple values in a single object. Some of the
 most basic types are <tt class="docutils literal">list</tt>, <tt class="docutils literal">tuple</tt> and <tt class="docutils literal">dict</tt>.</p>
-<p>Lists are <em>mutable</em> (can be changed)</p>
+<p>Lists are <em>mutable</em> (<em>i.e.</em> can be changed)</p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">a</span>
 <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 </pre></div>
-<p>while tuples are <em>immutable</em> (cannot be changed).</p>
+<p>while tuples are <em>immutable</em> (<em>i.e.</em> cannot be changed).</p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
@@ -227,7 +227,7 @@ of the variable to a new list <tt class="docutils literal">b</tt>.</p>
 <p>Functions are an essential part of any programming language and should be used
 as often as possible to avoid repeating lines of code (which can lead to bugs).</p>
 <p>Functions (or methods) are defined using the <tt class="docutils literal">def</tt> statement and results are
-returned with the <tt class="docutils literal">return</tt> statement. For example to define a function that
+returned with the <tt class="docutils literal">return</tt> statement. For example, to define a function that
 adds two values you would do the following</p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 <span class="o">...</span>     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
@@ -236,7 +236,7 @@ adds two values you would do the following</p>
 <span class="mi">8</span>
 </pre></div>
 <p>Virtually all Python objects can be passed to functions including other
-functions. For example we can pass the <tt class="docutils literal">add</tt> function we just defined to a
+functions. For example, we can pass the <tt class="docutils literal">add</tt> function we just defined to a
 new function as follows</p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">operate</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">func</span><span class="p">):</span>
 <span class="o">...</span>     <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
@@ -336,7 +336,7 @@ matrices</p>
 <p>Finally, to get started with your research you will most likely want to be able
 to plot your results. After installing numpy, the second package you will want
 to install is <a href="http://matplotlib.org/" target="_blank">Matplotlib</a>.</p>
-<p>To install numpy simply run the following command in a terminal</p>
+<p>To install matplotlib simply run the following command in a terminal</p>
 <div class="highlight"><pre><span></span>$ pip install matplotlib
 </pre></div>
 <p>To plot <span class="math">\(x^2\)</span> you would do the following</p>
