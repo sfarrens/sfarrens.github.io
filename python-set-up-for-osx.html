@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Seting up Python on Mac OSX Contents Installation Environment Execution Packages This objective of this post is to help you set up Python 2.7 on Mac OSX. I am currently running 10.12 (Sierra), but ...">
+        <meta name="description" content="Seting up Python on Mac OSX Contents Installation Environment Execution Packages This objective of this post is to help you set up Python 2.7 on Mac OSX. I am currently running 10.12 (Sierra), but...">
         <meta name="keywords" content="">
         <link rel="icon" href="/favicon.ico">
 
@@ -50,11 +50,6 @@
                         <a class="pull-left" href="/"><img class="mr20" src="/images/mythosaur.jpg" alt="logo" height="30">SF Space</a>
                     </div>
                     <div class="nav pull-right">
-                            <a  href="/pages/about.html">About</a>
-                            <a  href="/pages/cv.html">CV</a>
-                            <a  href="/pages/publications.html">Publications</a>
-                            <a  href="/pages/software.html">Software</a>
-                            <a  href="/pages/tutorials.html">Tutorials</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +140,7 @@ install Python using MacPorts run the following:</p>
 that your new Python becomes the default version.</p>
 <p>To do this you will need to add the new Python binary to your path by running
 the following command or adding it to your <tt class="docutils literal">.bash_profile</tt>.</p>
-<div class="highlight"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;PATHTOPYTHON/bin:</span>$<span class="s2">PATH&quot;</span>
+<div class="highlight"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;PATHTOPYTHON/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
 </pre></div>
 <p>Where <tt class="docutils literal">PATHTOPYTHON</tt> would be <tt class="docutils literal">/usr/local</tt> for a Homebrew installation,
 <tt class="docutils literal">/opt/local</tt> for a MacPorts installation or something like <tt class="docutils literal">$HOME/anaconda</tt>
@@ -158,8 +153,8 @@ for an Anaconda installation.</p>
 To do this you can set up a <tt class="docutils literal">PYTHONPATH</tt>. For example if you place your
 Python codes in the directory <tt class="docutils literal">/Users/username/Documents/Python</tt> you can add the
 following to your <tt class="docutils literal">.bash_profile</tt>.</p>
-<div class="highlight"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="s2">&quot;</span>$<span class="s2">HOME/Documents/Python&quot;</span>
-$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span>$<span class="s2">PYTHONPATH:</span>$<span class="s2">PATH&quot;</span>
+<div class="highlight"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/Documents/Python&quot;</span>
+$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PYTHONPATH</span><span class="s2">:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
 <div class="section" id="execution">
