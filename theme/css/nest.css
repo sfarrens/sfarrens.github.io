@@ -23,8 +23,7 @@
 
 /* Default styling */
 body {
-    /*font-family: "Open Sans", sans-serif;*/
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
 /*    font-size: 15px;*/
     color: #4b505a;
     background-color: #f5f5f5;
@@ -34,17 +33,17 @@ body {
 }
 
 /* Links */
-/* d67f37*/
+/* eb2344*/
 /* 009bff*/
 /* CE2323 */
-a, a:visited {
-    color: #d67f37;
-    text-decoration: none;
+a, a:visited { 
+    color: #eb2344; 
+    text-decoration: none; 
     transition: all 0.2s ease-out;
 }
-a:hover, a:active{
-    text-decoration:underline;
-    color:#d67f37;
+a:hover, a:active{ 
+    text-decoration:underline; 
+    color:#eb2344; 
 /*    opacity: 0.8; */
 }
 
@@ -80,7 +79,7 @@ pre, code {
     border-radius: 0px;
     color: #4b505a;
     margin: 34px 0;
-    font-weight: 700;
+    font-weight: 700; 
 }
 
 code { padding: 3px 6px; }
@@ -108,7 +107,7 @@ code { padding: 3px 6px; }
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  background:#333;
+  background:#333; 
   font-size: 14px;
   font-weight: 400;
   font-family: Consolas, monaco, monospace;
@@ -117,19 +116,19 @@ code { padding: 3px 6px; }
 
 /* Titles */
 
-h1 {
+h1 { 
     font-size: 28px;
-    line-height: 1.285714285714286em;
+    line-height: 1.285714285714286em; 
     font-weight: 600;
     letter-spacing: 2px;
     border:none;
 }
 
-h2 {
+h2 { 
     font-size: 20px;
-    line-height: 1.285714285714286em;
+    line-height: 1.285714285714286em; 
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 40px;   
     margin-bottom: 40px;
 }
 h2:after {
@@ -137,15 +136,15 @@ h2:after {
     content: " ";
     margin-top: 10px;
     width: 40px;
-    border-bottom: 3px solid rgba(214,127,55,1);
+    border-bottom: 3px solid rgba(235,35,68,1);
     /*border-bottom: 3px solid rgba(0,0,0,0.2);*/
 }
 
-h3 {
+h3 { 
     font-size: 16px;
-    line-height: 1.285714285714286em;
+    line-height: 1.285714285714286em; 
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 30px; 
     margin-bottom: 30px;
 }
 h3:after {
@@ -153,14 +152,14 @@ h3:after {
     content: " ";
     margin-top: 10px;
     width: 40px;
-    border-bottom: 3px solid rgba(214,127,55,1);
+    border-bottom: 3px solid rgba(235,35,68,1);
 }
 
-h4 {
+h4 { 
     font-size: 12px;
-    line-height: 1.285714285714286em;
+    line-height: 1.285714285714286em; 
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 30px; 
     margin-bottom: 30px;
     text-transform: uppercase;
 }
@@ -169,7 +168,7 @@ h4:after {
     content: " ";
     margin-top: 10px;
     width: 40px;
-    border-bottom: 3px solid rgba(0,0,0,0.2);
+    border-bottom: 3px solid rgba(0,0,0,0.2);    
 }
 
 /* Navbar */
@@ -250,7 +249,7 @@ h4:after {
     margin-top: 10px;
     margin-bottom: 15px;
     width: 50px;
-    border-bottom: 3px solid #d67f37;
+    border-bottom: 3px solid #eb2344;
 }
 .header-subtitle {
     font-size: 14px;
@@ -303,7 +302,7 @@ h4:after {
 .content dt{
     font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 24px;    
 }
 
 /* Navigation */
@@ -324,12 +323,12 @@ h4:after {
 }
 .menu h4{
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;  
 }
 .menu a{
   color: #fff;
   padding:0px;
-  background-color: #d67f37;
+  background-color: #eb2344;
   padding-left: 3px;
   padding-right: 3px;
   padding-top: 2px;
@@ -339,7 +338,7 @@ h4:after {
 
 /* Article */
 .article-container{
-    margin-top: 40px;
+    margin-top: 40px; 
 }
 .article {
     font-size: 14px;
@@ -352,7 +351,7 @@ h4:after {
 }
 .article h2{
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;  
 }
 .article h2 a{
     color: #4b505a;
@@ -361,13 +360,13 @@ h4:after {
 .article .date{
     font-size: 12px;
     margin-bottom: 10px;
-    opacity: 0.9;
+    opacity: 0.9;  
 }
 
 /* Archives */
 .archive-container{
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
 }
 .archive {
     font-size: 14px;
@@ -379,7 +378,7 @@ h4:after {
 }
 .archive h2{
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
 .archive h2 a{
     color: #4b505a;
@@ -388,7 +387,7 @@ h4:after {
 .archive dt{
     font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 24px;    
 }
 /* Styling */
 
