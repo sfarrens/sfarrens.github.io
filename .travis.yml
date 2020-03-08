@@ -8,7 +8,7 @@ rvm:
 # script: ./script/cibuild
 
 install:
-  - gem install jekyll html-proofer
+  - bundle install
 
 script:
   - bundle exec jekyll build
