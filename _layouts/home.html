@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home-container">
+  <div class="home-image-container">
+    <img src="{{ site.image_path }}/homeimage.png" class="home-image">
+  </div>
+  <div class="icon-container">
+    {% for item in site.data.icons %}
+    <div>
+      <a href="{{ item.link }}" target="_blank">
+        <img src="{{ site.image_path }}/{{ item.image }}" class="home-icon-pad">
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="topic-container">
+  {% for item in site.data.topics %}
+    <div class="topic" onclick="location.href='{{ item.link }}';">
+      <img src="{{ site.image_path }}/{{ item.image }}" class="topic-image">
+      <span class="topic-title">{{ item.name }}</span>
+    </div>
+  {% endfor %}
+</div>

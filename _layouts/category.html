@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{% if page.category == "pub" or page.category == "blog" %}
+{% assign filtered_posts = site.posts | where: 'category', page.category %}
+
+{% if page.category == "blog" %}
+<br>
+
+<div class="desktop">
+  <div class="blog-container">
+    {% for post in filtered_posts %}
+      {%- include blog.html -%}
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+{% for post in filtered_posts %}
+<br>
+
+<div class="desktop">
+{% if page.category == "pub" %}
+  {%- include pub_desktop.html -%}
+{% endif %}
+</div>
+
+<div class="mobile">
+  {%- include post_mobile.html -%}
+</div>
+{% endfor %}
+{% endif %}
+
+{% if page.category == "soft" or page.category == "tutor" %}
+{% assign filtered_posts = site.posts | where: 'category', page.category | sort %}
+{% for post in filtered_posts %}
+<br>
+
+<div class="desktop">
+  {% if page.category == "soft" %}
+    {%- include soft_desktop.html -%}
+  {% elsif page.category == "tutor" %}
+    {%- include tutor_desktop.html -%}
+  {% endif %}
+</div>
+
+<div class="mobile">
+  {%- include post_mobile.html -%}
+</div>
+{% endfor %}
+{% endif %}

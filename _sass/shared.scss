@@ -1,0 +1,43 @@
+@mixin shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin post-box-container($justify-value) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $justify-value;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin post-box($height, $width, $text-align) {
+  @include shadow;
+  text-align: $text-align;
+  height: $height;
+  border-radius: 0.3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @include desktoptab {
+    width: $width;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+@mixin post-box-image($height) {
+  width: 100%;
+  height: $height;
+  margin-bottom: 0.7rem;
+  object-fit: cover;
+}

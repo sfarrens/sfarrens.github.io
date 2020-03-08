@@ -1,0 +1,65 @@
+//Publication post settings
+@import "size";
+
+@mixin pub-font {
+  font-family: $pub-font-family;
+  font-weight: $pub-font-weight;
+}
+
+.pub-authors {
+  @include pub-font;
+  color: $pub-author-color;
+
+  @include desktoptab {
+    font-size: $pub-author-font-size;
+  }
+
+  @include mobile {
+    font-size: $pub-author-font-size-mobile;
+    padding-right: 0.4rem;
+  }
+
+}
+
+.pub-journal {
+  @include pub-font;
+  color: $pub-year-color;
+
+  @include desktoptab {
+    font-size: $pub-year-font-size;
+  }
+
+  @include mobile {
+    font-size: $pub-year-font-size-mobile;
+    padding-left: 0.5rem;
+    border-left: solid 1px $border-color;
+  }
+
+}
+
+.pub-year {
+  @include pub-font;
+  color: $pub-year-color;
+
+  @include desktoptab {
+    font-size: $pub-year-font-size;
+  }
+
+  @include mobile {
+    font-size: $pub-year-font-size-mobile;
+  }
+}
+
+.pub-excerpt {
+  @include pub-font;
+  color: $body-text-color;
+
+  @include desktoptab {
+    font-size: $pub-excerpt-font-size;
+  }
+
+  @include mobile {
+    font-size: $pub-excerpt-font-size-mobile;
+  }
+
+}

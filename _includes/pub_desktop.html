@@ -1,0 +1,39 @@
+<div class="post-container">
+  <div class="post-title-container" onclick="location.href='{{ post.url }}';">
+    <span class="post-title">{{ post.title }}</span>
+    <br>
+    <span class="pub-authors">{{ post.authors }}</span>
+    <br>
+    <span class="pub-journal">{{ post.journal }}</span>
+    <span class="pub-year">{{ post.year }}</span>
+    <br>
+  </div>
+  <div class="post-image-container" onclick="location.href='{{ post.url }}';">
+    <img src="{{ site.image_path }}/{{ post.image }}" class="post-image">
+  </div>
+  <div class="post-icon-container">
+    {% if post.ads != nil %}
+    <a href="{{ post.ads }}" target="_blank">
+      <img src="{{ site.image_path }}/nasa.png" class="post-icon">
+    </a>
+    {% endif %}
+    {% if post.arxiv != nil %}
+    <a href="{{ post.arxiv }}" target="_blank">
+      <img src="{{ site.image_path }}/arxiv.png" class="post-icon">
+    </a>
+    {% endif %}
+    {% if post.pdf != nil %}
+    <a href="{{ post.pdf }}" target="_blank">
+      <img src="{{ site.image_path }}/pdf.png" class="post-icon">
+    </a>
+    {% endif %}
+    {% if post.bibtex != nil %}
+    <a href="{{ post.bibtex }}" target="_blank">
+      <img src="{{ site.image_path }}/bibtex.png" class="post-icon">
+    </a>
+    {% endif %}
+  </div>
+  <div class="post-excerpt-container" onclick="location.href='{{ post.url }}';">
+    <span class="pub-excerpt">{{ post.excerpt | truncate: 300 }}</span>
+  </div>
+</div>

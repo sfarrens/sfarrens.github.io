@@ -1,0 +1,13 @@
+@import "rouge-github";
+
+pre {
+  padding: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  background-color: $code-bg-color;
+  border: solid 1px $border-color;
+  border-radius: 0.3rem;
+  font-size: 1.0rem;
+  overflow-x: scroll;
+}

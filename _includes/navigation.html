@@ -1,0 +1,8 @@
+<nav>
+  <div class="topnav" id="topnav">
+    {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" class="menu-text"> {{ item.name }}</a>
+    {% endfor %}
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</nav>

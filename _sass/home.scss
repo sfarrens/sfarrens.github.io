@@ -1,0 +1,72 @@
+.home-container {
+  padding-top: 2rem;
+}
+
+.home-image-container {
+  width: 100%;
+  height: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.home-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  object-fit: cover;
+  display: block;
+}
+
+.icon-container {
+  height: 125px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include desktoptab {
+    max-width: 400px;
+  }
+
+  @include mobile {
+    max-width: 250px;
+  }
+}
+
+.icon-container div {
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  @include desktoptab {
+    width: 50px;
+    height: 50px;
+  }
+
+  @include mobile {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.topic-container {
+  @include post-box-container(center);
+}
+
+.topic {
+  @include post-box(250px, 250px, center);
+}
+
+.topic-image {
+  @include post-box-image(70%);
+}
+
+.topic-title {
+  font-size: $topic-font-size;
+  font-weight: $topic-font-weight;
+  margin: 1rem;
+}

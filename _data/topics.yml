@@ -1,0 +1,9 @@
+- name: Publications
+  link: /publications.html
+  image: publications.jpg
+- name: Software
+  link: /software.html
+  image: software.jpg
+- name: Tutorials
+  link: /tutorials.html
+  image: tutorials.jpg

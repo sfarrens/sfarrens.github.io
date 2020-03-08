@@ -1,0 +1,176 @@
+// Import SCSS variables
+@import "variables";
+@import "shared";
+@import "size";
+// Import SCSS files
+@import "about";
+@import "blog";
+@import "code";
+@import "cv";
+@import "footer";
+@import "header";
+@import "home";
+@import "navigation";
+@import "post";
+@import "pub";
+@import "toc";
+
+//Set basic properties
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $body-font-family;
+  color: $body-text-color;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+
+}
+
+a {
+  color: $body-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $body-link-hover-color;
+    text-decoration: none;
+  }
+
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+  -webkit-overflow-scrolling: touch;
+
+  th {
+    font-weight: bold;
+  }
+
+  td,
+  th {
+    padding: 0.5rem 1rem;
+    border: 1px solid $table-border-color;
+  }
+}
+
+.main-content {
+
+  margin: 0 auto;
+  overflow: auto;
+  font-weight: $body-font-weight;
+
+  @include desktoptab {
+    max-width: 75%;
+    padding: 2rem 6rem;
+    font-size: 1.1rem;
+  }
+  @include mobile {
+    max-width: 100%;
+    padding: 2rem 3rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    color: $h1-color;
+    font-weight: $h1-font-weight;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 4rem;
+      border-bottom: 3px solid $h1-underline-color;
+    }
+
+    @include mobile {
+      font-size: $h1-font-size-mobile;
+    }
+
+  }
+
+  h2 {
+    color: $heading-color;
+    font-weight: $heading-font-weight;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 4rem;
+      border-bottom: 2px solid $heading-underline-color;
+    }
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $heading-color;
+    font-weight: $heading-font-weight;
+  }
+
+  strong {
+    font-weight: $strong-font-weight;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+
+  ul.special {
+    list-style-type: circle;
+  }
+
+  ol {
+    margin-top: 0;
+  }
+
+  dl {
+    padding: 0;
+
+    dt {
+      padding: 0;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    dd {
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: $blockquote-text-color;
+    border-left: 0.3rem solid $border-color;
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: $hr-border-color;
+    border: 0;
+  }
+}

@@ -1,0 +1,48 @@
+@import "post";
+@import "pub";
+
+.blog-container {
+  @include post-box-container(left);
+}
+
+.blog {
+  @include post-box(435px, 312px, none);
+  position: relative;
+}
+
+.blog-image {
+  @include post-box-image(250px);
+}
+
+.blog-text-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  max-height: 145px;
+  overflow: hidden;
+}
+
+.blog-excerpt {
+  @include pub-font;
+  color: $body-text-color;
+
+  @include desktoptab {
+    font-size: $pub-excerpt-font-size;
+  }
+
+  @include mobile {
+    font-size: $pub-excerpt-font-size-mobile;
+  }
+}
+
+.blog-tag {
+  color: $post-tag-color;
+  font-size: $post-tag-font-size;
+  font-weight: $post-tag-font-weight;
+  opacity: 1;
+  position: absolute;
+  top: 5%;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: $post-tag-bg-color;
+}

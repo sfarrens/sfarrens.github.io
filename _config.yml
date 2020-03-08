@@ -1,0 +1,22 @@
+title: SF Space
+description: My personal website
+show_downloads: true
+google_analytics: UA-88784993-1
+image_path: /assets/images
+
+plugins:
+  - jekyll-latex
+  - jekyll-target-blank
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+kramdown:
+   toc_levels: 1..2
+
+exclude: [vendor]

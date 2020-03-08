@@ -1,0 +1,15 @@
+- name: SF Space
+  link: /index.html
+  image: mythosaur.jpg
+- name: About
+  link: /about.html
+- name: CV
+  link: /cv.html
+- name: Publications
+  link: /publications.html
+- name: Software
+  link: /software.html
+- name: Tutorials
+  link: /tutorials.html
+- name: Blog
+  link: /blog.html

@@ -1,0 +1,17 @@
+<div class="post-container" onclick="location.href='{{ post.url }}';">
+  <div class="post-image-container">
+    <img src="{{ site.image_path }}/{{ post.image }}" class="post-image">
+  </div>
+  <br>
+  <div class="post-title-container">
+    <span class="post-title">{{ post.title }}</span>
+    <br>
+    {% if post.authors != nil %}
+    <span class="pub-authors">{{ post.authors }}</span>
+    <span class="pub-journal">{{ post.journal }}</span>
+    <span class="pub-year">{{ post.year }}</span>
+    <br>
+    {% endif %}
+    <span class="pub-excerpt">{{ post.excerpt | truncate: 150 }}</span>
+  </div>
+</div>

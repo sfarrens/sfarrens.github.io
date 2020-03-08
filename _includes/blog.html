@@ -1,0 +1,9 @@
+<div class="blog" onclick="location.href='{{ post.url }}';">
+  <img src="{{ site.image_path }}/{{ post.image }}" class="blog-image">
+  <div class="blog-tag">{{ post.tag }}</div>
+  <div class="blog-text-container">
+    <span class="post-title">{{ post.title }}</span>
+    <br>
+    <span class="blog-excerpt">{{ post.excerpt | truncate: 170 }}</span>
+  </div>
+</div>

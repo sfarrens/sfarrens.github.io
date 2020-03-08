@@ -1,0 +1,177 @@
+//Post settings
+@import "size";
+
+.post-container {
+
+  @include shadow;
+  border-radius: 0.3rem;
+
+  @include desktoptab {
+    border-radius: 0.3rem;
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+
+}
+
+.post-image-container {
+
+  @include desktoptab {
+    float: right;
+    width: 120px;
+    height: 120px;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: 220px;
+  }
+
+}
+
+.post-image {
+
+  height: 100%;
+  width: 100%;
+
+  @include desktoptab {
+    border-radius: 0.3rem;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: transform .5s ease;
+    display: block;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  @include mobile {
+    object-fit: cover;
+    display: block;
+  }
+
+}
+
+.in-post-image-container {
+  max-width: 37%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  @include shadow;
+}
+
+.in-post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.in-post-info {
+  font-weight: $in-post-info-font-weight;
+}
+
+.post-title-container {
+
+  vertical-align: top;
+
+  @include desktoptab {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    max-width: 69%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  @include mobile {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+  }
+
+}
+
+.post-icon-container {
+  display: block;
+  margin-left: 2rem;
+}
+
+.post-icon {
+  height: 30px;
+  padding-top: 10px;
+
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+.post-badge-container {
+  margin-top: 1.0rem;
+  display: block;
+  margin-left: 2rem;
+}
+
+.post-excerpt-container {
+  max-width: 70%;
+  vertical-align: top;
+  text-align: justify;
+  text-justify: inter-word;
+  overflow: hidden;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+
+  @include desktoptab {
+    cursor: pointer;
+  }
+
+}
+
+@mixin post-font {
+  font-family: $post-font-family;
+
+  @include desktoptab {
+    font-size: $post-font-size;
+  }
+
+  @include mobile {
+    font-size: $post-font-size-mobile;
+  }
+
+}
+
+.post-title {
+  @include post-font;
+
+  @include desktoptab {
+    font-size: $post-title-font-size;
+  }
+
+  @include mobile {
+    font-size: $post-title-font-size-mobile;
+    padding-bottom: 0.2rem;
+  }
+
+  font-weight: $post-title-font-weight;
+  color: $post-title-color;
+  display: inline-block;
+
+}
