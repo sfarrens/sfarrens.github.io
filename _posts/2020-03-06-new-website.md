@@ -10,7 +10,7 @@ Welcome to my new website! This is a little project that my wife and I worked on
 
 ## Site Generator
 
-[<img src="{{ site.image_path }}/jekyll.jpg" width="150px">](https://jekyllrb.com/)
+[<img src="{{ site.image_path }}/jekyll.jpg" class="md-image">](https://jekyllrb.com/)
 
 To generate this site I use Jekyll, a static site generator written in Ruby. This is an excellent option if, like me, you like writing in markdown and want an automated tool to convert markdown to static HTML.
 
@@ -78,7 +78,7 @@ I decided to go for the latter option. Fortunately, I did not have to start from
 
 ## Getting Sassy
 
-[<img src="{{ site.image_path }}/sass.png" width="150px">](https://sass-lang.com/)
+[<img src="{{ site.image_path }}/sass.png" class="md-image">](https://sass-lang.com/)
 
 Most of the work of getting your site to look the way you want it to is in defining the style sheets. This means learning how to write Cascading Style Sheets (CSS). One of the most exciting things I discovered while working on this project was Syntactically Awesome Style Sheets (Sass) and Sass certainly is awesome!
 
@@ -98,6 +98,25 @@ Here is a quick example of how to add a shadow to a container (something I used 
 }
 ```
 
-Once you get comfortable with Sass, the rest is just patience. You will define the layouts for each type of page (I ended up with 7 different layouts). In my opinion this made easier by breaking your HTML into pieces (that you keep in `_includes`). Similarly, you can break your Sass files into pieces that can import each other.
+Once you get comfortable with Sass, the rest is just patience. You will define the layouts for each type of page (I ended up with 7 different layouts). In my opinion this is made easier by breaking your HTML into pieces (that you keep in `_includes`). Similarly, you can break your Sass files into pieces that can import each other.
 
 ## Deployment
+
+[<img src="{{ site.image_path }}/octocat.png" class="md-image">](https://github.com/)
+
+Finally, once your website is ready for the world to see it, you can deploy it. In principle, you can do this on any server you like, but GitHub is ideally suited for hosting static HTML sites.
+
+You can host your site on any GitHub repository you have access to by simply creating a branch called `gh-pages`, but if this is going to your main website you should probably create a new repository called `[Your Username].github.io`. Anything you host on the master branch of this repository will be visible at `https://[Your Username].github.io/`.
+
+You can add CI tests for your website on [Travis CI](https://travis-ci.org/) by adding a `.travis.yml` file following the steps on the [Jekyll website](https://jekyllrb.com/docs/continuous-integration/travis-ci/).
+
+> Note: If you have any trouble getting `htmlproofer` to work with arguments try the following.
+
+```yaml
+install:
+  - bundle install
+
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer --disable-external --empty_alt_ignore ./_site
+```
