@@ -4,6 +4,7 @@ $mobile-breakpoint: 1000px !default;
 // Navigation
 $nav-font-family: Gill Sans, sans-serif;
 $nav-font-size: 1.1rem;
+$nav-font-size-mobile: 2.1rem;
 $nav-font-weight: 300;
 $nav-bg-color: #FFFFFF !default;
 $nav-site-name-color: #353535 !default;
@@ -15,11 +16,12 @@ $nav-border-color: #dddddd !default;
 
 // Topic
 $topic-font-size: 1.5rem;
+$topic-font-size-mobile: 2.2rem;
 $topic-font-weight: 300;
 
 // Text
 $h1-color: #000000 !default;
-$h1-font-size-mobile: 1.5rem;
+$h1-font-size-mobile: 2.5rem;
 $h1-font-weight: 300;
 $h1-underline-color: #db6e6e !default;
 $heading-color: #646464 !default;
@@ -28,6 +30,8 @@ $heading-underline-color: #db6e6e !default;
 
 // Body
 $body-font-family: Gill Sans, sans-serif;
+$body-font-size: 1.1rem;
+$body-font-size-mobile: 2.1rem;
 $body-font-weight: 300;
 $body-text-color: #606c71 !default;
 $body-link-color: #7394ce !default;
@@ -56,9 +60,9 @@ $post-font-family: Gill Sans, sans-serif;
 $post-title-font-weight: 500;
 $post-title-color: #000000;
 $post-title-font-size: 1.3rem;
-$post-title-font-size-mobile: 1.1rem;
+$post-title-font-size-mobile: 2.1rem;
 $post-font-size: 1rem;
-$post-font-size-mobile: 0.7rem;
+$post-font-size-mobile: 2rem;
 $post-tag-color: #FFFFFF;
 $post-tag-font-size: 0.8rem;
 $post-tag-font-weight: 300;
@@ -70,9 +74,9 @@ $pub-font-family: Gill Sans, sans-serif;
 $pub-font-weight: 300;
 $pub-author-color: #9e9e9e;
 $pub-author-font-size: 1.0rem;
-$pub-author-font-size-mobile: 0.9rem;
+$pub-author-font-size-mobile: 2rem;
 $pub-year-color: #9e9e9e;
 $pub-year-font-size: 1.0rem;
-$pub-year-font-size-mobile: 0.9rem;
+$pub-year-font-size-mobile: 2rem;
 $pub-excerpt-font-size: 1.0rem;
-$pub-excerpt-font-size-mobile: 0.9rem;
+$pub-excerpt-font-size-mobile: 2rem;

@@ -55,6 +55,10 @@ nav {
 
 @include mobile {
 
+  nav {
+    font-size: $nav-font-size-mobile;
+  }
+
   .topnav {
 
     a {
