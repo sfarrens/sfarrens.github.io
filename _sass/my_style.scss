@@ -10,6 +10,7 @@
 @import "footer";
 @import "header";
 @import "home";
+@import "markdown";
 @import "navigation";
 @import "post";
 @import "pub";
@@ -73,12 +74,12 @@ table {
   @include desktoptab {
     max-width: 75%;
     padding: 2rem 6rem;
-    font-size: 1.1rem;
+    font-size: $body-font-size;
   }
   @include mobile {
     max-width: 100%;
     padding: 2rem 3rem;
-    font-size: 0.9rem;
+    font-size: $body-font-size-mobile;
   }
 
   h1 {

@@ -6,7 +6,7 @@
 }
 
 .blog {
-  @include post-box(435px, 312px, none);
+  @include post-box(435px, 435px, 312px, none);
   position: relative;
 }
 
