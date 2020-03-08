@@ -31,12 +31,12 @@ In order to run the tutorial notebooks tutees will need to have the following in
 
 The objective of this tutorial is to provide a first look at Python for beginners. The level is aimed at individuals with little or no experience whatsoever with Python. Experienced users are unlikely to benefit from this tutorial.
 
-1. [Table of Contents](./Intro.ipynb)
-1. [Native Python](./Native.ipynb)
-1. [Basic Numpy](./Numpy.ipynb)
-1. [Matplotlib](./Matplotlib.ipynb)
-1. [Other Packages](./Other-Packages.ipynb)
-1. [Answers to Exercises](./Answers-to-exercises.ipynb)
+1. [Table of Contents](https://github.com/CosmoStat/Tutorials/tree/master/python/Intro.ipynb)
+1. [Native Python](https://github.com/CosmoStat/Tutorials/tree/master/python/Native.ipynb)
+1. [Basic Numpy](https://github.com/CosmoStat/Tutorials/tree/master/python/Numpy.ipynb)
+1. [Matplotlib](https://github.com/CosmoStat/Tutorials/tree/master/python/Matplotlib.ipynb)
+1. [Other Packages](https://github.com/CosmoStat/Tutorials/tree/master/python/Other-Packages.ipynb)
+1. [Answers to Exercises](https://github.com/CosmoStat/Tutorials/tree/master/python/Answers-to-exercises.ipynb)
 
 #### Tutorial 2: Intermediate and Advanced Topics
 
@@ -44,11 +44,11 @@ The objective of this tutorial is to provide a more in-depth look at object-orie
 and pythonic coding. The level is aimed at individuals with some experience with
 Python and good knowledge of basic object types. This tutorial will likely benefit all except the most advanced users.
 
-1. [Table of Contents](./Intro-2.ipynb)
-1. [Pythonic Thinking](./Pythonic.ipynb)
-1. [Numpy](./Numpy-Intro.ipynb)
-1. [Pandas](./Pandas-Intro.ipynb)
-1. [Scipy-Cosmo](./Scipy-Cosmo.ipynb)
-1. [The Anatomy of a Python Class: Part I](./Classes_I.ipynb)
-1. [The Anatomy of a Python Class: Part II](./Classes_II.ipynb)
-1. [Answers to Exercises](./Answers-to-exercises-2.ipynb)
+1. [Table of Contents](https://github.com/CosmoStat/Tutorials/tree/master/python/Intro-2.ipynb)
+1. [Pythonic Thinking](https://github.com/CosmoStat/Tutorials/tree/master/python/Pythonic.ipynb)
+1. [Numpy](https://github.com/CosmoStat/Tutorials/tree/master/python/Numpy-Intro.ipynb)
+1. [Pandas](https://github.com/CosmoStat/Tutorials/tree/master/python/Pandas-Intro.ipynb)
+1. [Scipy-Cosmo](https://github.com/CosmoStat/Tutorials/tree/master/python/Scipy-Cosmo.ipynb)
+1. [The Anatomy of a Python Class: Part I](https://github.com/CosmoStat/Tutorials/tree/master/python/Classes_I.ipynb)
+1. [The Anatomy of a Python Class: Part II](https://github.com/CosmoStat/Tutorials/tree/master/python/Classes_II.ipynb)
+1. [Answers to Exercises](https://github.com/CosmoStat/Tutorials/tree/master/python/Answers-to-exercises-2.ipynb)
