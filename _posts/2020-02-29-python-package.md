@@ -11,10 +11,8 @@ This template is designed to enable users to quickly package a Python project. A
 ## Contents
 ---
 
-1. [Set-Up](#Set-Up)
-1. [Management](#Management)
-1. [Deployment](#Deployment)
-1. [CosmoStat](#CosmoStat)
+* Table of Contents
+{:toc}
 
 ## Set-Up
 ---

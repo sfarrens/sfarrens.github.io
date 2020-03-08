@@ -3,6 +3,7 @@ description: My personal website
 show_downloads: true
 google_analytics: UA-88784993-1
 image_path: /assets/images
+url: ""
 
 plugins:
   - jekyll-latex

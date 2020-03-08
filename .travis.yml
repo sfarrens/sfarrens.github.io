@@ -2,18 +2,16 @@ language: ruby
 rvm:
   - 2.6.3
 
-before_script:
- - chmod +x ./script/cibuild # or do this locally and commit
+install:
+  - bundle install
 
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
-script: ./script/cibuild
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer --disable-external --empty_alt_ignore ./_site
 
-# branch whitelist, only for GitHub Pages
 branches:
   only:
-  - gh-pages     # test the gh-pages branch
-  - /pages-(.*)/ # test every branch which starts with "pages-"
+  - master
 
 env:
   global:

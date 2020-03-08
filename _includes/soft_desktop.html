@@ -7,29 +7,29 @@
     <img src="{{ site.image_path }}/{{ post.image }}" class="post-image">
   </div>
   <div class="post-icon-container">
-    {% if post.github != nil %}
+    {% if post.github %}
     <a href="{{ post.github }}" target="_blank">
       <img src="{{ site.image_path }}/github.png" class="post-icon">
     </a>
     {% endif %}
-    {% if post.sphinx != nil %}
+    {% if post.sphinx %}
     <a href="{{ post.sphinx }}" target="_blank">
       <img src="{{ site.image_path }}/sphinx.png" class="post-icon">
     </a>
     {% endif %}
-    {% if post.pypi != nil %}
+    {% if post.pypi %}
     <a href="{{ post.pypi }}" target="_blank">
       <img src="{{ site.image_path }}/pypi.png" class="post-icon">
     </a>
     {% endif %}
   </div>
   <div class="post-badge-container">
-    {% if post.travis != nil %}
+    {% if post.travis %}
       <a href="{{ post.travis }}" target="_blank">
         <img src="{{ post.travis-badge }}">
       </a>
     {% endif %}
-    {% if post.coveralls != nil %}
+    {% if post.coveralls %}
     <a href="{{ post.coveralls }}" target="_blank">
       <img src="{{ post.coveralls-badge }}">
     </a>

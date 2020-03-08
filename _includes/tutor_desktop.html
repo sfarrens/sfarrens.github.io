@@ -7,12 +7,12 @@
     <img src="{{ site.image_path }}/{{ post.image }}" class="post-image">
   </div>
   <div class="post-icon-container">
-    {% if post.github != nil %}
+    {% if post.github %}
     <a href="{{ post.github }}" target="_blank">
       <img src="{{ site.image_path }}/github.png" class="post-icon">
     </a>
     {% endif %}
-    {% if post.binder != nil %}
+    {% if post.binder %}
     <a href="{{ post.binder }}" target="_blank">
       <img src="{{ site.image_path }}/binder.png" class="post-icon">
     </a>

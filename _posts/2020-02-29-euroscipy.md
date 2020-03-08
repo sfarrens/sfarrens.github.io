@@ -16,13 +16,11 @@ Please see the [CosmoStat website](http://www.cosmostat.org/tutorials) for more 
 ## Contents
 ---
 
-1. [Requirements](#Requirements)
-1. [Notebooks](#Notebooks)
+* Table of Contents
+{:toc}
 
 ## Requirements
 ---
-
-
 
  This tutorial can be run via the interactive online [Binder](https://mybinder.org/v2/gh/sfarrens/euroscipy/master) interface. However, it is recommended to run it locally during the session to avoid wifi issues. Note that the following requirements need to be installed beforehand.
 
@@ -52,5 +50,5 @@ pip install git+https://github.com/CEA-COSMIC/pysap
 ## Notebooks
 ---
 
-1. [Introduction to Sparsity](./sparsity.ipynb)
-1. [Astronomical Image Denoising](./denoising.ipynb)
+1. [Introduction to Sparsity](https://github.com/sfarrens/euroscipy/sparsity.ipynb)
+1. [Astronomical Image Denoising](https://github.com/sfarrens/euroscipy/denoising.ipynb)

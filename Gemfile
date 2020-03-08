@@ -3,6 +3,3 @@
 source 'https://rubygems.org'
 
 gemspec
-
-gem 'jekyll-latex'
-gem 'jekyll-target-blank'

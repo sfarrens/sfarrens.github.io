@@ -12,22 +12,22 @@
     <img src="{{ site.image_path }}/{{ post.image }}" class="post-image">
   </div>
   <div class="post-icon-container">
-    {% if post.ads != nil %}
+    {% if post.ads %}
     <a href="{{ post.ads }}" target="_blank">
       <img src="{{ site.image_path }}/nasa.png" class="post-icon">
     </a>
     {% endif %}
-    {% if post.arxiv != nil %}
+    {% if post.arxiv %}
     <a href="{{ post.arxiv }}" target="_blank">
       <img src="{{ site.image_path }}/arxiv.png" class="post-icon">
     </a>
     {% endif %}
-    {% if post.pdf != nil %}
+    {% if post.pdf %}
     <a href="{{ post.pdf }}" target="_blank">
       <img src="{{ site.image_path }}/pdf.png" class="post-icon">
     </a>
     {% endif %}
-    {% if post.bibtex != nil %}
+    {% if post.bibtex %}
     <a href="{{ post.bibtex }}" target="_blank">
       <img src="{{ site.image_path }}/bibtex.png" class="post-icon">
     </a>
