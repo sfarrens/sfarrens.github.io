@@ -4,10 +4,19 @@ pre {
   padding: 0.8rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: $code-font-family;
   background-color: $code-bg-color;
   border: solid 1px $border-color;
   border-radius: 0.3rem;
   font-size: 1.0rem;
   overflow-x: scroll;
+
+  @include desktoptab{
+    font-size: $code-font-size;
+  }
+
+  @include mobile {
+    font-size: $code-font-size-mobile;
+  }
+
 }

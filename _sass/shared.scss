@@ -10,7 +10,7 @@
   margin-right: auto;
 }
 
-@mixin post-box($height, $width, $text-align) {
+@mixin post-box($height, $height-mobile, $width, $text-align) {
   @include shadow;
   text-align: $text-align;
   height: $height;
@@ -27,10 +27,12 @@
   }
 
   @include desktoptab {
+    height: $height;
     width: $width;
   }
 
   @include mobile {
+    height: $height-mobile;
     width: 100%;
   }
 }

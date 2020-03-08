@@ -6,9 +6,8 @@ layout: default
 {% assign filtered_posts = site.posts | where: 'category', page.category %}
 
 {% if page.category == "blog" %}
-<br>
-
 <div class="desktop">
+  <br>
   <div class="blog-container">
     {% for post in filtered_posts %}
       {%- include blog.html -%}
