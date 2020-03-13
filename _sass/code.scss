@@ -1,11 +1,12 @@
 @import "rouge-github";
 
 pre {
+  color: $body-text-color;
   padding: 0.8rem;
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: $code-font-family;
-  background-color: $code-bg-color;
+  // background-color: $code-bg-color;
   border: solid 1px $border-color;
   border-radius: 0.3rem;
   font-size: 1.0rem;
@@ -19,4 +20,18 @@ pre {
     font-size: $code-font-size-mobile;
   }
 
+}
+
+code {
+
+}
+
+.highlight {
+}
+
+.highlighter-rouge {
+  color: #c7254e;
+  background-color: $code-bg-color;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
 }

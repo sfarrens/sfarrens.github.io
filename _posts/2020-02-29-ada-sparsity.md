@@ -15,7 +15,14 @@ This tutorial is comprised of a series of <a href="https://jupyter-notebook.read
 
 All code blocks are provided in Python (support for both 2.7 and 3.6+) and the number of external packages required to run the examples has be kept to a minimum. With the exception of plotting routines, all of the code has been clearly presented inside the notebooks at least once to avoid the use of any "black boxes" for solving the problems presented.
 
-### Requirements
+## Contents
+{:.no_toc}
+
+* Table of Contents
+{:toc}
+
+
+## Requirements
 
 In order to run the tutorial notebooks tutees will need to have the following installed:
 
@@ -43,7 +50,7 @@ or
 $ conda install numpy scipy matplotlib jupyter
 ```
 
-### Notebooks
+## Notebooks
 
 1. [Introduction to Inverse Problems](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fada%2Finverse_problems_1.ipynb)
 1. [Introduction to Sparsity I](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fada%2Fsparsity_1.ipynb)
@@ -52,6 +59,6 @@ $ conda install numpy scipy matplotlib jupyter
 1. [Introduction to Wavelets](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fada%2Fwavelets_1.ipynb)
 1. [Exercise Solutions](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fada%2Fexercise_solutions.ipynb)
 
-### Acknowledgements
+## Acknowledgements
 
 S. Farrens would like to acknowledge the following people for helpful feedback and ideas for producing this tutorial: Fred Ngolè-Mboula and Jean-Luc Starck.

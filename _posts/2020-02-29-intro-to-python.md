@@ -11,7 +11,13 @@ This tutorial is comprised of a series of <a href="https://jupyter-notebook.read
 
 All code blocks are provided in Python (support for >=3.5) and the number of external packages required to run the examples has be kept to a minimum. All of the code has been clearly presented inside the notebook at least once to avoid the use of any "black boxes" for solving the problems presented.
 
-### Requirements
+## Contents
+{:.no_toc}
+
+* Table of Contents
+{:toc}
+
+## Requirements
 
 In order to run the tutorial notebooks tutees will need to have the following installed:
 
@@ -25,30 +31,30 @@ In order to run the tutorial notebooks tutees will need to have the following in
 * <a href="https://www.scipy.org/" target_="blank">SciPy</a> (recommend >=1.2.1)
 * <a href="https://seaborn.pydata.org/" target_="blank">Seaborn</a> (recommend >= 0.9.0)
 
-### Notebooks
+## Notebooks
 
-#### Tutorial 1: Beginner Topics
+### Tutorial 1: Beginner Topics
 
 The objective of this tutorial is to provide a first look at Python for beginners. The level is aimed at individuals with little or no experience whatsoever with Python. Experienced users are unlikely to benefit from this tutorial.
 
-1. [Table of Contents](https://github.com/CosmoStat/Tutorials/tree/master/python/Intro.ipynb)
-1. [Native Python](https://github.com/CosmoStat/Tutorials/tree/master/python/Native.ipynb)
-1. [Basic Numpy](https://github.com/CosmoStat/Tutorials/tree/master/python/Numpy.ipynb)
-1. [Matplotlib](https://github.com/CosmoStat/Tutorials/tree/master/python/Matplotlib.ipynb)
-1. [Other Packages](https://github.com/CosmoStat/Tutorials/tree/master/python/Other-Packages.ipynb)
-1. [Answers to Exercises](https://github.com/CosmoStat/Tutorials/tree/master/python/Answers-to-exercises.ipynb)
+1. [Table of Contents](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FIntro.ipynb)
+1. [Native Python](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FNative.ipynb)
+1. [Basic Numpy](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FNumpy.ipynb)
+1. [Matplotlib](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FMatplotlib.ipynb)
+1. [Other Packages](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FOther-Packages.ipynb)
+1. [Answers to Exercises](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FAnswers-to-exercises.ipynb)
 
-#### Tutorial 2: Intermediate and Advanced Topics
+### Tutorial 2: Intermediate and Advanced Topics
 
 The objective of this tutorial is to provide a more in-depth look at object-oriented
 and pythonic coding. The level is aimed at individuals with some experience with
 Python and good knowledge of basic object types. This tutorial will likely benefit all except the most advanced users.
 
-1. [Table of Contents](https://github.com/CosmoStat/Tutorials/tree/master/python/Intro-2.ipynb)
-1. [Pythonic Thinking](https://github.com/CosmoStat/Tutorials/tree/master/python/Pythonic.ipynb)
-1. [Numpy](https://github.com/CosmoStat/Tutorials/tree/master/python/Numpy-Intro.ipynb)
-1. [Pandas](https://github.com/CosmoStat/Tutorials/tree/master/python/Pandas-Intro.ipynb)
-1. [Scipy-Cosmo](https://github.com/CosmoStat/Tutorials/tree/master/python/Scipy-Cosmo.ipynb)
-1. [The Anatomy of a Python Class: Part I](https://github.com/CosmoStat/Tutorials/tree/master/python/Classes_I.ipynb)
-1. [The Anatomy of a Python Class: Part II](https://github.com/CosmoStat/Tutorials/tree/master/python/Classes_II.ipynb)
-1. [Answers to Exercises](https://github.com/CosmoStat/Tutorials/tree/master/python/Answers-to-exercises-2.ipynb)
+1. [Table of Contents](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FIntro-2.ipynb)
+1. [Pythonic Thinking](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FPythonic.ipynb)
+1. [Numpy](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FNumpy-Intro.ipynb)
+1. [Pandas](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FPandas-Intro.ipynb)
+1. [Scipy-Cosmo](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FScipy-Cosmo.ipynb)
+1. [The Anatomy of a Python Class: Part I](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FClasses_I.ipynb)
+1. [The Anatomy of a Python Class: Part II](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FClasses_II.ipynb)
+1. [Answers to Exercises](https://mybinder.org/v2/gh/CosmoStat/Tutorials/master?filepath=%2Fpython%2FAnswers-to-exercises-2.ipynb)

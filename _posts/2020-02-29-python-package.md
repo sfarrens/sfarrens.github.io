@@ -9,13 +9,11 @@ layout: post-tutor
 This template is designed to enable users to quickly package a Python project. After following the set-up instructions you should be able to run CI tests and automatically generate API documentation for your code.
 
 ## Contents
----
 
 * Table of Contents
 {:toc}
 
 ## Set-Up
----
 
 In order to use this template please follow the instructions provided below.
 
@@ -55,20 +53,19 @@ git push
 
 The following instructions are for the Travis-CI website.
 
-1. Go to https://travis-ci.org/.
+1. Go to [https://travis-ci.org/](https://travis-ci.org/).
 2. Log in using your GitHub account details.
-3. Go to your list of GitHub repositories by clicking on the `+` next to `My Repositories` (or go to https://travis-ci.org/account/repositories).
+3. Go to your list of GitHub repositories by clicking on the `+` next to `My Repositories` (or go to [https://travis-ci.org/account/repositories](https://travis-ci.org/account/repositories)).
 4. Find the package name you provided for the repository and click the switch on the right to activate CI tests.
 
-> Note: if you can't find your repository try clicking the `Sync account` button on the top left and then refresh the page.
-
-> Note: that private GitHub repositories can be accessed via https://travis-ci.com/.
+> Note: if you can't find your repository try clicking the `Sync account` button on the top left and then refresh the page.  
+> Note: that private GitHub repositories can be accessed via [https://travis-ci.com/](https://travis-ci.com/).
 
 ### Step 4: Activate coverage tests
 
 The following instructions are for the Coveralls website.
 
-1. Go to https://coveralls.io/.
+1. Go to [https://coveralls.io/](https://coveralls.io/).
 2. Log in using your GitHub account details.
 3. Go to the menu on the left and click on `Add repos`.
 4. Find the package name you provided for the repository and click the switch on the left to activate coverage tests.
@@ -148,7 +145,6 @@ git push origin new_branch
 7. Once your CI tests have passed you can merge your pull request, which should automatically generate your package API documentation. Go to *e.g.* https://username.github.io/mypackage/ to view your documentation.
 
 ## Management
----
 
 Now that your package is set up you can start managing your own code.
 
@@ -187,9 +183,7 @@ pip install -r develop.txt
 python setup.py test
 ```
 
-
 ## Deployment
----
 
 In order to upload your package to [PyPi](https://pypi.org/) (which allow users to install your package with `pip`), you should follow these steps:
 
@@ -220,7 +214,6 @@ pip install mypackage
 > Note that step 6 can be simplied by creating a [.pypirc](https://docs.python.org/3.3/distutils/packageindex.html#pypirc) file.
 
 ## CosmoStat
----
 
 All members of CosmoStat should aim to migrate mature repositories to the [CosmoStat group on GitHub](https://github.com/CosmoStat). This way your code will get more visibility and be maintained by the team.
 
