@@ -21,9 +21,14 @@ $topic-font-weight: 300;
 
 // Text
 $h1-color: #000000 !default;
+$h1-font-size: 2.5rem;
 $h1-font-size-mobile: 2.5rem;
 $h1-font-weight: 300;
 $h1-underline-color: #db6e6e !default;
+$h2-font-size: 2.3rem;
+$h2-font-size-mobile: 2.3rem;
+$h3-font-size: 1.6rem;
+$h3-font-size-mobile: 1.6rem;
 $heading-color: #646464 !default;
 $heading-font-weight: 300;
 $heading-underline-color: #db6e6e !default;
@@ -37,7 +42,10 @@ $body-text-color: #606c71 !default;
 $body-link-color: #7394ce !default;
 $body-link-hover-color: #eeafaf !default;
 $strong-font-weight: 500;
+
+// Markdown
 $blockquote-text-color: #819198 !default;
+$blockquote-line-color: #819198 !default;
 
 // Footer
 $footer-text-color: #a2a2a2 !default;
@@ -54,7 +62,8 @@ $code-text-color: #567482 !default;
 $code-text-color: #FF0000 !default;
 
 // Borders
-$border-color: #adacac !default;
+// $border-color: #adacac !default;
+$border-color: #606c71 !default;
 $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
 

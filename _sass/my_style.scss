@@ -27,7 +27,7 @@ body {
   color: $body-text-color;
   padding: 0;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.3;
 
 }
 
@@ -72,7 +72,7 @@ table {
   font-weight: $body-font-weight;
 
   @include desktoptab {
-    max-width: 75%;
+    max-width: 73%;
     padding: 2rem 6rem;
     font-size: $body-font-size;
   }
@@ -93,6 +93,10 @@ table {
       border-bottom: 3px solid $h1-underline-color;
     }
 
+    @include desktoptab {
+      font-size: $h1-font-size;
+    }
+
     @include mobile {
       font-size: $h1-font-size-mobile;
     }
@@ -109,9 +113,31 @@ table {
       width: 4rem;
       border-bottom: 2px solid $heading-underline-color;
     }
+
+    @include desktoptab {
+      font-size: $h2-font-size;
+    }
+
+    @include mobile {
+      font-size: $h2-font-size-mobile;
+    }
+
   }
 
-  h3,
+  h3 {
+    color: $heading-color;
+    font-weight: $heading-font-weight;
+    
+    @include desktoptab {
+      font-size: $h3-font-size;
+    }
+
+    @include mobile {
+      font-size: $h3-font-size-mobile;
+    }
+
+  }
+
   h4,
   h5,
   h6 {
@@ -153,10 +179,11 @@ table {
   }
 
   blockquote {
-    padding: 0 1rem;
+    padding-left: 1rem;
     margin-left: 0;
     color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+    width: 100%;
+    border-left: 2px solid $blockquote-line-color;
 
     > :first-child {
       margin-top: 0;
@@ -168,10 +195,10 @@ table {
   }
 
   hr {
-    height: 2px;
+    height: 1px;
     padding: 0;
     margin: 1rem 0;
-    background-color: $hr-border-color;
+    background-color: $nav-line-color;
     border: 0;
   }
 }

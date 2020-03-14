@@ -14,13 +14,12 @@ This tutorial was prepared for the [EuroScipy 2019](https://www.euroscipy.org/20
 Please see the [CosmoStat website](http://www.cosmostat.org/tutorials) for more signal and image processing tutorials.
 
 ## Contents
----
+{:.no_toc}
 
 * Table of Contents
 {:toc}
 
 ## Requirements
----
 
  This tutorial can be run via the interactive online [Binder](https://mybinder.org/v2/gh/sfarrens/euroscipy/master) interface. However, it is recommended to run it locally during the session to avoid wifi issues. Note that the following requirements need to be installed beforehand.
 
@@ -48,7 +47,6 @@ pip install git+https://github.com/CEA-COSMIC/pysap
 > Note that PySAP requires cmake and a C++ compiler that supports OpenMP. See [here](https://github.com/CEA-COSMIC/pysap/blob/master/doc/macos_install.rst) for macOS help. All of the tutorial exercises can be run without PySAP if necessary.
 
 ## Notebooks
----
 
-1. [Introduction to Sparsity](https://github.com/sfarrens/euroscipy/sparsity.ipynb)
-1. [Astronomical Image Denoising](https://github.com/sfarrens/euroscipy/denoising.ipynb)
+1. [Introduction to Sparsity](https://mybinder.org/v2/gh/sfarrens/euroscipy/master?filepath=%2Fsparsity.ipynb)
+1. [Astronomical Image Denoising](https://mybinder.org/v2/gh/sfarrens/euroscipy/master?filepath=%2Fdenoising.ipynb)

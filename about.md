@@ -17,9 +17,11 @@ layout: default
 
 ## Where I work
 
+I have been very fortunate to end up working in a very diverse and exciting team called **[CosmoStat](http://www.cosmostat.org/)**. CosmoStat is a *lab* based in the [astrophysics department](http://irfu.cea.fr/dap/en/index.php) at [CEA Paris-Saclay](http://www.cea.fr), just south-east of Paris.
+
 [![]({{ site.image_path }}/cosmostat_logo.jpg){:.about-cs-logo}](http://www.cosmostat.org/)
 
-I have been very fortunate to end up working in a very diverse and exciting team called **[CosmoStat](http://www.cosmostat.org/)**. CosmoStat is a *lab* based in the [astrophysics department](http://irfu.cea.fr/dap/en/index.php) at [CEA Paris-Saclay](http://www.cea.fr), just south-east of Paris. The team is made up of researchers with either a background in astrophysics or signal-processing that work together on trying to solve the challenges in cosmology. The idea is to use the latest developments in statistics and data science and apply them to technical problems like measuring galaxy shapes or modelling the point spread function of an instrument in space.
+The team is made up of researchers with either a background in astrophysics or signal-processing that work together on trying to solve the challenges in cosmology. The idea is to use the latest developments in statistics and data science and apply them to technical problems like measuring galaxy shapes or modelling the point spread function of an instrument in space.
 
 I also spend one day a week at [NeuroSpin](http://joliot.cea.fr/drf/joliot/Pages/Entites_de_recherche/NeuroSpin.aspx), a world leading biomedical imaging institute. I work with a team there aiming to improve the way in which we acquire and reconstruct brain images using Magnetic Resonance Imaging (MRI).
 
