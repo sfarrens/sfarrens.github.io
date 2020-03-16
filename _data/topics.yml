@@ -3,7 +3,7 @@
   image: publications.png
 - name: Software
   link: /software.html
-  image: software.jpg
+  image: software.png
 - name: Tutorials
   link: /tutorials.html
   image: tutorials.png
