@@ -2,8 +2,8 @@
 title: ADA Sparsity Tutorial
 category: tutor
 image: ada9.png
-github: https://github.com/CosmoStat/Tutorials/blob/master/ada
-binder: https://mybinder.org/v2/gh/CosmoStat/Tutorials/master
+github: https://github.com/CosmoStat/Tutorials/tree/ada
+binder: https://mybinder.org/v2/gh/CosmoStat/Tutorials/ada
 layout: post-tutor
 ---
 
