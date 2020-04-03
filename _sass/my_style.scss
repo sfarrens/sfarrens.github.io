@@ -127,7 +127,7 @@ table {
   h3 {
     color: $heading-color;
     font-weight: $heading-font-weight;
-    
+
     @include desktoptab {
       font-size: $h3-font-size;
     }
@@ -142,7 +142,7 @@ table {
   h5,
   h6 {
     color: $heading-color;
-    font-weight: $heading-font-weight;
+    font-weight: $heading-small-font-weight;
   }
 
   strong {
@@ -180,7 +180,7 @@ table {
 
   blockquote {
     padding-left: 1rem;
-    margin-left: 0;
+    margin-left: 2rem;
     color: $blockquote-text-color;
     width: 100%;
     border-left: 2px solid $blockquote-line-color;
