@@ -40,7 +40,7 @@ Before attempting to optimise your code (*i.e.* make it run faster) it is essent
 
 [cProfile](https://docs.python.org/3/library/profile.html) is a built-in Python profiler. The commands can be written directly into modules/scripts to track the number of calls to functions and the time spent on each call. Alternatively, cProfile can be passed as an option to the `python` command when executing a script. For this tutorial, we will use the latter option.
 
-We will start by looking at the [`sleeper.py`](./examples/sleeper.py) script. This script contains a function (`sleep_for_1s`) that calls Python's built-in [`sleep`](https://docs.python.org/3/library/time.html#time.sleep) method for one second. This will make it easy for us to assess the time spent on each call to this function. The other two functions in the script (`function1`, `function2`) simply make calls to the `sleep_for_1s` function.
+We will start by looking at the [`sleeper.py`](https://github.com/CosmoStat/Tutorials/blob/profiling/examples/sleeper.py) script. This script contains a function (`sleep_for_1s`) that calls Python's built-in [`sleep`](https://docs.python.org/3/library/time.html#time.sleep) method for one second. This will make it easy for us to assess the time spent on each call to this function. The other two functions in the script (`function1`, `function2`) simply make calls to the `sleep_for_1s` function.
 
 Running the script on its own produces no output, however if we time the process we can see that it takes six seconds in total.
 
@@ -141,7 +141,7 @@ $ snakeviz sleeper.pstats
 
 This will open a browser window where you can navigate and search for function calls.
 
-This is particularly useful for more complicated scripts such as [`complicated.py`](./examples/complicated.py) that use a lot of built-in functions behind the scenes.
+This is particularly useful for more complicated scripts such as [`complicated.py`](https://github.com/CosmoStat/Tutorials/blob/profiling/examples/complicated.py) that use a lot of built-in functions behind the scenes.
 
 ```bash
 $ python -m cProfile -o complicated.pstats examples/complicated.py
@@ -185,7 +185,7 @@ The runtime is not the only consideration you should have when aiming to optimis
 
 [Memory Profiler](https://github.com/pythonprofilers/memory_profiler) is a package for monitoring the memory consumption of a Python process.
 
-Similarly to cProfile, Memory Profiler can be run at the function level or on a whole script. To profile a single function, simply add a `@profile` decorator as done for the `memory_eater` function in the [`memory.py`](./examples/memory.py) script the execute the script as follows.
+Similarly to cProfile, Memory Profiler can be run at the function level or on a whole script. To profile a single function, simply add a `@profile` decorator as done for the `memory_eater` function in the [`memory.py`](https://github.com/CosmoStat/Tutorials/blob/profiling/examples/memory.py) script the execute the script as follows.
 
 ```bash
 $ python -m memory_profiler examples/memory.py
@@ -254,13 +254,13 @@ The first thing to look at, before using an special plugins or tricks, is how ef
 - Can any quantities be pre-computed to save time?
 - Are any calculations being performed unnecessarily?
 
-A very simplistic example of this is presented in [`efficient.py`](./examples/efficient.py). In this script two different approaches are shown for obtaining the same final quantities. In the *inefficient* implementation unnecessary calculations are made, while in the *efficient* implementation only the operations needed at a given time are performed. Try profiling this script to compare the two implementations.
+A very simplistic example of this is presented in [`efficient.py`](https://github.com/CosmoStat/Tutorials/blob/profiling/examples/efficient.py). In this script two different approaches are shown for obtaining the same final quantities. In the *inefficient* implementation unnecessary calculations are made, while in the *efficient* implementation only the operations needed at a given time are performed. Try profiling this script to compare the two implementations.
 
 ### Pythonic Coding
 
 One of the simplest ways to optimise your code is to take advantage of native Python data structures such as [*list comprehensions* ](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions), [*generators*](https://docs.python.org/3/c-api/gen.html), *etc.*
 
-For example, identifying loops that can be replaced by more efficient list comprehensions can shave valuable seconds off your code. Have a look at the script [`list_comp_vs_loop.py`](./examples/list_comp_vs_loop.py). The objective is to produce a list of cubed values from zero to `n`, however in one function this is accomplished using a standard loop, while the other implements a list comprehension. Try profiling both of this script to identify which implementation is faster.
+For example, identifying loops that can be replaced by more efficient list comprehensions can shave valuable seconds off your code. Have a look at the script [`list_comp_vs_loop.py`](https://github.com/CosmoStat/Tutorials/blob/profiling/examples/list_comp_vs_loop.py). The objective is to produce a list of cubed values from zero to `n`, however in one function this is accomplished using a standard loop, while the other implements a list comprehension. Try profiling both of this script to identify which implementation is faster.
 
 > See [Pythonic Thinking](https://github.com/CosmoStat/Tutorials/tree/python#tutorial-2-intermediate-and-advanced-topics) tutorial for more examples.
 
@@ -272,13 +272,13 @@ There are various packages specifically designed to speed up calculations in Pyt
 
 Numba works by compiling the first call to a given function meaning that subsequent calls do not require interpretation and are thus executed much faster.
 
-In the script [`numba_vs_numpy.py`](./examples/numba_vs_numpy.py) we compare two functions to calculate `tanh` of the diagonal elements of a matrix, one implemented with Numba and the other without. Try profiling this script to compare the performance of the two implementations. What happens if you reduce the number of calls to each function?
+In the script [`numba_vs_numpy.py`](https://github.com/CosmoStat/Tutorials/blob/profiling/examples/numba_vs_numpy.py) we compare two functions to calculate `tanh` of the diagonal elements of a matrix, one implemented with Numba and the other without. Try profiling this script to compare the performance of the two implementations. What happens if you reduce the number of calls to each function?
 
 ### Memory Mapping
 
 Reducing the memory consumption of your code can be a challenging problem. There are, however, some tricks such as memory mapping that can have a big impact.
 
-The [`memory_map.py`](./examples/memory_map.py) script demonstrates how loading a Numpy binary file as a memory map can significantly reduce the amount memory used. Try profiling this script to see how much of an impact this makes.
+The [`memory_map.py`](https://github.com/CosmoStat/Tutorials/blob/profiling/examples/memory_map.py) script demonstrates how loading a Numpy binary file as a memory map can significantly reduce the amount memory used. Try profiling this script to see how much of an impact this makes.
 
 ## Further Reading
 - [Python Profiling](https://medium.com/@antoniomdk1/hpc-with-python-part-1-profiling-1dda4d172cdf)
