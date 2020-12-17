@@ -64,6 +64,8 @@ title: Curriculum Vitae
 ## Invited Talks
 
 {:.special}
+* Nov 2020: Invited talk *["PySAP: From Galaxies to Brains and Beyond"](https://schedule.adass2020.es/adass2020/talk/9CBVK8)* at [ADASS XXX](https://adass2020.es/) in Granada, Spain (remote) ![]({{ site.image_path }}/spain.png){:.flag}   
+
 * Sep 2019: Keynote *"From Galaxies to Brains! - Image processing with Python"* at [EuroScipy](https://www.euroscipy.org/) in Bilbao, Spain ![]({{ site.image_path }}/spain.png){:.flag}   
 
 * May 2017: Seminar *["Regularisation techniques for solving inverse problems"](https://indico.in2p3.fr/event/14176/)* in Clermont-Ferrand, France ![]({{ site.image_path }}/france.png){:.flag}  
