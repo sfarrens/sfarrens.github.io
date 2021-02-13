@@ -1,11 +1,14 @@
 @import "size";
 
 .site-footer {
-  padding-top: 0.2rem;
-  padding-bottom: 1.6rem;
-  padding-left: 1rem;
+  padding-top: 1.0rem;
+  padding-bottom: 1.0rem;
   color: $footer-text-color;
   background-color: $footer-bg-color;
   font-size: $footer-font-size;
   font-weight: $footer-font-weight;
+}
+
+.site-footer-content {
+  text-align: center;
 }
