@@ -99,6 +99,14 @@
   font-weight: $in-post-info-font-weight;
 }
 
+.in-post-content-image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  object-fit: cover;
+  display: block;
+}
+
 .post-title-container {
 
   vertical-align: top;
