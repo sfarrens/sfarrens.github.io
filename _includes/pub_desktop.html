@@ -32,6 +32,11 @@
       <img src="{{ site.image_path }}/bibtex.png" class="post-icon">
     </a>
     {% endif %}
+    {% if post.doi %}
+    <a href="{{ post.doi }}" target="_blank">
+      <img src="{{ site.image_path }}/doi.png" class="post-icon">
+    </a>
+    {% endif %}
   </div>
   <div class="post-excerpt-container" onclick="location.href='{{ post.url }}';">
     <span class="pub-excerpt">{{ post.excerpt | truncate: 300 }}</span>

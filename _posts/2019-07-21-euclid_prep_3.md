@@ -9,6 +9,7 @@ ads: https://ui.adsabs.harvard.edu/abs/2019A%26A...627A..23E/abstract
 arxiv: https://arxiv.org/abs/1906.04707
 pdf: https://www.aanda.org/articles/aa/pdf/2019/07/aa35088-19.pdf
 bibtex: https://ui.adsabs.harvard.edu/abs/2019A%26A...627A..23E/exportcitation
+doi: https://www.doi.org/10.1051/0004-6361/201935088
 layout: post-pub
 ---
 
