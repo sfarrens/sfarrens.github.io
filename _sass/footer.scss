@@ -3,12 +3,12 @@
 .site-footer {
   padding-top: 1.0rem;
   padding-bottom: 1.0rem;
-  color: $footer-text-color;
   background-color: $footer-bg-color;
-  font-size: $footer-font-size;
-  font-weight: $footer-font-weight;
 }
 
 .site-footer-content {
+  color: $footer-text-color;
+  font-size: $footer-font-size;
+  font-weight: $footer-font-weight;
   text-align: center;
 }
