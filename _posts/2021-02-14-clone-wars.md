@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 
 I just finished watching all seven seasons of Star Wars: The Clone Wars on Disney+. So, while it is still fresh in my mind, I figured I would break down what the show is and share my thoughts.
 
-In this post I will share my opinions on Star Wars: The Clone Wars, which are entirely subjective and not intended to lesson anyone's enjoyment of the series.
+In this post I will share my opinions on Star Wars: The Clone Wars, which are entirely subjective and not intended to lesson anyone else's enjoyment of the series.
 
 ⚠️ Warning, this post may contain some spoilers.
 
