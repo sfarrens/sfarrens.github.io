@@ -6,7 +6,7 @@ twitter_username: Sam_Farrens
 title_image: /assets/images/homeimage.png
 post_author: Samuel Farrens
 image_path: /assets/images
-url: ""
+url: "https://sfarrens.github.io"
 
 plugins:
   - jekyll-latex
