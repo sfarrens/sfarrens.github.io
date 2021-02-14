@@ -4,7 +4,7 @@ category: blog
 image: clone_wars.png
 tag: Film and TV
 layout: post
-summary: Review of Star Wars: The Clone Wars
+summary: "Review of Star Wars: The Clone Wars"
 excerpt_separator: <!--more-->
 ---
 
