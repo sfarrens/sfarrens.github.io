@@ -57,43 +57,43 @@ I think that the writers, and supervising director Dave Filoni in particular, di
 
 #### The Jedi Masters
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/9/9f/Jedi_master_luminara_unduli.jpg/revision/latest/scale-to-width-down/189?cb=20140531031537" class="in-post-content-image" alt="Luminara Unduli">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/9/9f/Jedi_master_luminara_unduli.jpg" class="in-post-content-image" alt="Luminara Unduli">
 
 Jedi masters such as Plo Koon, Shaak Ti, Aayla Secura and Luminara Unduli, who in the films are virtually background extras, are given unique voices and roles to play in the conflict. This at least gives you a reason to care about their eventual fate in Episode III.
 
 #### Count Dooku
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/a/a9/Count_Dooku.jpg/revision/latest/scale-to-width-down/340?cb=20090228050607" class="in-post-content-image" alt="Count Dooku">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/a/a9/Count_Dooku.jpg" class="in-post-content-image" alt="Count Dooku">
 
 Count Dooku, leader of the separatists, is significantly more fleshed out. In the films Dooku, while portrayed by the excellent Christopher Lee,  appears out of nowhere and does little to further the plot. Clone Wars provides a clear picture of who this character is and succeeds in making him a compelling villain. In the series we get to see him as a duplicitous diplomat, the powerful Sith lord Darth Tyranus, a fallen Jedi and a disapproving mentor.
 
 #### Darth Maul
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/0/0e/Darthmaul_detail-4.png/revision/latest/scale-to-width-down/398?cb=20131101112413" class="in-post-content-image" alt="Maul">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/0/0e/Darthmaul_detail-4.png" class="in-post-content-image" alt="Maul">
 
 I was never a big fan of Darth Maul (or just Maul as he is later known). I think that [Star Wars: Episode I – The Phantom Menace](https://en.wikipedia.org/wiki/Star_Wars%3A_Episode_I_%E2%80%93_The_Phantom_Menace) is hands down the worst instalment in Star Wars cannon and his character never seemed like anything more than a poorly written villain in a poorly written film. The Clone Wars does a very good job of making him interesting, particularly with his reintroduction in season 4 episode 21, "Brothers", written by Katie Lucas (daughter of George Lucas). I think a lot of his newfound appeal is largely due to the voice acting of Sam Witwer.
 
 #### Padmé Amidala
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/1/10/Padme_Amidala-0.png/revision/latest/scale-to-width-down/653?cb=20180502161138" class="in-post-content-image" alt="Padmé Amidala">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/1/10/Padme_Amidala-0.png" class="in-post-content-image" alt="Padmé Amidala">
 
 Natalie Portman's performance and poor writing in the prequel films did little to endear me to the character of Queen/Senator Padmé Amidala. The Clone Wars does not fully salvage the character for me, but it gets pretty close. We get to see a mature leader making rational decisions (regarding the senate at least) and displaying a strong moral compass. A couple more story arcs might have been enough to push me over the edge, but as it stands the series did a good job of making me a lot more sympathetic to her.
 
 #### Chancellor Palpatine
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/2/27/Dark_Sidious_%282%29.PNG/revision/latest/scale-to-width-down/573?cb=20130314162648" class="in-post-content-image" alt="Darth Sidious">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/2/27/Dark_Sidious_%282%29.PNG" class="in-post-content-image" alt="Darth Sidious">
 
 Sheev Palpatine (a.k.a. Darth Sidious) was one few things that I thought was really well done in prequel films. Ian McDiarmid performance is excellent, every syllable seems perfectly weighted. The Clone Wars continues the development of this sinister character with equally captivating vocal performances by Ian Abercrombie (Seasons 1–6), Tim Curry (Seasons 5–6) and Ian McDiarmid himself (Season 7). It's also pretty cool to see more of Sidious in action outside of the senate chambers (see *e.g.* season 5 episode 16, "The Lawless").
 
 #### Obi-Wan Kenobi
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/9/95/Obi_wan_kenobi.png/revision/latest/scale-to-width-down/300?cb=20131015144329" class="in-post-content-image" alt="Obi-Wan Kenobi">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/9/95/Obi_wan_kenobi.png" class="in-post-content-image" alt="Obi-Wan Kenobi">
 
-The other standout choice from the prequel films was the casting of Ewan McGregor as Obi-Wan Kenobi. I think he did a very good job at channelling the gravitas that Alec Guinness brought to the role in the original trilogy, while also portraying a younger and less experienced jedi. James Arnold Taylor voice work is just as good in the Clone Wars. The writers also get the opportunity to hint at richer backstory for Obi-Wan, in particular through his connection to Mandalorian duchess Satine Kryze.
+The other standout choice from the prequel films was the casting of Ewan McGregor as Obi-Wan Kenobi. I think he did a very good job at channelling the gravitas that Alec Guinness brought to the role in the original trilogy, while also portraying a younger and less experienced Jedi. James Arnold Taylor's voice work is just as good in the Clone Wars. The writers also get the opportunity to hint at richer backstory for Obi-Wan, in particular through his connection to Mandalorian duchess Satine Kryze.
 
 #### Yoda
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/2/25/Yoda_detail_cw_model.png/revision/latest/scale-to-width-down/463?cb=20121003000417" class="in-post-content-image" alt="Yoda">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/2/25/Yoda_detail_cw_model.png" class="in-post-content-image" alt="Yoda">
 
 The way in which the Clone Wars handles Yoda is a bit different. They don't come close to capturing the magic of the character in [Star Wars: Episode V – The Empire Strikes Back](https://en.wikipedia.org/wiki/The_Empire_Strikes_Back), nor could they hope to. Instead, I got the impression that the writers wanted to show reverence for this character while experimenting with the boundaries of Star Wars lore. In episodes 10-13 of season 6 Yoda is lead on journey by the voice of the departed Qui-Gon Jinn to discover the secrets of how to live on in the Force after death. The style and tone of these episodes feel like a bit of a departure from the "standard" Star Wars universe, but stands out in terms of story telling.
 
@@ -111,13 +111,13 @@ Not all of the bounty hunters that show up in the Clone Wars make much of impact
 
 <img src="https://upload.wikimedia.org/wikipedia/en/4/40/AsajjVentress.jpg" class="in-post-content-image" alt="Asajj Ventress">
 
-Ventress made her first appeared back in the [2003 animated Clone Wars series](https://en.wikipedia.org/wiki/Star_Wars:_Clone_Wars_(2003_TV_series)) (perhaps a topic for another post) and was a recurring character throughout the Clone Wars. Initially I was not a fan as she seems to be just another one-dimensional villain and an excuse to have more random lightsaber duels in the series. This all changed in season 3 episodes 12-14, written by Katie Lucas (who wrote a lot of my favourite arcs). In this arc Ventress is on the run from her former master Dooku and takes refuge on her homeworld of Dathomir with the Nightsisters. This arc provided a backstory for Ventress and started a new more interesting path for the character to follow, which allowed her to evolve throughout the series and become one of my favourites from the show.
+Ventress made her first appearance back in the [2003 2D animated Clone Wars series](https://en.wikipedia.org/wiki/Star_Wars:_Clone_Wars_(2003_TV_series)) (perhaps a topic for another post) and was a recurring character throughout the Clone Wars. Initially I was not a fan as she seemed to be just another one-dimensional villain and an excuse to have more random lightsaber duels in the series. This all changed in season 3 episodes 12-14, written by Katie Lucas (who wrote a lot of my favourite arcs). In this arc Ventress is on the run from her former master Dooku and takes refuge on her homeworld of Dathomir with the Nightsisters. This arc provided a backstory for Ventress and started a new more interesting path for the character to follow, which allowed her to evolve throughout the series and become one of my favourites from the show.
 
 #### The Clones
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/2/22/MarchToKrell-CoK.jpg/revision/latest/scale-to-width-down/1000?cb=20130630192523" class="in-post-content-image" alt="Captain Rex and Clone Troopers">
+<img src="https://static.wikia.nocookie.net/starwars/images/7/71/PhaseICloneTrooper2-Fathead.png" class="in-post-content-image" alt="Captain Rex and Clone Troopers">
 
-The clones are central to the Clone Wars, which should be fairly obvious from the name. When they were originally introduced in Episode II they were pretty underwhelming in my opinion. The colourful armour variations of the clone troopers were a pretty uninspired way of selling more toys. The fact that they were cloned from Jango Fett was a low point for me (more on this when we get to Boba) and their sudden appearance didn't really make any sense. The series certainly wasn't able to undo the harm that was done in the films, but it did surprise me by making me care about the clones. This is for me the biggest success of the series. Taking a bunch of literal clones and giving them distinct personalities all while voiced by one man (Dee Bradley Baker the real star of the Clone Wars) is extremely impressive. Throughout the series we spend a lot of time getting to know some interesting clones including Captain Rex (CT-7567), Commander Cody (CC-2224), Fives (CT-5555), Echo (CT-1409), Jesse (CT-5597), Tup (CT-5385), Hevy (CT-782) and the honourable 99. I would argue that most of the clone-centric arcs of the series were good, but I think season 3 episodes 1-2 were what really got be invested in the Clone Wars as a whole.
+The clones are central to the Clone Wars, which should be fairly obvious from the name. When they were originally introduced in Episode II they were pretty underwhelming in my opinion. The colourful armour variations of the clone troopers were a pretty uninspired way of selling more toys. The fact that they were cloned from Jango Fett was a low point for me (more on this when we get to Boba) and their sudden appearance didn't really make any sense. The series certainly wasn't able to undo the harm that was done in the films, but it did surprise me by making me care about the clones. This is for me the biggest success of the series. Taking a bunch of literal clones and giving them distinct personalities all while voiced by one man (Dee Bradley Baker, the real star of the Clone Wars) is extremely impressive. Throughout the series we spend a lot of time getting to know some interesting clones including Captain Rex (CT-7567), Commander Cody (CC-2224), Fives (CT-5555), Echo (CT-1409), Jesse (CT-5597), Tup (CT-5385), Hevy (CT-782) and the honourable 99. I would argue that most of the clone-centric arcs of the series were good, but I think season 3 episodes 1-2 were what really got be invested in the Clone Wars as a whole.
 
 #### Ahsoka Tano
 
@@ -137,9 +137,9 @@ One of the main issues is simply the time period in which it is set. No matter h
 
 ### Pre-existing Characters
 
-Most of my problems with the Clone Wars is the handling of certain pre-existing characters. This is not surprising, since I went into this series with my impressions from the films, while new characters started with a clean slate.
+My biggest problem with the Clone Wars is the handling of certain pre-existing characters. This is not surprising, since I went into this series with some biased impressions from the films.
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/9/97/R2-D2-0.jpg/revision/latest/scale-to-width-down/800?cb=20180422162453" class="in-post-content-image" alt="R2D2">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/9/97/R2-D2-0.jpg" class="in-post-content-image" alt="R2D2">
 
 #### R2D2
 
@@ -147,19 +147,19 @@ Everyone loves R2D2 and I am no exception, he is after all "the droid" of Star W
 
 #### General Grievous
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/7/7e/Grievous_CN.jpg/revision/latest/scale-to-width-down/1000?cb=20180513131114" class="in-post-content-image" alt="General Grievous">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/7/7e/Grievous_CN.jpg" class="in-post-content-image" alt="General Grievous">
 
 The prequel trilogy made a mess of introducing the villains. Maul is killed in Episode I, Dooku shows up out of nowhere in Episode II and is killed off early in Episode III and then we are left with the worst of the lot, General Grievous. Apart from having a terrible character design (he looks like a low budget video game character), he doesn't seem to have any motivation or depth whatsoever. Sadly the Clone Wars does little to improve this character. We get to see plenty of him over the course of the series, but none of it made me care anymore about him. Episode 10 of season 1, "Lair of Grievous", attempts to allude to backstory but it is never really followed up in any meaningful way. While, I can understand that being sandwiched between two films might have forced the writers hands to a certain degree, I would have simply left him out all together.
 
 #### Jar Jar Binks
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/b/b7/JarJarBinks2.png/revision/latest/scale-to-width-down/732?cb=20200818071154" class="in-post-content-image" alt="Jar Jar Binks">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/b/b7/JarJarBinks2.png" class="in-post-content-image" alt="Jar Jar Binks">
 
 I don't think I need to say much here. Everyone knows that Jar Jar Binks is a terrible character and the less time spent remembering that he exists the better. I assume the writers were targeting younger children with the Jar Jar episodes in the series. I could have happily lived without them.
 
 #### Anakin Skywalker
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/c/ca/Anakin_skywalker_tcws03.png/revision/latest/scale-to-width-down/300?cb=20120310130032" class="in-post-content-image" alt="Anakin Skywalker">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/c/ca/Anakin_skywalker_tcws03.png" class="in-post-content-image" alt="Anakin Skywalker">
 
 My biggest problem with the prequel trilogy (out of many and bigger than Jar Jar) is Anakin Skywalker.
 Hayden Christensen's performance is uncomfortable to watch. I cringe every time he opens his mouth. Beyond that, the writing made it impossible to believe that someone so whiny and annoying could eventually become the awe-inspiring and immeasurably cool Darth Vader. Matt Lanter vocal portrayal is significantly better, but sadly I still found it impossible to see how this rash, sarcastic and fairly stupid character would turn to the dark side and become the calm and collected villain we all know and love. Had Anakin simply been another character (obviously not a choice the series' creators could have made), I think I would have been fine with him.
@@ -168,11 +168,11 @@ Beyond his lack of credibility as a young Vader, Anakin's awkward relationship w
 
 #### Boba Fett
 
-<img src="https://static.wikia.nocookie.net/theclonewiki/images/2/28/Young-Boba-Fett.png/revision/latest/scale-to-width-down/566?cb=20170603140751" class="in-post-content-image" alt="Young Boba Fett">
+<img src="https://static.wikia.nocookie.net/theclonewiki/images/2/28/Young-Boba-Fett.png" class="in-post-content-image" alt="Young Boba Fett">
 
-Boba Fett has always been my favourite Star Wars character since I first saw the Empire Strikes Back. I grew up reading Star Wars novels (now called Legends and not part of the cannon) such as [Tales from Jabba's Palace](https://en.wikipedia.org/wiki/Tales_from_Jabba's_Palace), where Fett escapes the sarlacc, and [Tales of the Bounty Hunters](https://en.wikipedia.org/wiki/Tales_of_the_Bounty_Hunters), where he hunts Han Solo. This built up picture in my mind of a cold and calculating bounty hunter who is feared and respected in the underworld. A picture I always longed to see further developed in the official Star Wars cannon. Unfortunately, in Episode II I was presented with a character who's uniqueness was stripped away making him a clone of Jango Fett, who sports a near identical look. Then a entire army of clone troopers, whose uniforms initially resemble that of Fett's iconic Mandalorian armour.
+Boba Fett has always been my favourite Star Wars character, ever since I first saw the Empire Strikes Back. I grew up reading Star Wars novels (now called Legends and not part of the cannon) such as [Tales from Jabba's Palace](https://en.wikipedia.org/wiki/Tales_from_Jabba's_Palace), where Fett escapes the sarlacc, and [Tales of the Bounty Hunters](https://en.wikipedia.org/wiki/Tales_of_the_Bounty_Hunters), where he hunts Han Solo. This built up a picture in my mind of a cold and calculating bounty hunter who is feared and respected in the underworld. A picture I always longed to see further developed in the official Star Wars cannon. Unfortunately, in Episode II I was presented with a character who's uniqueness was stripped away making him a clone of Jango Fett (who sports a near identical look). Then a entire army of clone troopers, whose uniforms initially resemble that of Fett's iconic Mandalorian armour.
 
-I don't hate the way Boba was handled in the Clone Wars, but I was a bit disappointed that we didn't get to see the sad boy from Episode II get closer to the bad-ass bounty hunter from Episode IV. I did appreciate the dynamic with Aurra Sing and his desire for revenge against Mace Windu ([as mentioned above](#the-bounty-hunters)). Beyond that, we only get to see Boba team up with band of useless bounty hunters and end up being made a fool of by Asajj Ventress (season 4 episode 20, "Bounty"). This is not really a complaint about the show itself, more that I would have liked to see more of Boba Fett doing cool things.
+I don't hate the way Boba was handled in the Clone Wars, but I was a bit disappointed that we didn't get to see the sad boy from Episode II get closer to the bad-ass bounty hunter from Episode IV. I did appreciate the dynamic with Aurra Sing and his desire for revenge against Mace Windu ([as mentioned above](#the-bounty-hunters)). Beyond that, we only get to see Boba team up with band of useless bounty hunters and end up being made a fool of by Asajj Ventress (season 4 episode 20, "Bounty"). This is not really a complaint about the show itself, rather that I would have liked to see more of Boba Fett doing cool things.
 
 ### New Characters
 
