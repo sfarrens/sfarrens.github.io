@@ -3,6 +3,7 @@ title: "Star Wars: The Clone Wars"
 category: blog
 image: clone_wars.png
 tag: Film and TV
+visibility: public
 layout: post
 blurb: "My review of Star Wars: The Clone Wars"
 excerpt_separator: <!--more-->

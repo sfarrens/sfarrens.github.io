@@ -12,11 +12,13 @@ layout: default
   <br>
   <div class="blog-container">
     {% for post in filtered_posts %}
-      {%- include blog.html -%}
+      {% if post.visibility == "public" %}
+        {%- include blog.html -%}
+      {% endif %}
     {% endfor %}
   </div>
-  {% endif %}
 </div>
+{% endif %}
 
 {% for post in filtered_posts %}
 <br>

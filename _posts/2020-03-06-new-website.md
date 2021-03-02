@@ -3,6 +3,7 @@ title: New Website
 category: blog
 image: screenshot.png
 tag: News
+visibility: public
 layout: post
 ---
 
