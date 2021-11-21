@@ -3,7 +3,7 @@ title: Deep transfer learning for blended source identification in galaxy survey
 category: pub
 image: blendhunter.png
 year: 2021
-journal: Astronomy and Computing
+journal: A&A
 authors: S. Farrens, A. Lacan, A. Guinot, A. Z. Vitorelli
 ads: https://ui.adsabs.harvard.edu/abs/2021arXiv211008180F/abstract
 arxiv: https://arxiv.org/abs/2110.08180
