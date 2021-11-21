@@ -68,9 +68,11 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     msgpack (1.2.10)
-    nokogiri (1.12.3-arm64-darwin)
+    nokogiri (1.12.5-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.12.3-x86_64-darwin)
+    nokogiri (1.12.5-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -85,7 +87,7 @@ GEM
       pygments.rb (~> 2.1)
     public_suffix (4.0.6)
     pygments.rb (2.2.0)
-    racc (1.5.2)
+    racc (1.6.0)
     rainbow (3.0.0)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
@@ -106,6 +108,7 @@ GEM
 PLATFORMS
   arm64-darwin-20
   x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   html-proofer (>= 3.0)
