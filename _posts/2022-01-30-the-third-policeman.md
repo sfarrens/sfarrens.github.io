@@ -48,7 +48,7 @@ This level of detail adds a level of richness and depth to the narrative that, f
 
 ### Joe
 
-Another brilliant device employed by O'brien throughout the novel are internal discussions held between the protagonist and *Joe*. Joe is the name given by the protagonist to his own inner voice (or perhaps *soul*).
+Another brilliant device employed by O'Brien throughout the novel are internal discussions held between the protagonist and *Joe*. Joe is the name given by the protagonist to his own inner voice (or perhaps *soul*).
 
 Joe is a prevailing voice of reason and calm for the protagonist, particularly in the most stressful situations. From the perspective of the reader, we are given an insight to the internal thought process of the protagonist, but in a way that feels natural and in no way interrupts the flow of the narrative.
 
