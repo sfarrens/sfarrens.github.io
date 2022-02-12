@@ -9,10 +9,10 @@ $nav-font-weight: 300;
 $nav-bg-color: #FFFFFF !default;
 $nav-site-name-color: #353535 !default;
 $nav-site-font-weight: bold;
-$nav-line-color: #dddddd !default;
+$nav-line-color: #b5b4b4 !default;
 $nav-link-color: #646464 !default;
 $nav-link-hover-color: #eeafaf !default;
-$nav-border-color: #dddddd !default;
+$nav-border-color: #b5b4b4 !default;
 
 // Topic
 $topic-font-size: 1.5rem;
@@ -39,7 +39,7 @@ $body-font-family: Gill Sans, sans-serif;
 $body-font-size: 1.3rem;
 $body-font-size-mobile: 3.1rem;
 $body-font-weight: 300;
-$body-text-color: #606c71 !default;
+$body-text-color: #494c4e !default;
 $body-link-color: #7394ce !default;
 $body-link-hover-color: #eeafaf !default;
 $strong-font-weight: 500;
@@ -47,6 +47,10 @@ $strong-font-weight: 500;
 // Markdown
 $blockquote-text-color: #819198 !default;
 $blockquote-line-color: #819198 !default;
+$blockquote-font-family: Georgia, serif;
+$blockquote-font-style: italic;
+$blockquote-font-weight: 300;
+
 
 // Footer
 $footer-text-color: #a2a2a2 !default;

@@ -77,7 +77,7 @@ table {
     font-size: $body-font-size;
   }
   @include mobile {
-    max-width: 100%;
+    max-width: 90%;
     padding: 2rem 3rem;
     font-size: $body-font-size-mobile;
   }
@@ -179,11 +179,26 @@ table {
   }
 
   blockquote {
-    padding-left: 1rem;
-    margin-left: 2rem;
+    padding: 0.35em 40px;
+    margin: 2rem 2rem;
+    width: 90%;
     color: $blockquote-text-color;
-    width: 100%;
-    border-left: 2px solid $blockquote-line-color;
+    font-family: $blockquote-font-family;
+    font-style: $blockquote-font-style;
+    font-weight: $blockquote-font-weight;
+    line-height: 1.45;
+    position: relative;
+
+    &:before {
+        display: block;
+        padding-left: 10px;
+        content: "\201C";
+        font-size: 80px;
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        color: #7a7a7a;
+    }
 
     > :first-child {
       margin-top: 0;
@@ -192,6 +207,7 @@ table {
     > :last-child {
       margin-bottom: 0;
     }
+
   }
 
   hr {

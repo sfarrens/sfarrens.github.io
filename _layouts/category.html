@@ -30,7 +30,9 @@ layout: default
 </div>
 
 <div class="mobile">
+{% if post.visibility == "public" %}
   {%- include post_mobile.html -%}
+{% endif %}
 </div>
 {% endfor %}
 {% endif %}
