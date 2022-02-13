@@ -1,6 +1,6 @@
 ---
 title: About Me
-image: me.jpg
+image: office_wave.jpg
 myname: Samuel Farrens
 tagline: Cosmologist and Python enthusiast
 layout: default

@@ -29,6 +29,12 @@ $h2-font-size: 2.3rem;
 $h2-font-size-mobile: 4.1rem;
 $h3-font-size: 1.6rem;
 $h3-font-size-mobile: 3.4rem;
+$h5-color: #819198 !default;
+$h5-font-size: 1.3rem;
+$h5-font-size-mobile: 3.1rem;
+$h5-font-family: Georgia, serif;
+$h5-font-style: italic;
+$h5-font-weight: 300;
 $heading-color: #494c4e !default;
 $heading-font-weight: 300;
 $heading-small-font-weight: 400;
@@ -46,11 +52,9 @@ $strong-font-weight: 500;
 
 // Markdown
 $blockquote-text-color: #819198 !default;
-$blockquote-line-color: #819198 !default;
-$blockquote-font-family: Georgia, serif;
 $blockquote-font-style: italic;
 $blockquote-font-weight: 300;
-
+$blockquote-line-color: #db6e6e !default;
 
 // Footer
 $footer-text-color: #a2a2a2 !default;
@@ -82,7 +86,7 @@ $post-title-font-size-mobile: 3.1rem;
 $post-font-size: 1rem;
 $post-font-size-mobile: 3rem;
 $post-tag-color: #FFFFFF;
-$post-tag-font-size: 0.8rem;
+$post-tag-font-size: 1.1rem;
 $post-tag-font-weight: 300;
 $post-tag-bg-color: #646464 !default;
 $in-post-info-font-weight: 600;

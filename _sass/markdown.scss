@@ -1,11 +1,11 @@
 .md-image {
 
   @include desktoptab {
-    width: 150px;
+    width: 400px;
   }
 
   @include mobile {
-    width: 300px;
+    width: 80%;
   }
 
 }

@@ -31,7 +31,9 @@
   }
 
   @include mobile {
-    max-width: 400px;
+    max-width: 80%;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 
@@ -48,8 +50,8 @@
   }
 
   @include mobile {
-    width: 65px;
-    height: 65px;
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -58,11 +60,17 @@
 }
 
 .topic {
-  @include post-box(250px, 450px, 250px, center);
+  @include post-box(250px, 700px, 250px, center);
 }
 
 .topic-image {
-  @include post-box-image(70%);
+  @include desktoptab {
+    @include post-box-image(70%);
+  }
+
+  @include mobile {
+    @include post-box-image(80%);
+  }
 }
 
 .topic-title {

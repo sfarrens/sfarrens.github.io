@@ -40,7 +40,7 @@ One of the most fascinating aspects of this novel that really pulled me into the
 
 de Selby's *'theories'* are very amusing ranging from the simple design of houses, which should not have walls, to the nature of darkness, which is the accretion of *black air*. The beauty in O'Brien's writing, however, is that, behind the silly concepts put forward by de Selby, there is enough semi-scientific (in some cases not so semi) reasoning as to sell the idea to the reader.
 
-> If a man stands before a mirror and sees in it his reflection, what he sees is not a true reproduction of himself but a picture of himself when he was a younger man.
+##### If a man stands before a mirror and sees in it his reflection, what he sees is not a true reproduction of himself but a picture of himself when he was a younger man.
 
 Following the quote above is the justification that there is a very real delay between the time that light reflects off the surface of the observer, bounces back off the mirror and meets the eye. Therefore, the image observed is in fact that of a slightly younger individual.
 
@@ -54,7 +54,7 @@ Joe is a prevailing voice of reason and calm for the protagonist, particularly i
 
 One passage in particular I found simultaneously funny, creepy and perhaps even a little despairing. As the protagonist lies in bed, slowly falling asleep with the day's thoughts spinning around his head he has the following reflection about Joe.
 
-> I thought that he must be lying beside me in the bed and I kept my hands carefully at my sides in case I should accidentally touch him, I felt, for no reason, that his diminutive body would be horrible to the human touch - scaly or slimy like an eel or with repelling roughness like a cat's tongue.
+##### I thought that he must be lying beside me in the bed and I kept my hands carefully at my sides in case I should accidentally touch him, I felt, for no reason, that his diminutive body would be horrible to the human touch - scaly or slimy like an eel or with repelling roughness like a cat's tongue.
 
 This absent minded thought upsets Joe, making the protagonist compelled to apologise, effectively to himself.
 

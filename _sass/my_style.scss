@@ -138,8 +138,39 @@ table {
 
   }
 
+  h5 {
+    padding: 0.35em 40px;
+    margin: 2rem 2rem;
+    width: 90%;
+    color: $h5-color;
+    font-family: $h5-font-family;
+    font-style: $h5-font-style;
+    font-weight: $h5-font-weight;
+    line-height: 1.45;
+    position: relative;
+
+    &:before {
+        display: block;
+        padding-left: 10px;
+        content: "\201C";
+        font-size: 80px;
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        color: #7a7a7a;
+    }
+
+    @include desktoptab {
+      font-size: $h5-font-size;
+    }
+
+    @include mobile {
+      font-size: $h5-font-size-mobile;
+    }
+
+  }
+
   h4,
-  h5,
   h6 {
     color: $heading-color;
     font-weight: $heading-small-font-weight;
@@ -179,26 +210,13 @@ table {
   }
 
   blockquote {
-    padding: 0.35em 40px;
-    margin: 2rem 2rem;
-    width: 90%;
+    padding-left: 1rem;
+    margin-left: 2rem;
     color: $blockquote-text-color;
-    font-family: $blockquote-font-family;
     font-style: $blockquote-font-style;
     font-weight: $blockquote-font-weight;
-    line-height: 1.45;
-    position: relative;
-
-    &:before {
-        display: block;
-        padding-left: 10px;
-        content: "\201C";
-        font-size: 80px;
-        position: absolute;
-        left: -20px;
-        top: -20px;
-        color: #7a7a7a;
-    }
+    width: 100%;
+    border-left: 2px solid $blockquote-line-color;
 
     > :first-child {
       margin-top: 0;

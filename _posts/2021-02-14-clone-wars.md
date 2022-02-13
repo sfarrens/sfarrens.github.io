@@ -42,7 +42,7 @@ The series ran for 6 continuous seasons from 2008 till 2014 and was only recentl
 
 Let's start on a positive note and talk about what is good about this series.
 
-> "As a whole I think it's good and I really enjoyed it." - Me
+##### As a whole I think it's good and I really enjoyed it. - Me
 
 <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/TheMandalorian.jpg" class="in-post-content-image" alt="Din Djarin">
 

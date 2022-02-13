@@ -1,5 +1,11 @@
+@import "size";
+
 .flag {
-  height: 1.1rem;
-  top: 3px;
-  object-position: 0 2px;
+  object-position: 0 3px;
+  @include desktoptab {
+    height: 1.3rem;
+  }
+  @include mobile {
+    height: 3.1rem;
+  }
 }
