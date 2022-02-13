@@ -39,7 +39,7 @@ The second part of the tutorial introduces some slightly more advanced topics.
 
 Some fun exercises are scattered throughout the tutorial to keep things interesting.
 
-The tutorial is aimed as intermediate Python users but should also be accessible to beginners.
+The tutorial is aimed at intermediate Python users but should also be accessible to beginners.
 
 ## Tutorial
 
