@@ -30,7 +30,9 @@ layout: default
 </div>
 
 <div class="mobile">
-{% if post.visibility == "public" %}
+{% if page.category == "blog" and post.visibility == "public" %}
+  {%- include post_mobile.html -%}
+{% elsif page.category != "blog" %}
   {%- include post_mobile.html -%}
 {% endif %}
 </div>
