@@ -23,7 +23,11 @@ excerpt_separator: <!--more-->
 
 [<img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Gojira_Fortitude_artwork.png" class="md-image">](https://en.wikipedia.org/wiki/Fortitude_(album))
 
-French environmentally conscientious progressive metal masters [Gojira](https://en.wikipedia.org/wiki/Gojira_(band)) released their seventh studio album, [*Fortitute*](https://en.wikipedia.org/wiki/Fortitude_(album)), in the first half of 2021 signalling the start of many good things to come. As should be expected, Gojira deliver on all of the technical complexity and crisp production that has become trademark of their sound.
+##### Drowning all day long, in an ocean of stress, gotta find a safety raft, another wave is striking down
+
+French environmentally conscientious progressive metal masters [Gojira](https://en.wikipedia.org/wiki/Gojira_(band)) released their seventh studio album, [*Fortitute*](https://en.wikipedia.org/wiki/Fortitude_(album)), in the first half of 2021 signalling the start of many good things to come. As should be expected, Gojira deliver on all of the technical complexity and crisp production that has become trademark of their sound. Driving riffs and intense vocals are perfectly interspersed with calm and pensive interludes throughout the album making this a perfect follow up to 2016's *Magma*.
+
+Any other year this album could have easily been my number one pick.
 
 ### 2 Hushed and Grim - *Mastodon*
 
@@ -76,50 +80,114 @@ It may not be for everyone, but it is my pick for the best album of 2021.
 
 [<img src="https://upload.wikimedia.org/wikipedia/en/a/af/Epica-omega-album-2021.jpg" class="md-image">](https://en.wikipedia.org/wiki/Omega_(Epica_album))
 
-### Caravans to the Outer Worlds - *Enslaved*
+### Apotheosis - *Bornholm*
 
-[<img src="https://f4.bcbits.com/img/a4076372856_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Enslaved_(band))
+[<img src="https://f4.bcbits.com/img/a3515409057_16.jpg" class="md-image">](https://hu.wikipedia.org/wiki/Apotheosis)
 
+##### I will burn on the stake, cause of my evangelium, I am hawk and snake, this is my evangelium
 
-### Über den Sternen - *Empyrium*
+[Bornholm](https://hu.wikipedia.org/wiki/Bornholm_(egy%C3%BCttes)) are a Hungarian black metal band I discovered last year through their 2021 release [*Apotheosis*](https://hu.wikipedia.org/wiki/Apotheosis). I really like the melodies mixed with the chugging riffs that in places remind me of *Dimmu Borgir* and *Behemoth*. Despite having been around since the early 2000's, there doesn't appear to be a lot information about them available*.
 
-[<img src="https://f4.bcbits.com/img/a3600714431_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Empyrium)
+> *I could only find a Wikipedia page in Hungarian
 
-### The Persistence of Memory - *Emigrate*
-
-[<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Emigrate_-_The_Persistence_of_Memory.png/220px-Emigrate_-_The_Persistence_of_Memory.png" class="md-image">](https://en.wikipedia.org/wiki/The_Persistence_of_Memory_(album))
-
-### Etemen Ænka - *Dvne*
-
-[<img src="https://f4.bcbits.com/img/a3088714416_16.jpg" class="md-image">](https://songs-of-arrakis.bandcamp.com/album/etemen-nka)
-
-### Viribus Unitis - *Dragony*
-
-[<img src="https://f4.bcbits.com/img/a2808500135_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Dragony)
-
-### Ascension Codes - *Cynic*
-
-[<img src="https://f4.bcbits.com/img/a2186652237_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Cynic_(band))
+This one might have flown under your radar, so you should check it out.
 
 ### The Raging River (EP) - *Cult of Luna*
 
 [<img src="https://f4.bcbits.com/img/a3657618506_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Cult_of_Luna)
 
-### Apotheosis - *Bornholm*
+##### Here flows my blood, this is my home, above the sky, shimmers in gold
 
-[<img src="https://f4.bcbits.com/img/a3515409057_16.jpg" class="md-image">](https://hu.wikipedia.org/wiki/Apotheosis)
+*Post-metal* is a subgenre that have found myself gravitating towards evermore in recent years and this is certainly in part due to Swedish band [Cult of Luna](https://en.wikipedia.org/wiki/Cult_of_Luna). In 2021 they released a five-track EP titled *The Raging River* that perfectly encapsulates the atmosphere and blurred boundaries between musical styles that Cult of Luna navigate perfectly.
+
+> In this EP whets your appetite then you should probably also check out their recent full length album *The Long Road North*, which will likely feature on my top albums of 2022.
+
+### Ascension Codes - *Cynic*
+
+[<img src="https://f4.bcbits.com/img/a2186652237_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Cynic_(band))
+
+##### We’ve been waiting for you
+
+[Cynic](https://en.wikipedia.org/wiki/Cynic_(band))'s 1993 album *Focus* is considered an all-time progressive metal classic. Since then they have split up multiple times and had various line-up changes. In 2021 they released *Ascension Codes*, which is only their forth full length album. There is a lot of cool, funky and unusual stuff on this album that make it well worth a listen. I would even go as far as to say this is the most *progressive* of the progressive metal albums I listened to in 2021.
+
+### Viribus Unitis - *Dragony*
+
+[<img src="https://f4.bcbits.com/img/a2808500135_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Dragony)
+
+##### There's a fire that burns in my soul, there's a darkness consuming me whole, I am alone, heir to the throne, chilled to the bone
+
+[Dragony](https://en.wikipedia.org/wiki/Dragony) is an unapologetically cheesy power metal band from Austria. Their 2021 release *Viribus Unitis* (With United Forces) kicks off with a taste of *An der schönen, blauen Donau* (On the Blue Danube) by Austrian composer *Johann Strauss II*. The lyrics are a bit silly, the choruses are soaring, the melodies are classically inspired, in other words all the pieces are there for a great power metal album... and I'm all in! I couldn't help but smile when listening to this album so I am happy to recommend it in case it can put a smile on someone else's face.
+
+> I am pretty sure that the chap with green electricity coming out of his hand is supposed to be Nikola Tesla. 😂
 
 ### A View from the Top of the World - *Dream Theater*
 
 [<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Dream_Theater_-_A_View_from_the_Top_of_the_World.jpg/220px-Dream_Theater_-_A_View_from_the_Top_of_the_World.jpg" class="md-image">](https://en.wikipedia.org/wiki/A_View_from_the_Top_of_the_World)
 
-### Subjects - *Scale the Summit*
+[Dream Theater](https://en.wikipedia.org/wiki/Dream_Theater) are still the undisputed kings of progressive metal.[A View from the Top of the World
+](https://en.wikipedia.org/wiki/A_View_from_the_Top_of_the_World) marks their fifteenth studio album since 1989's *When Dream and Day Unite*. While it has all the essential parts of classic Dream Theater album,
 
-[<img src="https://f4.bcbits.com/img/a0874005294_10.jpg" class="md-image">](https://en.wikipedia.org/wiki/Scale_the_Summit)
+> - [x] crazy time signatures,
+> - [x] seriously long songs,
+> - [x] melodic guitar and keyboard solos,
+> - [x] epic drumming,
 
+it didn't really feel like anything particularly new or original by these virtuosos. It's very good and certainly a solid release, but in year full of exceptional music it didn't really stand out for me.
+
+### Etemen Ænka - *Dvne*
+
+[<img src="https://f4.bcbits.com/img/a3088714416_16.jpg" class="md-image">](https://songs-of-arrakis.bandcamp.com/album/etemen-nka)
+
+##### In dust, in blood, colossus stones birthed, generations of labour ignite, distant ray of light
+
+One of the most impressive bands that I discoverd in 2021 was British progressive/post-metal band *Dvne* (I believe pronounced like Dune) with their album *Etemen Ænka* *.
+
+> *There seem to be some debates online as to what this means.
+
+The music is atmospheric and experimental, which I thoroughly enjoy, and the cover has hands down my favourite album art work of 2021.
+
+### The Persistence of Memory - *Emigrate*
+
+[<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Emigrate_-_The_Persistence_of_Memory.png/220px-Emigrate_-_The_Persistence_of_Memory.png" class="md-image">](https://en.wikipedia.org/wiki/The_Persistence_of_Memory_(album))
+
+##### Tell me, tell me that your sweet love hasn't died
+
+[Emigrate](https://en.wikipedia.org/wiki/Emigrate_(band)) is an idustrial metal/rock band fronted by Richard Kruspe, best known as the lead guitarist of German giants *Rammstein*. The [The Persistence of Memory](https://en.wikipedia.org/wiki/The_Persistence_of_Memory_(album)) is their fourth studio album and, while not one of my top five from 2021, I found myself listening to it fairly often. I think the cover of *Always on My Mind* featuring Till Lindemann was a particular highlight.
+
+### Über den Sternen - *Empyrium*
+
+[<img src="https://f4.bcbits.com/img/a3600714431_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Empyrium)
+
+##### Autumn was in its prime, fruits turned to golden wine
+
+[Empyrium](https://en.wikipedia.org/wiki/Empyrium) if a folk/doom metal band from Germany that have been around since the mid 90's, but were never on my radar until I came across their 2021 album *Über den Sternen* (Above the Stars). I often enjoy the inclusion of folk instruments and choirs in metal music and this album has both!
+
+### Caravans to the Outer Worlds (EP) - *Enslaved*
+
+[<img src="https://f4.bcbits.com/img/a4076372856_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Enslaved_(band))
+
+##### Esoteric navigation, through the astral storms, Odin!
+
+*Caravans to the Outer Worlds* is a fairly short four-track EP by Norwegian extreme/progressive metal band [Enslaved](https://en.wikipedia.org/wiki/Enslaved_(band)). Enslaved have very clearly demonstrated in recent years* that they one of the best bands on the metal scene. This EP gives a little taste of what they are about and will likely leave wanting more.
+
+> *e.g. See their 2017 release E.
 
 ### Helloween - *Helloween*
 
 [<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Helloween_-_Helloween.png/220px-Helloween_-_Helloween.png" class="md-image">](https://en.wikipedia.org/wiki/Helloween_(album))
 
-Power metal pioneers Helloween...
+##### Yesterday is history, tomorrow is a mystery
+
+Power metal pioneers [Helloween](https://en.wikipedia.org/wiki/Helloween) were back in 2021 with their self-titled sixteenth album [*Helloween*](https://en.wikipedia.org/wiki/Helloween_(album)). This is their first studio album to feature all three of Helloween's iconic singers, Kai Hansen, Michael Kiske and Andi Deris. Listening to this album feels like being transported back to late 80's/early 90's during Helloween's peak years, yet the song writing retains some of the newer elements the band have incorporated into their music during their later years. On paper it seems like it shouldn't really work, but the end result speaks for itself.
+
+I don't think this album will convert anyone who find Helloween a bit too cheesy, but there is a lot of fun to be had if you give it a chance.
+
+### Subjects - *Scale the Summit*
+
+[<img src="https://f4.bcbits.com/img/a0874005294_10.jpg" class="md-image">](https://en.wikipedia.org/wiki/Scale_the_Summit)
+
+[Scale the Summit](https://en.wikipedia.org/wiki/Scale_the_Summit) is an instrumental progressive metal band from Texas. Their most recent release, *Subjects*, is a bit different in that the songs features guest vocalists*.
+
+> *There is also a purely instrumental version of the album available for the purists.
+
+Compositionally speaking Subjects is very consistent with their previous releases but the inclusion of vocals adds a new dimension to the music that I found refreshing. As much as I love instrumental progressive metal, things can get a bit samey, so I am glad they decided to mix things up a bit for this album.
