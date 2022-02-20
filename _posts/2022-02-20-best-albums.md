@@ -51,6 +51,8 @@ It may not be for everyone, but it is my pick for the best album of 2021.
 
 ## Honourable Mentions
 
+Here I list some of the albums there were in contention for a top 5 spot or that I would at least like recommend. The albums are simply listed in alphabetically order by band name.
+
 ### Leprous - *Aphelion*
 
 [<img src="https://upload.wikimedia.org/wikipedia/en/0/05/Leprous_aphelion.jpg" class="md-image">](https://en.wikipedia.org/wiki/Aphelion_(Leprous_album))
