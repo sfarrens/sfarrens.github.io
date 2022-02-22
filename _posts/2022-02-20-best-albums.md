@@ -19,6 +19,22 @@ excerpt_separator: <!--more-->
 
 ## My Top 5 Albums of 2021
 
+### 4 Access All Worlds - *IOTUNN*
+
+[<img src="https://f4.bcbits.com/img/a0999622748_16.jpg" class="md-image">](https://iotunn.bandcamp.com/album/access-all-worlds)
+
+##### A far cry from home
+
+*Access All Worlds* is the first full-length release by Danish progressive death metal band *IOTUNN* (old Norse word for giant). What sets this album apart and pushed it right into my top five for 2021 was the incredible and haunting voice of Faroese singer Jón Aldará*.
+
+> *Primarily known as the singer of the Faroese doom/death metal band Hamferð.
+
+His harsh vocals are perfect fit for the more melodic death metal aspects of the music, while his soaring clean vocals take centre stage and add an otherworldly vibe to the entire album.
+
+Probably the biggest stamp of approval I can give this album is a quote by my wife who typically doesn't like a lot of my music.
+
+##### I don't mind this - Lana
+
 ### 3 Fortitute - *Gojira*
 
 [<img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Gojira_Fortitude_artwork.png" class="md-image">](https://en.wikipedia.org/wiki/Fortitude_(album))
@@ -66,21 +82,6 @@ Here I list some of the albums there were in contention for a top 5 spot or that
 
 [<img src="https://f4.bcbits.com/img/a2914463014_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Jinjer)
 
-### Access All Worlds - *IOTUNN*
-
-[<img src="https://f4.bcbits.com/img/a0999622748_16.jpg" class="md-image">](https://iotunn.bandcamp.com/album/access-all-worlds)
-
-### An Unexpected Reality - *Gatecreeper*
-
-[<img src="https://f4.bcbits.com/img/a1404065325_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Gatecreeper)
-
-### Aggression Continuum - *Fear Factory*
-
-[<img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Fear_Factory_-_Aggression_Continuum.jpg/220px-Fear_Factory_-_Aggression_Continuum.jpg" class="md-image">](https://en.wikipedia.org/wiki/Aggression_Continuum)
-
-### Omega - *Epica*
-
-[<img src="https://upload.wikimedia.org/wikipedia/en/a/af/Epica-omega-album-2021.jpg" class="md-image">](https://en.wikipedia.org/wiki/Omega_(Epica_album))
 
 ### Apotheosis - *Bornholm*
 
@@ -173,6 +174,24 @@ The music is atmospheric and experimental, which I thoroughly enjoy, and the cov
 *Caravans to the Outer Worlds* is a fairly short four-track EP by Norwegian extreme/progressive metal band [Enslaved](https://en.wikipedia.org/wiki/Enslaved_(band)). Enslaved have very clearly demonstrated in recent years* that they one of the best bands on the metal scene. This EP gives a little taste of what they are about and will likely leave wanting more.
 
 > *e.g. See their 2017 release E.
+
+### Omega - *Epica*
+
+[<img src="https://upload.wikimedia.org/wikipedia/en/a/af/Epica-omega-album-2021.jpg" class="md-image">](https://en.wikipedia.org/wiki/Omega_(Epica_album))
+
+##### Freedom, true freedom, to know where to seek, is to see we're the gateway to our mystery
+
+[Omega](https://en.wikipedia.org/wiki/Omega_(Epica_album)) (or *Ωmega* as it is written on the album cover) is the eight full studio album by Dutch symphonic metal masters [Epica](https://en.wikipedia.org/wiki/Epica_(band)). Simone Simons continues to be one of the most impressive vocalists on the metal scene. You are not getting anything particularly different with this album compared to previous releases, but it does sound like Epica have really honed their sound over the last twenty years, particularly in terms of production and balancing the diverse elements that make up their songs.
+
+### An Unexpected Reality - *Gatecreeper*
+
+[<img src="https://f4.bcbits.com/img/a1404065325_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Gatecreeper)
+
+##### I starve myself from you, I wither away
+
+[Gatecreeper](https://en.wikipedia.org/wiki/Gatecreeper) are a death metal band from Arizona that I discovered last year. *An Unexpected Reality* is their latest EP (I think 🤷🏻‍♂️) and the songs a very short and brutal. I was onboard with just the opening riff on *Starved*. The album cover art is also incredible!
+
+It may not be to everyone's taste, but it will take you less than twenty minutes to listen to the whole thing.
 
 ### Helloween - *Helloween*
 
