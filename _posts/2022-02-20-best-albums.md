@@ -19,6 +19,20 @@ excerpt_separator: <!--more-->
 
 ## My Top 5 Albums of 2021
 
+Here are my picks for the five best albums released in 2021 in descending order.
+
+### 5 Etemen Ænka - *Dvne*
+
+[<img src="https://f4.bcbits.com/img/a3088714416_16.jpg" class="md-image">](https://songs-of-arrakis.bandcamp.com/album/etemen-nka)
+
+##### In dust, in blood, colossus stones birthed, generations of labour ignite, distant ray of light
+
+One of the most impressive bands that I discoverd in 2021 was British progressive/post-metal band *Dvne* (I believe pronounced like Dune) with their album *Etemen Ænka* (🤷🏻‍♂️ *).
+
+> *There seem to be some debates online as to what this means.
+
+The music is atmospheric and very experimental, which I thoroughly enjoy. The cover has hands down my favourite album artwork of 2021.
+
 ### 4 Access All Worlds - *IOTUNN*
 
 [<img src="https://f4.bcbits.com/img/a0999622748_16.jpg" class="md-image">](https://iotunn.bandcamp.com/album/access-all-worlds)
@@ -68,20 +82,6 @@ It may not be for everyone, but it is my pick for the best album of 2021.
 ## Honourable Mentions
 
 Here I list some of the albums there were in contention for a top 5 spot or that I would at least like recommend. The albums are simply listed in alphabetically order by band name.
-
-### Leprous - *Aphelion*
-
-[<img src="https://upload.wikimedia.org/wikipedia/en/0/05/Leprous_aphelion.jpg" class="md-image">](https://en.wikipedia.org/wiki/Aphelion_(Leprous_album))
-
-### Deceiver - *Khemmis*
-
-[<img src="https://f4.bcbits.com/img/a2933389309_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Khemmis_(band))
-
-
-### Wallflowers - *Jinjer*
-
-[<img src="https://f4.bcbits.com/img/a2914463014_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Jinjer)
-
 
 ### Apotheosis - *Bornholm*
 
@@ -137,18 +137,6 @@ This one might have flown under your radar, so you should check it out.
 
 it didn't really feel like anything particularly new or original by these virtuosos. It's very good and certainly a solid release, but in year full of exceptional music it didn't really stand out for me.
 
-### Etemen Ænka - *Dvne*
-
-[<img src="https://f4.bcbits.com/img/a3088714416_16.jpg" class="md-image">](https://songs-of-arrakis.bandcamp.com/album/etemen-nka)
-
-##### In dust, in blood, colossus stones birthed, generations of labour ignite, distant ray of light
-
-One of the most impressive bands that I discoverd in 2021 was British progressive/post-metal band *Dvne* (I believe pronounced like Dune) with their album *Etemen Ænka* *.
-
-> *There seem to be some debates online as to what this means.
-
-The music is atmospheric and experimental, which I thoroughly enjoy, and the cover has hands down my favourite album art work of 2021.
-
 ### The Persistence of Memory - *Emigrate*
 
 [<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Emigrate_-_The_Persistence_of_Memory.png/220px-Emigrate_-_The_Persistence_of_Memory.png" class="md-image">](https://en.wikipedia.org/wiki/The_Persistence_of_Memory_(album))
@@ -171,7 +159,7 @@ The music is atmospheric and experimental, which I thoroughly enjoy, and the cov
 
 ##### Esoteric navigation, through the astral storms, Odin!
 
-*Caravans to the Outer Worlds* is a fairly short four-track EP by Norwegian extreme/progressive metal band [Enslaved](https://en.wikipedia.org/wiki/Enslaved_(band)). Enslaved have very clearly demonstrated in recent years* that they one of the best bands on the metal scene. This EP gives a little taste of what they are about and will likely leave wanting more.
+*Caravans to the Outer Worlds* is a fairly short four-track EP by Norwegian extreme/progressive metal band [Enslaved](https://en.wikipedia.org/wiki/Enslaved_(band)). Enslaved have very clearly demonstrated in recent years* that they one of the best bands on the metal scene. This EP gives a little taste of what they are about and will likely leave you wanting more.
 
 > *e.g. See their 2017 release E.
 
@@ -202,6 +190,32 @@ It may not be to everyone's taste, but it will take you less than twenty minutes
 Power metal pioneers [Helloween](https://en.wikipedia.org/wiki/Helloween) were back in 2021 with their self-titled sixteenth album [*Helloween*](https://en.wikipedia.org/wiki/Helloween_(album)). This is their first studio album to feature all three of Helloween's iconic singers, Kai Hansen, Michael Kiske and Andi Deris. Listening to this album feels like being transported back to late 80's/early 90's during Helloween's peak years, yet the song writing retains some of the newer elements the band have incorporated into their music during their later years. On paper it seems like it shouldn't really work, but the end result speaks for itself.
 
 I don't think this album will convert anyone who find Helloween a bit too cheesy, but there is a lot of fun to be had if you give it a chance.
+
+### Wallflowers - *Jinjer*
+
+[<img src="https://f4.bcbits.com/img/a2914463014_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Jinjer)
+
+##### Oh how much longer, will they keep on stabbing me?
+
+In 2021 Ukrainian band [Jinjer](https://en.wikipedia.org/wiki/Jinjer) released their fourth studio album *Wallflowers*. For those not already familiar with the band the most striking aspect of their music will be the versatile vocals of lead singer Tatiana Shmailyuk, who seamlessly jumps from the harshest metalcore vocals to the cleanest jazzy vocals in blink of an eye. I don't think this album introduced anything particular revolutionary with respect to previous albums, but they have certainly refined their sound.
+
+It's hard not to think of the current situation in Ukraine at the time of writing this. Jinjer are from Donetsk, which is now claimed by the breakaway state of the Donetsk People's Republic and was recently officially recognised by the Russian government. I am curious to see how if at all this will influence their music going forward.
+
+### Deceiver - *Khemmis*
+
+[<img src="https://f4.bcbits.com/img/a2933389309_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Khemmis_(band))
+
+##### These faded lives are all we have
+
+On the doom metal front Colorado based [Khemmis](https://en.wikipedia.org/wiki/Khemmis_(band)) released their fourth studio album *Deceiver*. This is a slow and moody album full of fuzzy guitar tones and some great layered vocals. I think this would make a good gateway album for those less used to harsh vocals as they are used sparingly and only to emphasise certain movements in the songs.
+
+### Leprous - *Aphelion*
+
+[<img src="https://upload.wikimedia.org/wikipedia/en/0/05/Leprous_aphelion.jpg" class="md-image">](https://en.wikipedia.org/wiki/Aphelion_(Leprous_album))
+
+I discovered the Norwegian progressive rock back [Leprous](https://en.wikipedia.org/wiki/Leprous) in 2020 after I heard lead singer Einar Solberg's guest appearance on *Ihsahn*'s EP *Pharos* performing a cover of Manhattan Skyline by *A-ha*. He has a very distinctive voice that caught my attention. In 2021 Leprous released their seventh studio album [Aphelion](https://en.wikipedia.org/wiki/Aphelion_(Leprous_album)) and I really enjoyed it. There are lots of slow and understated build ups to very catchy choruses on songs like *Silhouette*. This combined with some subtle progy elements made for a very compelling listen.
+
+This was a serious contender for the top five, but only just lost out for lack of that heavier edge I crave.
 
 ### Subjects - *Scale the Summit*
 
