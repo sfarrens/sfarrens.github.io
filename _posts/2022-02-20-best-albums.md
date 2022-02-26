@@ -3,13 +3,15 @@ title: Best Albums of 2021
 category: blog
 image: bloodmoon-i.png
 tag: Music
-visibility: private
+visibility: public
 layout: post
 blurb: "My picks for the best albums of 2021"
 excerpt_separator: <!--more-->
 ---
 
-2021 was a trying year for everyone. One silver lining from this situation (at least from my perspective) has been that many musicians have not be able to tour and hence have had time to focus on creating new music. A lot of great albums were released last year, here are my picks for the best albums of 2021.
+2021 was a trying year for everyone, being stuck at home, anxious and with no clear end to the pandemic in sight. One silver lining from this dire situation (at least from my perspective) has been that many musicians have not be able to tour and hence have had time to focus on creating new music with any distractions. A lot of great albums were released last year so many, in fact, that I found it hard to narrow down my list of favourites to a reasonable number. In the end, after lengthy internal debates, I choose my top five albums of the year. Five albums that are very much worth your time, particularly if you are not already familiar with some of these bands.
+
+In case these five are enough sate your appetite, I have also included a list of a further twenty-three albums that are worth checking out.
 
 ## Contents
 {:.no_toc}
@@ -20,6 +22,8 @@ excerpt_separator: <!--more-->
 ## My Top 5 Albums of 2021
 
 Here are my picks for the five best albums released in 2021 in descending order.
+
+> Click on the album covers for more details.
 
 ### 5 Etemen Ænka - *Dvne*
 
@@ -67,7 +71,7 @@ Any other year this album could have easily been my number one pick.
 
 [Mastodon](https://en.wikipedia.org/wiki/Mastodon_(band)) demonstrate astonishing musical versatility and imagination, and are able to push the boundaries of metal with each album they release. Their eighth release, [*Hushed and Grim*](https://en.wikipedia.org/wiki/Hushed_and_Grim), is no exception. Ever since drummer Brann Dailor decided to take on more lead vocal duties for the band, Mastodon have been in the unique position of having three exceptional lead singers. Primary vocalist, Troy Sanders, has never sounded so good in my opinion. It sounds like he has really pushed himself out of his comfort zone enabling him to explore new musical dimensions. On songs like *The Crux* and *Skeleton of Splendor* it feels like an emotional tide is being held back by his powerful lungs.
 
-It may not be Mastodon's best album to date, but I love how they continue to evolve and surprise me with the directions they take.
+It may not be my favourite Mastodon album to date, but I love how they continue to evolve and surprise me with the directions they take.
 
 ### 1 Bloodmoon: I - *Converge & Chelsea Wolf*
 
@@ -191,15 +195,23 @@ Power metal pioneers [Helloween](https://en.wikipedia.org/wiki/Helloween) were b
 
 I don't think this album will convert anyone who find Helloween a bit too cheesy, but there is a lot of fun to be had if you give it a chance.
 
+### Senjutsu - *Iron Maiden*
+
+[<img src="https://upload.wikimedia.org/wikipedia/en/6/67/Iron_Maiden_-_Senjutsu.jpg" class="md-image">](https://en.wikipedia.org/wiki/Senjutsu_(album))
+
+[Iron Maiden](https://en.wikipedia.org/wiki/Iron_Maiden) need no introduction, they remain one of the biggest metal bands of all time. [Senjutsu](https://en.wikipedia.org/wiki/Senjutsu_(album)) is their seventeenth studio album. Let's be honest here, this album would not even make it into a top ten list of Iron Maiden albums, but that only speaks to the quality of the band. Even a mediocre release by their standards holds up against the best that most other bands have to offer.
+
+If you are fan of Maiden the there is plenty of good stuff on this album that make it worth listening to. If, however, you are not yet initiated then you should really go back and listen to their earlier work (e.g. *Piece of Mind*, *Powerslave*, etc.) before digging into this latest release.
+
 ### Wallflowers - *Jinjer*
 
 [<img src="https://f4.bcbits.com/img/a2914463014_16.jpg" class="md-image">](https://en.wikipedia.org/wiki/Jinjer)
 
 ##### Oh how much longer, will they keep on stabbing me?
 
-In 2021 Ukrainian band [Jinjer](https://en.wikipedia.org/wiki/Jinjer) released their fourth studio album *Wallflowers*. For those not already familiar with the band the most striking aspect of their music will be the versatile vocals of lead singer Tatiana Shmailyuk, who seamlessly jumps from the harshest metalcore vocals to the cleanest jazzy vocals in blink of an eye. I don't think this album introduced anything particular revolutionary with respect to previous albums, but they have certainly refined their sound.
+In 2021 Ukrainian* band [Jinjer](https://en.wikipedia.org/wiki/Jinjer) released their fourth studio album *Wallflowers*. For those not already familiar with the band the most striking aspect of their music will be the versatile vocals of lead singer Tatiana Shmailyuk, who seamlessly jumps from the harshest metalcore vocals to the cleanest jazzy vocals in blink of an eye. I don't think this album introduced anything particular revolutionary with respect to previous albums, but they have certainly refined their sound.
 
-It's hard not to think of the current situation in Ukraine at the time of writing this. Jinjer are from Donetsk, which is now claimed by the breakaway state of the Donetsk People's Republic and was recently officially recognised by the Russian government. I am curious to see how if at all this will influence their music going forward.
+> *It's hard not to think of the current situation in Ukraine at the time of writing this. Jinjer are from Donetsk, which is now claimed by the breakaway state of the Donetsk People's Republic and was recently officially recognised by the Russian government. At the time of writing this Russian forces have launched a full-scale invasion into Ukraine and the future of this country remains very much uncertain.
 
 ### Deceiver - *Khemmis*
 
@@ -209,13 +221,57 @@ It's hard not to think of the current situation in Ukraine at the time of writin
 
 On the doom metal front Colorado based [Khemmis](https://en.wikipedia.org/wiki/Khemmis_(band)) released their fourth studio album *Deceiver*. This is a slow and moody album full of fuzzy guitar tones and some great layered vocals. I think this would make a good gateway album for those less used to harsh vocals as they are used sparingly and only to emphasise certain movements in the songs.
 
-### Leprous - *Aphelion*
+### Aphelion - *Leprous*
 
 [<img src="https://upload.wikimedia.org/wikipedia/en/0/05/Leprous_aphelion.jpg" class="md-image">](https://en.wikipedia.org/wiki/Aphelion_(Leprous_album))
 
 I discovered the Norwegian progressive rock back [Leprous](https://en.wikipedia.org/wiki/Leprous) in 2020 after I heard lead singer Einar Solberg's guest appearance on *Ihsahn*'s EP *Pharos* performing a cover of Manhattan Skyline by *A-ha*. He has a very distinctive voice that caught my attention. In 2021 Leprous released their seventh studio album [Aphelion](https://en.wikipedia.org/wiki/Aphelion_(Leprous_album)) and I really enjoyed it. There are lots of slow and understated build ups to very catchy choruses on songs like *Silhouette*. This combined with some subtle progy elements made for a very compelling listen.
 
 This was a serious contender for the top five, but only just lost out for lack of that heavier edge I crave.
+
+### Esclavo Miserable - *MISERABLE*
+
+[<img src="https://m.media-amazon.com/images/I/61rjWZ3KBjL._UXNaN_FMjpg_QL85_.jpg" class="md-image">](https://www.metal-archives.com/albums/Miserable/Esclavo_Miserable/914143)
+
+##### Ahogado en una eterna lágrima
+
+A fun discovery from 2021 was Peruvian metal band *MISERABLE* with their second full length album *Esclavo Miserable* (Miserable Slave). This is an old-school lo-fi heavy/thrash metal album and all of the songs are in Spanish. This is a good option if you are fan of 80's metal and are looking for something a bit more diverse to listen to.
+
+### ...And Again into the Light - *Panopticon*
+
+[<img src="https://m.media-amazon.com/images/I/71sLXdUUbSL._SL1200_.jpg" class="md-image">](https://en.wikipedia.org/wiki/Panopticon_(band))
+
+##### Endless days turn into night
+
+[Panopticon](https://en.wikipedia.org/wiki/Panopticon_(band))* are a black metal band from Kentucky that incorporate elements of American folk into their music. *...And Again into the Light* is their ninth studio album. I would describe it as dark and atmospheric but also very beautiful and moving in places. I really love atmospheric black metal like this but I have to admit it is a bit of an acquired taste.
+
+> Named after philosopher Jeremy Bentham's conceptual prison in which prisoners could be observed by a single guard.
+
+### Call of the Wild - *Powerwolf*
+
+[<img src="https://m.media-amazon.com/images/I/91sxRO6rl6L._SL1500_.jpg" class="md-image">](https://en.wikipedia.org/wiki/Call_of_the_Wild_(Powerwolf_album))
+
+##### Then she went dancing with the dead, lost the lord and the spiritus sanctus, raving
+
+I have been vaguely aware of German power metal band [Powerwolf](https://en.wikipedia.org/wiki/Powerwolf) for several years, but it wasn't until 2021 that I decided to give them a chance. [Call of the Wild](https://en.wikipedia.org/wiki/Call_of_the_Wild_(Powerwolf_album)) is their eighth full length release since 2005. While not really in contention the best album of 2021, I did have a lot of fun listening to this. The songs are really catchy and it's great to see power metal still going strong.
+
+### Glory for Salvation - *Rhapsody of Fire*
+
+[<img src="https://upload.wikimedia.org/wikipedia/en/0/07/Rhapsodyoffiregloryforsalvation2021.jpg" class="md-image">](https://en.wikipedia.org/wiki/Glory_for_Salvation)
+
+##### One day, I'll be your hero
+
+Back in the late 90's/early 00's [Rhapsody of Fire](https://en.wikipedia.org/wiki/Rhapsody_of_Fire)* was one of my favourite bands. Originally from Trieste (in the north-east of Italy), Rhapsody combined fantasy, with epic symphonic scores and power metal. Basically, it was like the musical equivalent of Dungeons and Dragons. Over the years there have been various schisms, and now only keyboardist and songwriter Alex Staropoli remains from the original line-up. [Glory for Salvation](https://en.wikipedia.org/wiki/Glory_for_Salvation) is their thirteenth studio album overall and second to feature new lead singer Giacomo Voli. For me, it's nowhere near the golden age of Rhapsody with guitarist Luca Turilli and singer Fabio Lione, but it's still a good album with some catchy songs.
+
+> *Originally just Rhapsody, the 'of Fire' was added in later years for legal reasons.
+
+### The Work - *Rivers of Nihil*
+
+[<img src="https://m.media-amazon.com/images/I/71ZQTWtp7lL._SL1310_.jpg" class="md-image">](https://en.wikipedia.org/wiki/Rivers_of_Nihil)
+
+##### I want your money, your time, I want your patience and your pride
+
+*Where Owls Know My Name* was hands down the best album released in 2018 and felt like a breath of fresh air in the extreme metal genre. Technical death metal band [Rivers of Nihil](https://en.wikipedia.org/wiki/Rivers_of_Nihil) were back in 2021 with their fourth album, *The Work*. This is a more slow burning and pensive album compared to its predecessor. Nevertheless, the intricacy and experimentation you would hope for are still present. I would have liked a bit more saxophone scattered throughout the album, but this is another great album by one of the most exiting bands to have emerged in recent years.
 
 ### Subjects - *Scale the Summit*
 
@@ -226,3 +282,25 @@ This was a serious contender for the top five, but only just lost out for lack o
 > *There is also a purely instrumental version of the album available for the purists.
 
 Compositionally speaking Subjects is very consistent with their previous releases but the inclusion of vocals adds a new dimension to the music that I found refreshing. As much as I love instrumental progressive metal, things can get a bit samey, so I am glad they decided to mix things up a bit for this album.
+
+### Imperial - *Soen*
+
+[<img src="https://m.media-amazon.com/images/I/61O4yTXbm5L._SX522_.jpg" class="md-image">](https://en.wikipedia.org/wiki/Soen)
+
+##### I believe, that in the end we could be something more
+
+[Soen](https://en.wikipedia.org/wiki/Soen) are a progressive metal band from Sweden. Their first album from back in 2012, *Cognitive*, sounded a bit like a cross between *Tool* and *Opeth*. While this is certainly a complement in terms of quality, I felt at the time that Soen lacked their own unique sound. In 2021 they released their fifth studio album, *Imperial*, and it's fresh, original and excellent! The influences are still detectable* but the song writing is distinctive and emotive.
+
+> *There even a little Pink Floyd thrown into the mix on this album.
+
+I am really looking forward to see where they go from here.
+
+### Forge Your Future - *Spirit Adrift*
+
+[<img src="https://m.media-amazon.com/images/I/91Kxxk5Qp3S._SL1500_.jpg" class="md-image">](https://en.wikipedia.org/wiki/Spirit_Adrift)
+
+##### I saw the future and it set me free, the stars aligned and cleared the way
+
+*Forge Your Future* is a three-song EP by Arizona-based heavy/doom metal band [Spirit Adrift](https://en.wikipedia.org/wiki/Spirit_Adrift). If you are craving some more classic heavy metal vibes, then I don't think you could do better in 2021 than this EP. It has all the atmosphere and energy of a 70's masterpiece but with perfectly balanced modern production.
+
+Had this been a full-length album it would have been a very strong contender for a top five spot.
