@@ -1,5 +1,5 @@
 ---
-title: "SHAPEPIPE: A modular weak-lensing processing and analysis pipeline"
+title: "ShapePipe: A modular weak-lensing processing and analysis pipeline"
 category: pub
 image: shapepipe_mask.png
 year: 2022
