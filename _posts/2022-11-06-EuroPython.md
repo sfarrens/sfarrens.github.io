@@ -5,6 +5,8 @@ image: europython_2022_logo.png
 tag: News
 visibility: public
 layout: post
+blurb: "My EuroPython talk"
+excerpt_separator: <!--more-->
 ---
 
 **<a href="https://ep2022.europython.eu/" target="_blank">EuroPython 2022</a>**
