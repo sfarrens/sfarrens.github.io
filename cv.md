@@ -18,7 +18,7 @@ title: Curriculum Vitae
 * Fax: +33 01 69 08 65 77
 
 * Address:  
-  Service d'Astrophysique, CEA Saclay,  
+  Service d'Astrophysique, CEA Paris-Saclay,  
   Orme des Merisiers, Building 709  
   F-91191 Gif-sur-Yvette, France
 
@@ -27,7 +27,7 @@ title: Curriculum Vitae
 {:.special}
 *  Dec 2017 - Present: **Commissariat à l’Énergie Atomique ([CEA](http://www.cea.fr)) Paris-Saclay**, France ![]({{ site.image_path }}/france.png){:.flag}  
   Position: Permanent Researcher  
-  Project Involvement: [Euclid](https://www.euclid-ec.org/), [UNIONS-CFIS](http://www.cfht.hawaii.edu/Science/CFIS/), [AstroDeep](http://www.astrodeep.eu/)
+  Project Involvement: [Euclid](https://www.euclid-ec.org/), [UNIONS](https://www.skysurvey.cc/), [COSMIC](http://cosmic.cosmostat.org/), [AstroDeep](http://www.astrodeep.eu/)
 
 * Oct 2015 - Nov 2017: **Commissariat à l’Énergie Atomique ([CEA](http://www.cea.fr)) Paris-Saclay**, France ![]({{ site.image_path }}/france.png){:.flag}  
   Position: Postdoctoral Researcher  
@@ -69,6 +69,35 @@ title: Curriculum Vitae
 * Sep 2019: Keynote *"From Galaxies to Brains! - Image processing with Python"* at [EuroScipy](https://www.euroscipy.org/) in Bilbao, Spain ![]({{ site.image_path }}/spain.png){:.flag}   
 
 * May 2017: Seminar *["Regularisation techniques for solving inverse problems"](https://indico.in2p3.fr/event/14176/)* in Clermont-Ferrand, France ![]({{ site.image_path }}/france.png){:.flag}  
+
+## Supervision
+
+### Software Developers
+
+{:.special}
+* Nov 2022 - Present: **Jennifer Pollack** (Euclid)
+* Apr 2021 - Present: **Sergio Miranda La Hera** (Euclid)
+
+
+### Postdocs
+
+{:.special}
+* Feb 2022 - Present: **Lucie Baumont** (Euclid, UNIONS)
+* Nov 2020 - Sep 2022: **André Zamorano Vitorelli** (Euclid, UNIONS)
+
+### Master's Students
+
+{:.special}
+* Apr 2021 - Aug 2021: **Olivier Roth** [*"Unsupervised learning for galaxy cluster membership assignment"*](http://www.cosmostat.org/wp-content/uploads/2020/09/Unsupervised_Cluster_Membership_Assignment_Internship.pdf)
+* Sep 2019 - Feb 2020: **Sophie Starck** *"PySAP Software
+Development and Data Science"*
+* Jul 2019 - Dec 2019: **Alice Lacan** [*"Deep Learning for Multiclass Classification of Blended Galaxy
+Images"*](http://www.cosmostat.org/wp-content/uploads/2018/09/deblending_cont.pdf)
+* Jul 2019 - Dec 2019: **Joël Gehin** *"Euclid Data Processing"*
+* Apr 2018 - Sep 2018: **Alexandre Bruckert** [*"Machine Learning and Image Deblending for Astrophysical Data"*](http://www.cosmostat.org/wp-content/uploads/2017/11/deblending.pdf)
+* Nov 2017 - Apr 2018: **Hugo De Bouard** *"Déconvolution d’images de galaxies"*
+* Jul 2017 - Dec 2017: **Xinyu Wang** *"Identification of Blended Galaxy Images"*
+* Apr 2017 - Sep 2017: **Peipei Ran** *"Deconvolution of astrophysical images with space variant instrumental response"*
 
 ## Teaching
 
