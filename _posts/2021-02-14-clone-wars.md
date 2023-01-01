@@ -104,7 +104,7 @@ The Clone Wars also introduced an array of new characters to the Star Wars unive
 
 #### The Bounty Hunters
 
-<img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Cad_Bane_TCW.png" class="in-post-content-image" alt="Cad Bane">
+<img src="https://www.sideshow.com/wp/wp-content/uploads/2022/04/cad-bane-the-clone-wars.jpeg" class="in-post-content-image" alt="Cad Bane">
 
 Not all of the bounty hunters that show up in the Clone Wars make much of impact, but two certainly do. The first is Aurra Sing, who actually appears briefly in Episode I. She is shown to be a ruthless but also compassionate character. In the series we get to see her stalk Senator Padmé Amidala (season 3 episode 7, "The Assassin") and become a surrogate mother to the orphaned Boba Fett (season 2 episodes 20-22). The second is Cad Bane. Bane is a Duros (blue X-Files looking alien) that dresses like a space cowboy and is only interested in getting paid. In the series he is voiced by Corey Burton (who also voices Count Dooku), but with a very cool metallic sounding distortion effect. He shows up in several story arcs, my favourite being Obi-Wan's Face-Off style infiltration of Moralo Eval's band of bounty hunters in season 4 episodes 15-18.
 
