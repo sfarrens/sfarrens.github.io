@@ -1,17 +1,44 @@
-@import "post";
-@import "pub";
+@use "post";
+@use "pub";
+@use "variables" as *;
+@use "shared";
+@use "size";
 
 .blog-container {
-  @include post-box-container(left);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .blog {
-  @include post-box(435px, 435px, 312px, none);
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.08);
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  transition: box-shadow 0.2s;
   position: relative;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15), 0 12px 40px 0 rgba(0,0,0,0.12);
+    opacity: 0.95;
+  }
+}
+
+.blog-post {
+  position: relative;
+  @include shared.post-box(435px, 435px, 312px, none);
 }
 
 .blog-image {
-  @include post-box-image(250px);
+  @include shared.post-box-image(250px);
 }
 
 .blog-text-container {
@@ -23,14 +50,14 @@
 }
 
 .blog-excerpt {
-  @include pub-font;
+  @include pub.pub-font;
   color: $body-text-color;
 
-  @include desktoptab {
+  @include size.desktoptab {
     font-size: $pub-excerpt-font-size;
   }
 
-  @include mobile {
+  @include size.mobile {
     font-size: $pub-excerpt-font-size-mobile;
   }
 }

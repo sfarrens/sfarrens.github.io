@@ -7,3 +7,15 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+  var topnav = document.getElementById("topnav");
+  var icon = document.querySelector('.icon');
+  
+  if (topnav.classList.contains('responsive') && 
+      !topnav.contains(event.target) && 
+      !icon.contains(event.target)) {
+    topnav.className = "topnav";
+  }
+});

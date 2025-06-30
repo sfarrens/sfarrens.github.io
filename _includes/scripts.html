@@ -5,3 +5,62 @@
           TeX: { equationNumbers: { autoNumber: "AMS" } }
         });
 </script>
+
+<script>
+(function() {
+  const toggle = document.querySelector('.nav-dark-toggle');
+  const body = document.body;
+  // Respect system preference on first load
+  if (localStorage.getItem('dark-mode') === null && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode');
+    toggle.textContent = '☀️';
+  }
+  // Load preference
+  if (localStorage.getItem('dark-mode') === 'true') {
+    body.classList.add('dark-mode');
+    toggle.textContent = '☀️';
+  }
+  toggle.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+    const isDark = body.classList.contains('dark-mode');
+    toggle.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('dark-mode', isDark);
+  });
+})();
+</script>
+
+<script>
+// Navigation scroll effect for desktop
+(function() {
+  const nav = document.querySelector('nav');
+  let lastScrollTop = 0;
+  const scrollThreshold = 50; // Start effect after scrolling 50px
+
+  function handleScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Only apply effect on desktop (screen width > 1000px)
+    if (window.innerWidth > 1000) {
+      if (scrollTop > scrollThreshold) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    } else {
+      // Remove scrolled class on mobile
+      nav.classList.remove('scrolled');
+    }
+    
+    lastScrollTop = scrollTop;
+  }
+
+  // Add scroll event listener
+  window.addEventListener('scroll', handleScroll);
+  
+  // Handle window resize
+  window.addEventListener('resize', handleScroll);
+  
+  // Initial check
+  handleScroll();
+})();
+</script>

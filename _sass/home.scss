@@ -1,3 +1,7 @@
+@use "variables" as *;
+@use "size";
+@use "shared";
+
 .home-container {
   padding-top: 2rem;
 }
@@ -26,11 +30,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include desktoptab {
+  @include size.desktoptab {
     max-width: 400px;
   }
 
-  @include mobile {
+  @include size.mobile {
     max-width: 80%;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -44,32 +48,32 @@
     opacity: 0.4;
   }
 
-  @include desktoptab {
+  @include size.desktoptab {
     width: 50px;
     height: 50px;
   }
 
-  @include mobile {
+  @include size.mobile {
     width: 90px;
     height: 90px;
   }
 }
 
 .topic-container {
-  @include post-box-container(center);
+  @include shared.post-box-container(center);
 }
 
 .topic {
-  @include post-box(250px, 700px, 250px, center);
+  @include shared.post-box(250px, 700px, 250px, center);
 }
 
 .topic-image {
-  @include desktoptab {
-    @include post-box-image(70%);
+  @include size.desktoptab {
+    @include shared.post-box-image(70%);
   }
 
-  @include mobile {
-    @include post-box-image(80%);
+  @include size.mobile {
+    @include shared.post-box-image(80%);
   }
 }
 
@@ -77,11 +81,11 @@
   font-weight: $topic-font-weight;
   margin: 1rem;
 
-  @include desktoptab {
+  @include size.desktoptab {
     font-size: $topic-font-size;
   }
 
-  @include mobile {
+  @include size.mobile {
     font-size: $topic-font-size-mobile;
   }
 

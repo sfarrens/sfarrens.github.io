@@ -1,8 +1,16 @@
 <nav>
   <div class="topnav" id="topnav">
-    {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" class="menu-text"> {{ item.name }}</a>
-    {% endfor %}
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="/index.html" class="site-name">SF Space</a>
+    <div class="nav-links">
+      <a href="/about.html">About</a>
+      <a href="/cv.html">CV</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/software.html">Software</a>
+      <a href="/tutorials.html">Tutorials</a>
+      <a href="/travel.html">Travel</a>
+      <a href="/blog.html">Blog</a>
+    </div>
+    <button id="dark-mode-toggle" class="nav-dark-toggle">🌙</button>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
   </div>
 </nav>

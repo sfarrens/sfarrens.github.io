@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 @mixin desktoptab {
   @media screen and (min-width: #{$mobile-breakpoint}) {
     @content;

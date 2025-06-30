@@ -1,4 +1,5 @@
-@import "size";
+@use "size";
+@use "variables" as *;
 
 .site-footer {
   padding-top: 1.0rem;
@@ -11,11 +12,11 @@
   font-weight: $footer-font-weight;
   text-align: center;
 
-  @include desktoptab {
+  @include size.desktoptab {
     font-size: $footer-font-size;
   }
 
-  @include mobile {
+  @include size.mobile {
     font-size: $footer-font-size-mobile;
   }
 }

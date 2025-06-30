@@ -1,16 +1,17 @@
-//Post settings
-@import "size";
+@use "size";
+@use "variables" as *;
+@use "shared";
 
 .post-container {
 
-  @include shadow;
+  @include shared.shadow;
   border-radius: 0.3rem;
 
-  @include desktoptab {
+  @include size.desktoptab {
     width: 100%;
   }
 
-  @include mobile {
+  @include size.mobile {
     width: 100%;
     overflow: hidden;
     display: inline-block;
@@ -19,14 +20,14 @@
 
   &:hover {
     opacity: 0.9;
-    background-color: $post-hoever-color;
+    background-color: $post-hover-color;
   }
 
 }
 
 .post-image-container {
 
-  @include desktoptab {
+  @include size.desktoptab {
     float: right;
     width: 120px;
     height: 120px;
@@ -36,7 +37,7 @@
     cursor: pointer;
   }
 
-  @include mobile {
+  @include size.mobile {
     float: none;
     margin-top: 0;
     margin-right: 0;
@@ -52,7 +53,7 @@
   width: 100%;
   display: block;
 
-  @include desktoptab {
+  @include size.desktoptab {
     border-radius: 0.3rem;
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
@@ -63,7 +64,7 @@
     }
   }
 
-  @include mobile {
+  @include size.mobile {
     object-fit: cover;
     &:hover {
       transform: none;
@@ -77,13 +78,13 @@
   margin-right: auto;
   overflow: hidden;
   border-radius: 0.3rem;
-  @include shadow;
+  @include shared.shadow;
 
-  @include desktoptab {
+  @include size.desktoptab {
     max-width: 40%;
   }
 
-  @include mobile {
+  @include size.mobile {
     max-width: 90%;
   }
 
@@ -103,21 +104,22 @@
 .in-post-content-image {
   margin-left: auto;
   margin-right: auto;
-  @include desktoptab {
-    height: 400px;
-  }
-  @include mobile {
-    width: 80%;
-  }
   object-fit: cover;
   display: block;
+  
+  @include size.desktoptab {
+    height: 400px;
+  }
+  @include size.mobile {
+    width: 80%;
+  }
 }
 
 .post-title-container {
 
   vertical-align: top;
 
-  @include desktoptab {
+  @include size.desktoptab {
     margin-top: 2rem;
     margin-left: 2rem;
     max-width: 69%;
@@ -125,7 +127,7 @@
     cursor: pointer;
   }
 
-  @include mobile {
+  @include size.mobile {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -165,7 +167,7 @@
   margin-bottom: 1rem;
   display: inline-block;
 
-  @include desktoptab {
+  @include size.desktoptab {
     cursor: pointer;
   }
 
@@ -174,30 +176,28 @@
 @mixin post-font {
   font-family: $post-font-family;
 
-  @include desktoptab {
+  @include size.desktoptab {
     font-size: $post-font-size;
   }
 
-  @include mobile {
+  @include size.mobile {
     font-size: $post-font-size-mobile;
   }
 
 }
 
 .post-title {
-  @include post-font;
-
-  @include desktoptab {
-    font-size: $post-title-font-size;
-  }
-
-  @include mobile {
-    font-size: $post-title-font-size-mobile;
-    padding-bottom: 0.2rem;
-  }
-
+  font-family: $post-font-family;
   font-weight: $post-title-font-weight;
   color: $post-title-color;
   display: inline-block;
 
+  @include size.desktoptab {
+    font-size: $post-title-font-size;
+  }
+
+  @include size.mobile {
+    font-size: $post-title-font-size-mobile;
+    padding-bottom: 0.2rem;
+  }
 }

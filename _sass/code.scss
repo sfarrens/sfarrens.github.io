@@ -1,4 +1,6 @@
-@import "rouge-github";
+@use "variables" as *;
+@use "rouge-github";
+@use "size";
 
 pre {
   color: $body-text-color;
@@ -12,11 +14,11 @@ pre {
   font-size: 1.0rem;
   overflow-x: scroll;
 
-  @include desktoptab{
+  @include size.desktoptab{
     font-size: $code-font-size;
   }
 
-  @include mobile {
+  @include size.mobile {
     font-size: $code-font-size-mobile;
   }
 

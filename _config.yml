@@ -9,7 +9,6 @@ image_path: /assets/images
 url: "https://sfarrens.github.io"
 
 plugins:
-  - jekyll-latex
   - jekyll-target-blank
 
 defaults:

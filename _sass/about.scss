@@ -1,4 +1,6 @@
-
+@use "variables" as *;
+@use "shared";
+@use "size";
 
 .about-image-container {
   margin-left: auto;
@@ -7,14 +9,14 @@
   margin-bottom: 2rem;
   overflow: hidden;
   border-radius: 0.3rem;
-  @include shadow;
+  @include shared.shadow;
 
-  @include desktoptab {
+  @include size.desktoptab {
     height: 25rem;
     width: 30rem;
   }
 
-  @include mobile {
+  @include size.mobile {
     height: 45rem;
     width: 80%;
   }
@@ -38,7 +40,7 @@
   margin: 1rem;
   padding-bottom: 1rem;
   font-weight: 300;
-  @include mobile {
+  @include size.mobile {
     font-size: 3rem;
   }
 }
@@ -56,12 +58,12 @@
   border-radius: 0.3rem;
   overflow: hidden;
 
-  @include desktoptab {
+  @include size.desktoptab {
     padding-top: 33.75%;
     width: 60%;
   }
 
-  @include mobile {
+  @include size.mobile {
     padding-top: 56.25%;
     width: 100%;
   }
