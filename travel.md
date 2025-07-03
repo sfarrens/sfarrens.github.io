@@ -4,13 +4,19 @@ title: Travel
 visited_countries:
   - Albania
   - Andorra
+  - Australia
   - Austria
+  - Bahamas
   - Belgium
   - Bosnia and Herzegovina
+  - Brazil
   - Bulgaria
+  - China
+  - Costa Rica
   - Croatia
   - Czechia
   - Denmark
+  - Egypt
   - Estonia
   - Finland
   - France
@@ -19,6 +25,7 @@ visited_countries:
   - Hungary
   - Ireland
   - Italy
+  - Japan
   - Kosovo
   - Latvia
   - Liechtenstein
@@ -31,9 +38,10 @@ visited_countries:
   - Norway
   - Poland
   - Portugal
+  - Qatar
+  - Republic of Serbia
   - Romania
   - San Marino
-  - Republic of Serbia
   - Slovakia
   - Slovenia
   - Spain
@@ -41,16 +49,8 @@ visited_countries:
   - Switzerland
   - Turkey
   - United Kingdom
-  - Vatican
-  - Bahamas
-  - Brazil
   - United States of America
-  - China
-  - Japan
-  - Egypt
-  - Australia
-  - Qatar
-  - Costa Rica
+  - Vatican
 visited_territories:
   - Gibraltar
 ---
