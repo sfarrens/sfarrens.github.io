@@ -1,0 +1,150 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Leaflet CSS and JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+:root {
+  --counter-bg-light: #f8f9fa;
+  --counter-bg-dark: #23272f;
+  --counter-border-light: #e0e0e0;
+  --counter-border-dark: #333a44;
+  --counter-main-light: #388e3c;
+  --counter-main-dark: #7fff7f;
+  --counter-label-light: #555;
+  --counter-label-dark: #bbb;
+  --counter-percent-light: #888;
+  --counter-percent-dark: #aaa;
+  --counter-territory-light: #f57c00;
+  --counter-territory-dark: #ffb74d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --counter-bg: var(--counter-bg-dark);
+    --counter-border: var(--counter-border-dark);
+    --counter-main: var(--counter-main-dark);
+    --counter-label: var(--counter-label-dark);
+    --counter-percent: var(--counter-percent-dark);
+    --counter-territory: var(--counter-territory-dark);
+  }
+}
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+  :root {
+    --counter-bg: var(--counter-bg-light);
+    --counter-border: var(--counter-border-light);
+    --counter-main: var(--counter-main-light);
+    --counter-label: var(--counter-label-light);
+    --counter-percent: var(--counter-percent-light);
+    --counter-territory: var(--counter-territory-light);
+  }
+}
+#travel-counters-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--counter-bg);
+  border-radius: 2em;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border: 1.5px solid var(--counter-border);
+  padding: 2em 2.5em 1.5em 2.5em;
+  margin: 0 auto 2em auto;
+  max-width: 350px;
+}
+#main-country-count {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--counter-main);
+  margin-bottom: 0.1em;
+}
+#main-country-label {
+  font-size: 1.1em;
+  color: var(--counter-label);
+  margin-bottom: 0.2em;
+}
+#territory-count {
+  font-size: 1.1em;
+  color: var(--counter-territory);
+  margin-top: 0.7em;
+}
+  </style>
+</head>
+<body>
+  {{ content }}
+  <div id="travel-counters" style="display:flex;justify-content:center;">
+    <div id="travel-counters-box">
+      <div id="main-country-count"></div>
+      <div id="main-country-label"></div>
+      <div id="territory-count"></div>
+    </div>
+  </div>
+
+  <div id="map" style="height: 500px; margin-bottom: 2em;"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // List of visited countries and territories (read from front matter)
+      var visitedCountries = [
+        {% for country in page.visited_countries %}"{{ country }}"{% unless forloop.last %}, {% endunless %}{% endfor %}
+      ];
+      var visitedTerritories = [
+        {% for territory in page.visited_territories %}"{{ territory }}"{% unless forloop.last %}, {% endunless %}{% endfor %}
+      ];
+
+      // Main country and territory counts
+      var countryCount = visitedCountries.length;
+      var territoryCount = visitedTerritories.length;
+
+      // Render main counters
+      document.getElementById('main-country-count').textContent = countryCount;
+      document.getElementById('main-country-label').textContent = 'Countries Visited';
+      if (territoryCount > 0) {
+        document.getElementById('territory-count').textContent = territoryCount + ' territories/regions';
+      } else {
+        document.getElementById('territory-count').textContent = '';
+      }
+
+      // Combine for map highlighting
+      var allVisited = visitedCountries.concat(visitedTerritories);
+
+      // Initialize the map
+      var map = L.map('map').setView([20, 0], 2);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+
+      // Load GeoJSON and highlight visited countries/territories
+      fetch('/assets/countries.geojson')
+        .then(res => res.json())
+        .then(data => {
+          L.geoJson(data, {
+            style: function(feature) {
+              var countryName = feature.properties.ADMIN || feature.properties.name;
+              return {
+                fillColor: allVisited.includes(countryName) ? '#2ecc40' : '#ccc',
+                weight: 1,
+                color: 'white',
+                fillOpacity: allVisited.includes(countryName) ? 0.8 : 0.3
+              };
+            },
+            onEachFeature: function(feature, layer) {
+              var countryName = feature.properties.ADMIN || feature.properties.name;
+              if (allVisited.includes(countryName)) {
+                layer.bindPopup('<b>' + countryName + '</b><br>Visited!');
+              } else {
+                layer.bindPopup('<b>' + countryName + '</b>');
+              }
+            }
+          }).addTo(map);
+        });
+    });
+  </script>
+</body>
+</html> 
