@@ -1,5 +1,5 @@
-@use "size";
-@use "variables" as *;
+@import "size";
+@import "variables";
 
 nav {
   background-color: $nav-bg-color;

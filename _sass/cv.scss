@@ -1,12 +1,12 @@
-@use "size";
-@use "variables" as *;
+@import "size";
+@import "variables";
 
 .flag {
   object-position: 0 3px;
-  @include size.desktoptab {
+  @include desktoptab {
     height: 1.3rem;
   }
-  @include size.mobile {
+  @include mobile {
     height: 3.1rem;
   }
 }

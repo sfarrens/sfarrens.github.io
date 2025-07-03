@@ -1,6 +1,6 @@
-@use "variables" as *;
-@use "size";
-@use "shared";
+@import "variables";
+@import "size";
+@import "shared";
 
 .home-container {
   padding-top: 2rem;
@@ -30,11 +30,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include size.desktoptab {
+  @include desktoptab {
     max-width: 400px;
   }
 
-  @include size.mobile {
+  @include mobile {
     max-width: 80%;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -48,32 +48,32 @@
     opacity: 0.4;
   }
 
-  @include size.desktoptab {
+  @include desktoptab {
     width: 50px;
     height: 50px;
   }
 
-  @include size.mobile {
+  @include mobile {
     width: 90px;
     height: 90px;
   }
 }
 
 .topic-container {
-  @include shared.post-box-container(center);
+  @include post-box-container(center);
 }
 
 .topic {
-  @include shared.post-box(250px, 700px, 250px, center);
+  @include post-box(250px, 700px, 250px, center);
 }
 
 .topic-image {
-  @include size.desktoptab {
-    @include shared.post-box-image(70%);
+  @include desktoptab {
+    @include post-box-image(70%);
   }
 
-  @include size.mobile {
-    @include shared.post-box-image(80%);
+  @include mobile {
+    @include post-box-image(80%);
   }
 }
 
@@ -81,11 +81,11 @@
   font-weight: $topic-font-weight;
   margin: 1rem;
 
-  @include size.desktoptab {
+  @include desktoptab {
     font-size: $topic-font-size;
   }
 
-  @include size.mobile {
+  @include mobile {
     font-size: $topic-font-size-mobile;
   }
 

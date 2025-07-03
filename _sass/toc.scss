@@ -1,5 +1,5 @@
-@use "size";
-@use "variables" as *;
+@import "size";
+@import "variables";
 
 #markdown-toc {
 
@@ -17,7 +17,7 @@
   }
 
   li {
-    @include size.desktoptab {
+    @include desktoptab {
       display:inline-block;
       padding-right: 0.7rem;
 
@@ -29,7 +29,7 @@
         border-right: solid 1px $border-color;
       }
     }
-   @include size.mobile {
+   @include mobile {
      &:not(:last-child) {
        margin-bottom: 0.6rem;
      }

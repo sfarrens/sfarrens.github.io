@@ -1,17 +1,17 @@
-@use "size";
-@use "variables" as *;
-@use "shared";
+@import "size";
+@import "variables";
+@import "shared";
 
 .post-container {
 
-  @include shared.shadow;
+  @include shadow;
   border-radius: 0.3rem;
 
-  @include size.desktoptab {
+  @include desktoptab {
     width: 100%;
   }
 
-  @include size.mobile {
+  @include mobile {
     width: 100%;
     overflow: hidden;
     display: inline-block;
@@ -27,7 +27,7 @@
 
 .post-image-container {
 
-  @include size.desktoptab {
+  @include desktoptab {
     float: right;
     width: 120px;
     height: 120px;
@@ -37,7 +37,7 @@
     cursor: pointer;
   }
 
-  @include size.mobile {
+  @include mobile {
     float: none;
     margin-top: 0;
     margin-right: 0;
@@ -53,7 +53,7 @@
   width: 100%;
   display: block;
 
-  @include size.desktoptab {
+  @include desktoptab {
     border-radius: 0.3rem;
     -webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
@@ -64,7 +64,7 @@
     }
   }
 
-  @include size.mobile {
+  @include mobile {
     object-fit: cover;
     &:hover {
       transform: none;
@@ -78,13 +78,13 @@
   margin-right: auto;
   overflow: hidden;
   border-radius: 0.3rem;
-  @include shared.shadow;
+  @include shadow;
 
-  @include size.desktoptab {
+  @include desktoptab {
     max-width: 40%;
   }
 
-  @include size.mobile {
+  @include mobile {
     max-width: 90%;
   }
 
@@ -107,10 +107,10 @@
   object-fit: cover;
   display: block;
   
-  @include size.desktoptab {
+  @include desktoptab {
     height: 400px;
   }
-  @include size.mobile {
+  @include mobile {
     width: 80%;
   }
 }
@@ -119,7 +119,7 @@
 
   vertical-align: top;
 
-  @include size.desktoptab {
+  @include desktoptab {
     margin-top: 2rem;
     margin-left: 2rem;
     max-width: 69%;
@@ -127,7 +127,7 @@
     cursor: pointer;
   }
 
-  @include size.mobile {
+  @include mobile {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -167,7 +167,7 @@
   margin-bottom: 1rem;
   display: inline-block;
 
-  @include size.desktoptab {
+  @include desktoptab {
     cursor: pointer;
   }
 
@@ -176,11 +176,11 @@
 @mixin post-font {
   font-family: $post-font-family;
 
-  @include size.desktoptab {
+  @include desktoptab {
     font-size: $post-font-size;
   }
 
-  @include size.mobile {
+  @include mobile {
     font-size: $post-font-size-mobile;
   }
 
@@ -192,11 +192,11 @@
   color: $post-title-color;
   display: inline-block;
 
-  @include size.desktoptab {
+  @include desktoptab {
     font-size: $post-title-font-size;
   }
 
-  @include size.mobile {
+  @include mobile {
     font-size: $post-title-font-size-mobile;
     padding-bottom: 0.2rem;
   }

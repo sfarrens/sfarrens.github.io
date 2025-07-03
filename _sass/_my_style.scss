@@ -1,20 +1,20 @@
 // Import SCSS variables
-@use "variables" as *;
-@use "shared";
-@use "size";
+@import "variables";
+@import "shared";
+@import "size";
 // Import SCSS files
-@use "about";
-@use "blog";
-@use "code";
-@use "cv";
-@use "footer";
-@use "home";
-@use "markdown";
-@use "navigation";
-@use "post";
-@use "pub";
-@use "toc";
-@use "travel";
+@import "about";
+@import "blog";
+@import "code";
+@import "cv";
+@import "footer";
+@import "home";
+@import "markdown";
+@import "navigation";
+@import "post";
+@import "pub";
+@import "toc";
+@import "travel";
 
 //Set basic properties
 html {
@@ -71,12 +71,12 @@ table {
   overflow: auto;
   font-weight: $body-font-weight;
 
-  @include size.desktoptab {
+  @include desktoptab {
     max-width: 73%;
     padding: 2rem 6rem;
     font-size: $body-font-size;
   }
-  @include size.mobile {
+  @include mobile {
     max-width: 90%;
     padding: 2rem 3rem;
     font-size: $body-font-size-mobile;
@@ -93,11 +93,11 @@ table {
       border-bottom: 3px solid $h1-underline-color;
     }
 
-    @include size.desktoptab {
+    @include desktoptab {
       font-size: $h1-font-size;
     }
 
-    @include size.mobile {
+    @include mobile {
       font-size: $h1-font-size-mobile;
     }
 
@@ -114,11 +114,11 @@ table {
       border-bottom: 2px solid $heading-underline-color;
     }
 
-    @include size.desktoptab {
+    @include desktoptab {
       font-size: $h2-font-size;
     }
 
-    @include size.mobile {
+    @include mobile {
       font-size: $h2-font-size-mobile;
     }
 
@@ -128,11 +128,11 @@ table {
     color: $heading-color;
     font-weight: $heading-font-weight;
 
-    @include size.desktoptab {
+    @include desktoptab {
       font-size: $h3-font-size;
     }
 
-    @include size.mobile {
+    @include mobile {
       font-size: $h3-font-size-mobile;
     }
 
@@ -160,11 +160,11 @@ table {
         color: #7a7a7a;
     }
 
-    @include size.desktoptab {
+    @include desktoptab {
       font-size: $h5-font-size;
     }
 
-    @include size.mobile {
+    @include mobile {
       font-size: $h5-font-size-mobile;
     }
 

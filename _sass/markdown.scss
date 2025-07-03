@@ -1,13 +1,13 @@
-@use "size";
-@use "variables" as *;
+@import "size";
+@import "variables";
 
 .md-image {
 
-  @include size.desktoptab {
+  @include desktoptab {
     width: 400px;
   }
 
-  @include size.mobile {
+  @include mobile {
     width: 80%;
   }
 
