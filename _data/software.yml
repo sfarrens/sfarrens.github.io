@@ -1,0 +1,62 @@
+# Software projects displayed as thumbnail cards on the software page.
+# Each entry links to GitHub (or docs if github is absent).
+
+- title: ShapePipe
+  image: shapepipe_mask.png
+  language: Python
+  github: https://github.com/CosmoStat/shapepipe
+  docs: https://cosmostat.github.io/shapepipe
+  description: "A modular weak-lensing processing and analysis pipeline developed at CEA Paris-Saclay."
+
+- title: "Python Sparse data Analysis Package (PySAP)"
+  image: pysap.png
+  language: Python
+  github: https://github.com/CEA-COSMIC/pysap
+  docs: https://python-pysap.readthedocs.io/en/latest/
+  pypi: https://pypi.org/project/python-pySAP/
+  description: "Image reconstruction and analysis toolbox for astrophysics and MRI, leveraging sparse and low-rank methods."
+
+- title: ModOpt
+  image: modopt_logo.png
+  language: Python
+  github: https://github.com/CEA-COSMIC/ModOpt
+  docs: https://cea-cosmic.github.io/ModOpt/
+  pypi: https://pypi.org/project/modopt/
+  description: "Modular optimisation tools for solving inverse problems; provides a flexible framework for iterative algorithms."
+
+- title: "Super Friends-of-Friends (SFoF)"
+  image: cluster.png
+  language: C++
+  github: https://github.com/sfarrens/sfof
+  description: "Friends-of-friends galaxy cluster detection algorithm operating in spectroscopic or photometric redshift space."
+
+- title: SF_Deconvolve
+  image: sf_deconvolve.png
+  language: Python
+  github: https://github.com/sfarrens/sf_deconvolve
+  description: "PSF deconvolution using low-rank approximation and sparsity, supporting spatially varying PSF stacks."
+
+- title: SF_Tools
+  language: Python
+  github: https://github.com/sfarrens/sf_tools
+  docs: https://sfarrens.github.io/sf_tools/
+  pypi: https://pypi.org/project/sf_tools/
+  description: "Python modules for image analysis, signal processing, and statistics."
+
+- title: Pycymatch
+  image: pycymatch.jpg
+  language: Python
+  github: https://github.com/sfarrens/pycymatch
+  description: "Cylindrical matching code for comparing cluster detection catalogues against simulated dark matter halo catalogues."
+
+- title: "Cluster Profile Code (CPC)"
+  image: profile.png
+  language: Python
+  github: https://github.com/sfarrens/cluster_profile
+  description: "Analysis code for computing cluster profiles and comparing cluster detection algorithm performance."
+
+- title: BigMac
+  image: bigmac_logo_red.png
+  language: CMake
+  github: https://github.com/sfarrens/bigmac
+  description: "CMake variables that facilitate compiling C/C++ code on macOS using the default clang compiler."

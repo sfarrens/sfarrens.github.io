@@ -2,6 +2,118 @@
 @import "shared";
 @import "size";
 
+// ── Hero section ──────────────────────────────────────────────────────────────
+
+.about-hero {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(135deg, #fdf6f6 0%, #f5f8fd 100%);
+  @include shadow;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.25rem;
+  }
+}
+
+.about-hero-image-wrap {
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  @include shadow;
+
+  @include desktop { width: 200px; height: 220px; }
+  @include tablet  { width: 170px; height: 190px; }
+  @include mobile  { width: 160px; height: 180px; }
+}
+
+.about-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.about-hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.about-hero-name {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: $h1-color;
+  margin: 0;
+
+  // Suppress the underline decoration from .main-content h2
+  &:after { display: none; }
+}
+
+.about-hero-tagline {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: $body-text-color;
+  margin: 0;
+  font-weight: 300;
+}
+
+.about-hero-position {
+  font-size: 0.9rem;
+  color: $pub-author-color;
+  margin: 0 0 0.5rem;
+  font-style: italic;
+}
+
+.about-hero-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+
+  @include mobile { justify-content: center; }
+}
+
+.about-hero-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  @include shadow;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.about-hero-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+.about-hero-icon--zoom {
+  width: 36px;
+  height: 36px;
+  transform: scale(1.3);
+}
+
+// ── Legacy about-image (kept for any old pages that still use it) ─────────────
+
 .about-image-container {
   margin-left: auto;
   margin-right: auto;
@@ -11,15 +123,9 @@
   border-radius: 0.3rem;
   @include shadow;
 
-  @include desktoptab {
-    height: 25rem;
-    width: 30rem;
-  }
-
-  @include mobile {
-    height: 45rem;
-    width: 80%;
-  }
+  @include desktop { height: 25rem; width: 30rem; }
+  @include tablet  { height: 22rem; width: 26rem; }
+  @include mobile  { width: 90%; aspect-ratio: 4 / 3; }
 }
 
 .about-image {
@@ -40,13 +146,14 @@
   margin: 1rem;
   padding-bottom: 1rem;
   font-weight: 300;
-  @include mobile {
-    font-size: 3rem;
-  }
 }
 
+// ── Inline content elements ───────────────────────────────────────────────────
+
 .about-cs-logo {
-  width: 450px;
+  @include desktop { width: 450px; }
+  @include tablet  { width: 340px; }
+  @include mobile  { width: 100%; }
 }
 
 .about-iframe-container {
@@ -58,16 +165,9 @@
   border-radius: 0.3rem;
   overflow: hidden;
 
-  @include desktoptab {
-    padding-top: 33.75%;
-    width: 60%;
-  }
-
-  @include mobile {
-    padding-top: 56.25%;
-    width: 100%;
-  }
-
+  @include desktop { padding-top: 33.75%; width: 60%; }
+  @include tablet  { padding-top: 45%;    width: 80%; }
+  @include mobile  { padding-top: 56.25%; width: 100%; }
 }
 
 .about-iframe {
@@ -78,4 +178,19 @@
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+// ── Dark mode ─────────────────────────────────────────────────────────────────
+
+body.dark-mode .about-hero {
+  background: linear-gradient(135deg, $dm-surface 0%, $dm-hover 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .about-hero-name     { color: #fff; }
+body.dark-mode .about-hero-tagline  { color: $dm-text; }
+body.dark-mode .about-hero-position { color: $dm-muted; }
+body.dark-mode .about-hero-icon-link {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }

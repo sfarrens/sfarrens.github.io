@@ -2,11 +2,14 @@
 layout: default
 ---
 
-<br>
+{% if page.image %}
 <div class="in-post-image-container">
   <img src="{{ site.image_path }}/{{ page.image }}" class="in-post-image">
 </div>
-<br>
-<br>
+{% endif %}
+
+{% if page.category == 'blog' %}
+<p class="in-post-date">{{ page.date | date: "%-d %B %Y" }}</p>
+{% endif %}
 
 {{ content }}

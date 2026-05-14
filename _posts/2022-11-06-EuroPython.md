@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 
 **<a href="https://ep2022.europython.eu/" target="_blank">EuroPython 2022</a>**
 
-This year I was fortunate enough to be selected to give a talk about [ShapePipe](/soft/2022/07/06/shapepipe_soft.html) at the EuroPython 2022 conference in Dublin. It was fun going back to the city where I was born and seeing how much it has changed. The conference itself was quite interesting, particularly to learn about some new Python tools and ways in which people are using Python in different domains (you can find a summary of some of things I learned about in the [Twitter thread](https://twitter.com/Sam_Farrens/status/1549065554430152704?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1549065554430152704%7Ctwgr%5E45305b10fbf0f24bde9834dfb1f6c41535b15077%7Ctwcon%5Es1_&ref_url=http%3A%2F%2F127.0.0.1%3A4000%2Fblog%2F2022%2F11%2F06%2FEuroPython.htmlpresentation) below). It was also a good challenge for me personally in preparing a presentation on scientific software for a primarily non-academic audience (check out the [video below](#presentation) to see how it went).
+This year I was fortunate enough to be selected to give a talk about [ShapePipe](https://github.com/CosmoStat/shapepipe) at the EuroPython 2022 conference in Dublin. It was fun going back to the city where I was born and seeing how much it has changed. The conference itself was quite interesting, particularly to learn about some new Python tools and ways in which people are using Python in different domains (you can find a summary of some of things I learned about in the [Twitter thread](https://twitter.com/Sam_Farrens/status/1549065554430152704?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1549065554430152704%7Ctwgr%5E45305b10fbf0f24bde9834dfb1f6c41535b15077%7Ctwcon%5Es1_&ref_url=http%3A%2F%2F127.0.0.1%3A4000%2Fblog%2F2022%2F11%2F06%2FEuroPython.htmlpresentation) below). It was also a good challenge for me personally in preparing a presentation on scientific software for a primarily non-academic audience (check out the [video below](#presentation) to see how it went).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Last week I travelled to <a href="https://twitter.com/hashtag/Dublin?src=hash&amp;ref_src=twsrc%5Etfw">#Dublin</a> for <a href="https://twitter.com/hashtag/EuroPython2022?src=hash&amp;ref_src=twsrc%5Etfw">#EuroPython2022</a> and had a great time. Here is a thread about some things I learned and my experience overall. 🧵👇<a href="https://twitter.com/europython?ref_src=twsrc%5Etfw">@europython</a> <a href="https://twitter.com/hashtag/Python?src=hash&amp;ref_src=twsrc%5Etfw">#Python</a></p>&mdash; Samuel Farrens (@Sam_Farrens) <a href="https://twitter.com/Sam_Farrens/status/1549065554430152704?ref_src=twsrc%5Etfw">July 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -47,7 +47,4 @@ We hope that some of the things we have learned could be useful to other teams, 
 
 ## Presentation
 
-<div class="about-iframe-container">
-  <iframe src="https://www.youtube.com/embed/jz4-qekuDUs" frameborder="0" allowfullscreen
-    class="about-iframe"></iframe>
-</div>
+{% include youtube.html id="jz4-qekuDUs" title="ShapePipe at EuroPython 2022" %}

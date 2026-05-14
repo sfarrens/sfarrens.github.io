@@ -1,6 +1,7 @@
 ---
 title: Introduction to Python
 category: tutor
+tag: Python
 image: python.png
 github: https://github.com/CosmoStat/Tutorials/tree/python
 binder: https://mybinder.org/v2/gh/CosmoStat/Tutorials/python

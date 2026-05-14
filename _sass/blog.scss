@@ -10,56 +10,56 @@
   justify-content: flex-start;
   gap: 2rem;
   margin: 0 auto;
-  max-width: 1200px;
+
+  @include desktop { max-width: 1200px; }
+  @include tablet  { gap: 1.5rem; }
+  @include mobile  { gap: 1rem; justify-content: center; }
 }
 
 .blog {
   cursor: pointer;
-  margin: 1rem;
   border-radius: 0.3rem;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
   display: inline-block;
   vertical-align: top;
-  width: 300px;
   transition: box-shadow 0.2s;
   position: relative;
 
+  @include desktop { width: 300px; margin: 1rem; }
+  @include tablet  { width: calc(50% - 2rem); margin: 0; }
+  @include mobile  { width: 100%; margin: 0; }
+
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15), 0 12px 40px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15), 0 12px 40px 0 rgba(0, 0, 0, 0.12);
     opacity: 0.95;
   }
 }
 
-.blog-post {
-  position: relative;
-  @include post-box(435px, 435px, 312px, none);
-}
-
 .blog-image {
-  @include post-box-image(250px);
+  width: 100%;
+  object-fit: cover;
+  display: block;
+
+  @include desktop { height: 200px; }
+  @include tablet  { height: 180px; }
+  @include mobile  { height: 180px; }
 }
 
 .blog-text-container {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  max-height: 145px;
+  margin: 0.75rem 1rem 1rem;
   overflow: hidden;
+
+  @include desktop { max-height: 145px; }
 }
 
 .blog-excerpt {
   @include pub-font;
   color: $body-text-color;
 
-  @include desktoptab {
-    font-size: $pub-excerpt-font-size;
-  }
-
-  @include mobile {
-    font-size: $pub-excerpt-font-size-mobile;
-  }
+  @include desktoptab { font-size: $pub-excerpt-font-size; }
+  @include mobile     { font-size: $pub-excerpt-font-size-mobile; }
 }
 
 .blog-tag {

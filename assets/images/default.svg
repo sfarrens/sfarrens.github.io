@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f3ef"/>
+      <stop offset="100%" stop-color="#e2dbd2"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="1.1" fill="#cdc6be"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#dots)" opacity="0.55"/>
+
+  <!-- Thin orbit ring -->
+  <circle cx="400" cy="300" r="128" fill="none" stroke="#c0584e" stroke-width="1.2" opacity="0.18"/>
+
+  <!-- 4-pointed sparkle — main arms -->
+  <path d="M400,205 L418,282 L495,300 L418,318 L400,395 L382,318 L305,300 L382,282 Z"
+        fill="#c0584e" opacity="0.20"/>
+
+  <!-- 4-pointed sparkle rotated 45° (smaller, for 8-point star effect) -->
+  <path d="M456,244 L418,284 L456,300 L418,316 L456,356 L382,316 L344,300 L382,284 Z"
+        fill="#c0584e" opacity="0.10" transform="rotate(45 400 300)"/>
+
+  <!-- Centre dot -->
+  <circle cx="400" cy="300" r="7" fill="#c0584e" opacity="0.35"/>
+
+  <!-- Four accent dots along the ring -->
+  <circle cx="400" cy="172" r="3.5" fill="#c0584e" opacity="0.25"/>
+  <circle cx="528" cy="300" r="3.5" fill="#c0584e" opacity="0.25"/>
+  <circle cx="400" cy="428" r="3.5" fill="#c0584e" opacity="0.25"/>
+  <circle cx="272" cy="300" r="3.5" fill="#c0584e" opacity="0.25"/>
+</svg>

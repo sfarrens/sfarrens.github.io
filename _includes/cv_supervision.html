@@ -1,0 +1,16 @@
+{% for group in include.groups %}
+<details class="cv-collapsible" open>
+<summary class="cv-collapsible-header">{{ group.title }}</summary>
+<div class="cv-timeline">
+{% for item in group.items %}
+  <div class="cv-timeline-item">
+    <div class="cv-timeline-dot"></div>
+    <div class="cv-timeline-content">
+      {% if item.dates %}<span class="cv-timeline-dates">{{ item.dates }}</span>{% endif %}
+      {% if item.role %}<p class="cv-timeline-role">{{ item.role | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>
+</details>
+{% endfor %}

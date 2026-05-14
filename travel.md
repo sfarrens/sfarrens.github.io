@@ -31,6 +31,8 @@ visited_countries:
   - Liechtenstein
   - Lithuania
   - Luxembourg
+  - Malta
+  - Mexico
   - Monaco
   - Montenegro
   - Netherlands

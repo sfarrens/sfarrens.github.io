@@ -1,0 +1,13 @@
+{% if post.visibility == "public" %}
+<div class="data-card blog-card" data-tag="{{ post.tag }}">
+  <a href="{{ post.url }}" class="data-card-image-link">
+    <img src="{{ site.image_path }}/{{ post.image | default: 'default.svg' }}" alt="{{ post.title }}" class="data-card-image" loading="lazy">
+  </a>
+  <div class="data-card-body">
+    {% if post.tag %}<span class="data-card-lang">{{ post.tag }}</span>{% endif %}
+    <span class="data-card-date">{{ post.date | date: "%-d %B %Y" }}</span>
+    <a href="{{ post.url }}" class="data-card-title">{{ post.title }}</a>
+    <p class="data-card-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+  </div>
+</div>
+{% endif %}

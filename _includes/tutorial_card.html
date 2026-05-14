@@ -1,0 +1,25 @@
+{% assign link = post.url %}
+<div class="data-card tutorial-card" data-tag="{{ post.tag }}">
+  <a href="{{ link }}" class="data-card-image-link">
+    <img src="{{ site.image_path }}/{{ post.image | default: 'default.svg' }}" alt="{{ post.title }}" class="data-card-image" loading="lazy">
+  </a>
+  <div class="data-card-body">
+    {% if post.tag %}<span class="data-card-lang">{{ post.tag }}</span>{% endif %}
+    <a href="{{ link }}" class="data-card-title">{{ post.title }}</a>
+    {% if post.excerpt %}
+    <p class="data-card-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+    {% endif %}
+    <div class="data-card-links">
+      {% if post.github %}
+      <a href="{{ post.github }}" target="_blank" title="GitHub">
+        <img src="{{ site.image_path }}/github.png" class="data-card-icon" alt="GitHub" loading="lazy">
+      </a>
+      {% endif %}
+      {% if post.binder %}
+      <a href="{{ post.binder }}" target="_blank" title="Binder">
+        <img src="{{ site.image_path }}/binder.png" class="data-card-icon" alt="Binder" loading="lazy">
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

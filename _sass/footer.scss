@@ -4,11 +4,12 @@
 .site-footer {
   padding-top: 1.0rem;
   padding-bottom: 1.0rem;
-  background-color: $footer-bg-color;
+  background-color: $nav-bg-color;
+  border-top: 1px solid $nav-border-color;
 }
 
 .site-footer-content {
-  color: $footer-text-color;
+  color: $nav-link-color;
   font-weight: $footer-font-weight;
   text-align: center;
 

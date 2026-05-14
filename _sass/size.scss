@@ -1,22 +1,45 @@
-@import "variables";
+// Breakpoints: phone ≤600px, tablet 601–960px, desktop ≥961px
+$mobile-max: 600px;
+$tablet-max: 960px;
 
-@mixin desktoptab {
-  @media screen and (min-width: #{$mobile-breakpoint}) {
+@mixin desktop {
+  @media screen and (min-width: #{$tablet-max + 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: #{$mobile-max + 1px}) and (max-width: #{$tablet-max}) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media screen and (max-width: #{$mobile-breakpoint}) {
+  @media screen and (max-width: #{$mobile-max}) {
     @content;
   }
 }
 
-.mobile {
-    display: none;
+// tablet + desktop (601px+) — replaces old desktoptab which was ≥1000px
+@mixin desktoptab {
+  @media screen and (min-width: #{$mobile-max + 1px}) {
+    @content;
+  }
 }
 
-@media screen and (max-width: #{$mobile-breakpoint}) {
-      .mobile {display: block;}
-      .desktop {display: none;}
+// tablet + mobile (up to 960px)
+@mixin tabletmobile {
+  @media screen and (max-width: #{$tablet-max}) {
+    @content;
+  }
+}
+
+// .mobile: visible only on phone; .desktop: visible on tablet and up
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: #{$mobile-max}) {
+  .mobile { display: block; }
+  .desktop { display: none; }
 }

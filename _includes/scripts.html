@@ -1,4 +1,73 @@
 <script src="{{ site.baseurl }}/assets/js/responsive.js"></script>
+
+<script>
+// Set --nav-height and --toc-height so the sticky bar offset and
+// scroll-margin-top on headings are always accurate.
+(function () {
+  var nav = document.querySelector('nav');
+  var toc = document.getElementById('markdown-toc');
+
+  function setOffsets() {
+    document.documentElement.style.setProperty(
+      '--nav-height', (nav ? nav.offsetHeight : 0) + 'px'
+    );
+    document.documentElement.style.setProperty(
+      '--toc-height', (toc ? toc.offsetHeight : 0) + 'px'
+    );
+  }
+  setOffsets();
+  window.addEventListener('resize', setOffsets);
+})();
+
+// Sticky TOC: highlight active section on scroll; update immediately on click.
+(function () {
+  var toc = document.getElementById('markdown-toc');
+  if (!toc) return;
+
+  var links = Array.prototype.slice.call(toc.querySelectorAll('a'));
+  var sections = links.map(function (link) {
+    var id = link.getAttribute('href').replace('#', '');
+    return { link: link, section: document.getElementById(id) };
+  }).filter(function (item) { return item.section; });
+
+  if (!sections.length) return;
+
+  function setActive(link) {
+    links.forEach(function (l) { l.classList.remove('toc-active'); });
+    link.classList.add('toc-active');
+  }
+
+  setActive(sections[0].link);
+
+  if (!('IntersectionObserver' in window)) return;
+
+  // After clicking a pill the browser scrolls smoothly; suppress the observer
+  // for ~800 ms so the clicked pill stays highlighted during the animation.
+  var clicking = false;
+
+  links.forEach(function (link) {
+    link.addEventListener('click', function () {
+      setActive(link);
+      clicking = true;
+      setTimeout(function () { clicking = false; }, 800);
+    });
+  });
+
+  var observer = new IntersectionObserver(function (entries) {
+    if (clicking) return;
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var match = sections.find(function (s) { return s.section === entry.target; });
+      if (match) setActive(match.link);
+    });
+  }, {
+    rootMargin: '-10% 0px -80% 0px',
+    threshold: 0
+  });
+
+  sections.forEach(function (s) { observer.observe(s.section); });
+})();
+</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
@@ -8,24 +77,32 @@
 
 <script>
 (function() {
-  const toggle = document.querySelector('.nav-dark-toggle');
+  const toggle = document.querySelector('.theme-switch-input');
   const body = document.body;
-  // Respect system preference on first load
-  if (localStorage.getItem('dark-mode') === null && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    body.classList.add('dark-mode');
-    toggle.textContent = '☀️';
+
+  function applyDark(isDark) {
+    body.classList.toggle('dark-mode', isDark);
+    if (toggle) toggle.checked = isDark;
   }
-  // Load preference
-  if (localStorage.getItem('dark-mode') === 'true') {
-    body.classList.add('dark-mode');
-    toggle.textContent = '☀️';
+
+  // Freeze transitions while restoring saved state so the slider doesn't
+  // animate on every page load in dark mode.
+  body.classList.add('no-transition');
+  const stored = localStorage.getItem('dark-mode');
+  if (stored === null) {
+    applyDark(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  } else {
+    applyDark(stored === 'true');
   }
-  toggle.addEventListener('click', function() {
-    body.classList.toggle('dark-mode');
-    const isDark = body.classList.contains('dark-mode');
-    toggle.textContent = isDark ? '☀️' : '🌙';
-    localStorage.setItem('dark-mode', isDark);
-  });
+  body.offsetHeight; // force reflow before re-enabling transitions
+  body.classList.remove('no-transition');
+
+  if (toggle) {
+    toggle.addEventListener('change', function() {
+      applyDark(toggle.checked);
+      localStorage.setItem('dark-mode', toggle.checked);
+    });
+  }
 })();
 </script>
 
@@ -56,11 +133,161 @@
 
   // Add scroll event listener
   window.addEventListener('scroll', handleScroll);
-  
+
   // Handle window resize
   window.addEventListener('resize', handleScroll);
-  
+
   // Initial check
   handleScroll();
+})();
+</script>
+
+<script>
+// Wrap markdown tables in a scrollable .table-wrap div.
+(function() {
+  document.querySelectorAll('.main-content table').forEach(function(tbl) {
+    if (tbl.parentNode.classList.contains('table-wrap')) return;
+    var wrap = document.createElement('div');
+    wrap.className = 'table-wrap';
+    tbl.parentNode.insertBefore(wrap, tbl);
+    wrap.appendChild(tbl);
+  });
+})();
+</script>
+
+<script>
+// Transform > [!NOTE/TIP/IMPORTANT/WARNING/CAUTION] blockquotes into styled alerts.
+(function() {
+  var ALERTS = {
+    NOTE: {
+      label: 'Note',
+      icon: '<svg viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>'
+    },
+    TIP: {
+      label: 'Tip',
+      icon: '<svg viewBox="0 0 16 16"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"/></svg>'
+    },
+    IMPORTANT: {
+      label: 'Important',
+      icon: '<svg viewBox="0 0 16 16"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>'
+    },
+    WARNING: {
+      label: 'Warning',
+      icon: '<svg viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>'
+    },
+    CAUTION: {
+      label: 'Caution',
+      icon: '<svg viewBox="0 0 16 16"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>'
+    },
+    DISCLAIMER: {
+      label: 'Disclaimer',
+      icon: '<svg viewBox="0 0 16 16"><path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.25.25 0 0 0-.174-.237Z"/></svg>'
+    }
+  };
+
+  var RE = /^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION|DISCLAIMER)\]\s*/i;
+
+  document.querySelectorAll('blockquote').forEach(function(bq) {
+    var firstP = bq.querySelector('p');
+    if (!firstP) return;
+    var match = firstP.textContent.match(RE);
+    if (!match) return;
+    var type = match[1].toUpperCase();
+    var cfg = ALERTS[type];
+
+    // Strip [!TYPE] token from the paragraph's HTML
+    firstP.innerHTML = firstP.innerHTML.replace(RE, '');
+    if (!firstP.textContent.trim()) firstP.parentNode.removeChild(firstP);
+
+    bq.classList.add('bq-alert', 'bq-alert--' + type.toLowerCase());
+
+    var header = document.createElement('p');
+    header.className = 'bq-alert-header';
+    header.innerHTML = cfg.icon + '<span class="bq-alert-label">' + cfg.label + '</span>';
+    bq.insertBefore(header, bq.firstChild);
+  });
+})();
+</script>
+
+<script>
+// Language label for code blocks
+(function() {
+  var LANG_NAMES = {
+    javascript: 'JavaScript', typescript: 'TypeScript',
+    python: 'Python', ruby: 'Ruby', bash: 'Bash', shell: 'Shell',
+    html: 'HTML', css: 'CSS', scss: 'SCSS', sass: 'Sass',
+    json: 'JSON', yaml: 'YAML', toml: 'TOML', xml: 'XML',
+    sql: 'SQL', php: 'PHP', java: 'Java', go: 'Go', rust: 'Rust',
+    swift: 'Swift', kotlin: 'Kotlin', liquid: 'Liquid', r: 'R',
+    cpp: 'C++', csharp: 'C#', powershell: 'PowerShell', makefile: 'Makefile'
+  };
+
+  document.querySelectorAll('div.highlighter-rouge').forEach(function(div) {
+    var classes = div.className.split(' ');
+    var langClass = null;
+    for (var i = 0; i < classes.length; i++) {
+      if (classes[i].indexOf('language-') === 0) { langClass = classes[i]; break; }
+    }
+    if (!langClass) return;
+    var lang = langClass.slice(9);
+    if (!lang) return;
+    var pre = div.querySelector('pre');
+    if (!pre) return;
+
+    var name = LANG_NAMES[lang] ||
+               (lang.length <= 4 ? lang.toUpperCase() : lang[0].toUpperCase() + lang.slice(1));
+
+    pre.classList.add('has-lang-label');
+    var lbl = document.createElement('span');
+    lbl.className = 'code-lang-label';
+    lbl.textContent = name;
+    pre.insertBefore(lbl, pre.firstChild);
+  });
+})();
+</script>
+
+<script>
+(function() {
+  var CLIPBOARD_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+  var CHECK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+
+  document.querySelectorAll('pre').forEach(function(pre) {
+    var btn = document.createElement('button');
+    btn.className = 'code-copy-btn';
+    btn.setAttribute('aria-label', 'Copy code');
+    btn.innerHTML = CLIPBOARD_ICON;
+    btn.addEventListener('click', function() {
+      var code = pre.querySelector('code');
+      var text = (code ? code : pre).innerText;
+      navigator.clipboard.writeText(text).then(function() {
+        btn.innerHTML = CHECK_ICON;
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.innerHTML = CLIPBOARD_ICON;
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+    pre.appendChild(btn);
+  });
+})();
+</script>
+
+<script>
+(function() {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 })();
 </script>

@@ -7,9 +7,10 @@ visibility: public
 layout: post
 ---
 
-Following the dramatic conclusion to the [2022 Men's FIFA World Cup in Qatar](https://en.wikipedia.org/wiki/2022_FIFA_World_Cup), I thought this might be a good time to answer the question that no one asked: *where was Ireland?* *
+Following the dramatic conclusion to the [2022 Men's FIFA World Cup in Qatar](https://en.wikipedia.org/wiki/2022_FIFA_World_Cup), I thought this might be a good time to answer the question that no one asked: *where was Ireland?*
 
-> *Note that in this blog post I am focusing on the [Republic of Ireland men's national football team](https://en.wikipedia.org/wiki/Republic_of_Ireland_national_football_team). I use the term Ireland throughout the post to refer either to the whole island or as a shorthand for the Republic of Ireland.
+> [!NOTE]
+> In this blog post I am focusing on the [Republic of Ireland men's national football team](https://en.wikipedia.org/wiki/Republic_of_Ireland_national_football_team). I use the term Ireland throughout the post to refer either to the whole island or as a shorthand for the Republic of Ireland.
 
 ## Contents
 {:.no_toc}
@@ -49,7 +50,7 @@ The Republic of Ireland failed to qualify for any of the World Cups held between
 
 Meanwhile, Northern Ireland did manage to qualify for three World Cups in that period: [1958 in Sweden](https://en.wikipedia.org/wiki/1958_FIFA_World_Cup), [1982 in Spain](https://en.wikipedia.org/wiki/1982_FIFA_World_Cup) and [1986 in Mexico](https://en.wikipedia.org/wiki/1986_FIFA_World_Cup). Ironically, [George Best](https://en.wikipedia.org/wiki/George_Best), arguably Northern Ireland's greatest player, never made it to a World Cup. Northern Ireland has not qualified for the World Cup since 1986, but did perform quite well at the [UEFA European Championship held in France in 2016](https://en.wikipedia.org/wiki/UEFA_Euro_2016).
 
-<img src="https://www.belfasttelegraph.co.uk/news/northern-ireland/9b822/40408180.ece/AUTOCROP/w1240h700/Football%20-%201970%20British%20Home%20Championship%20-%20Wales%201%20Northern%20Ireland%200%20Northern%20Irelands%20George%20Best%20at%20Vetch%20Field%20Swansea" class="in-post-content-image" alt="George Best">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/George_best_1976.jpg/500px-George_best_1976.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" class="in-post-content-image" alt="George Best">
 
 ## The Debut: 1990
 
@@ -59,7 +60,7 @@ The wait was finally over on the 11th of June 1990 when the Republic of Ireland 
 
 <img src="https://i.guim.co.uk/img/media/28269071804c59715156080d569d093fd53e263f/0_0_2810_1759/master/2810.jpg?width=620&quality=45&dpr=2&s=none" class="in-post-content-image" alt="Jack Charlton">
 
-##### We're all part of Jackie's Army, We're all off to Italy, And we'll really shake them up, When we win The World Cup, 'Cause Ireland are the greatest football team
+> We're all part of Jackie's Army, We're all off to Italy, And we'll really shake them up, When we win The World Cup, 'Cause Ireland are the greatest football team
 
 Ireland went on to earn a 0-0 draw against Egypt and another 1-1 draw against then reigning European champions, the Netherlands. It was the Dublin giant [Niall Quinn](https://en.wikipedia.org/wiki/Niall_Quinn) who provided the equaliser against the Dutch. Ireland finished second in group F, advancing to the knockout stage of the World Cup in their first ever appearance.
 
@@ -71,11 +72,12 @@ Ireland went on to earn a 0-0 draw against Egypt and another 1-1 draw against th
 | 4   | 🇪🇬 Egypt       | 3   | 0 | 2 | 1 | 1  | 2  | -1 | 2   |
 
 ### Republic of Ireland 🇮🇪 0-0 (a.e.t.) 🇷🇴 Romania
+> [!NOTE]
 > Ireland win 5-4 on penalties
 
 Ireland's round of 16 opponents were Romania, featuring the sublime [Gheorghe Hagi](https://en.wikipedia.org/wiki/Gheorghe_Hagi). The game finished 0-0 and went to penalties. Kevin Sheedy, [Ray Houghton](https://en.wikipedia.org/wiki/Ray_Houghton), [Andy Townsend](https://en.wikipedia.org/wiki/Andy_Townsend), [Tony Cascarino](https://en.wikipedia.org/wiki/Tony_Cascarino) and [David O'Leary](https://en.wikipedia.org/wiki/David_O%27Leary) put all five of Ireland's penalties away, but it was Donegal's own [Packie Bonner](https://en.wikipedia.org/wiki/Packie_Bonner) who would become a national hero when he stopped [Daniel Timofte](https://en.wikipedia.org/wiki/Daniel_Timofte)'s spot kick and sent Ireland to the quarter-finals.
 
-<img src="https://www.cricketsoccer.com/wp-content/uploads/2020/06/gettyimages-1257149jpg-js326789124.jpg" class="in-post-content-image" alt="Packie Bonner, Italia 90">
+<img src="https://focus.independent.ie/thumbor/OXrBzSXWaNjzglT54_gBv_JWHXc=/0x122:2167x1570/960x640/prod-mh-ireland/d69da70e-517b-4d7a-b1f6-761375cd24e5/07bb204b-1189-4bd5-915b-49c91ce59c5e/d69da70e-517b-4d7a-b1f6-761375cd24e5.jpg" class="in-post-content-image" alt="Packie Bonner, Italia 90">
 
 ### Republic of Ireland 🇮🇪 0-1 🇮🇹 Italy
 
@@ -111,7 +113,7 @@ Sadly Ireland's second appearance at the World Cup was to be shorter lived than 
 
 In 1996, Jack Charlton was replaced by another English manager, [Mick McCarthy](https://en.wikipedia.org/wiki/Mick_McCarthy). Under McCarthy Ireland managed to finish second in their qualification group for the [1998 World Cup in France](https://en.wikipedia.org/wiki/1998_FIFA_World_Cup), but lost 2-3 on aggregate to Belgium in the play-offs.
 
-##### Anyone that uses the word ‘quintessentially’ in a half-time talk is talking crap. - Mick McCarthy
+> Anyone that uses the word ‘quintessentially’ in a half-time talk is talking crap. - Mick McCarthy
 
 ## The Return: 2002
 
@@ -131,6 +133,8 @@ Ireland managed to grind out two 1-1 draws in group E against Cameroon and Germa
 | 4   | 🇸🇦 Saudi Arabia | 3  | 0 | 0 | 3 | 0  | 12 | -12 | 0  |
 
 ### Spain 🇪🇸 1-1 (a.e.t.) 🇮🇪 Republic of Ireland
+
+> [!NOTE]
 > Spain win 3-2 on penalties
 
 Ireland's last game at the World Cup to date was their round of 16 match against Spain. Spain took an early lead with a goal by [Fernando Morientes](https://en.wikipedia.org/wiki/Fernando_Morientes), but Ireland managed to hold on and won a penalty that Robbie Keane scored in the 90th minute. Ireland again survived the extra time and made it to a penalty shoot out. In contrast to 1990, Ireland only managed to score two out of their five penalty kicks, with both Robbie Keane and [Steve Finnan](https://en.wikipedia.org/wiki/Steve_Finnan) scoring. It was [Gaizka Mendieta](https://en.wikipedia.org/wiki/Gaizka_Mendieta) who sealed Ireland's fate scoring Spain's final kick and knocking Ireland out of the World Cup.

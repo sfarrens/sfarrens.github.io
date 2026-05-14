@@ -1,6 +1,7 @@
 ---
 title: Python Packaging Template
 category: tutor
+tag: Python
 image: python.png
 github: https://github.com/sfarrens/python_package_template
 layout: post-tutor

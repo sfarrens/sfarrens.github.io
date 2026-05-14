@@ -21,6 +21,7 @@ To generate this site I use Jekyll, a static site generator written in Ruby. Thi
 
 [<img src="{{ site.image_path }}/jekyll.jpg" class="md-image">](https://jekyllrb.com/)
 
+> [!TIP]
 > To get started with Jekyll I recommend following their [Step by Step tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/).
 
 Jekyll sites generally have the following structure:
@@ -87,6 +88,7 @@ Most of the work of getting your site to look the way you want it to is in defin
 
 [<img src="{{ site.image_path }}/sass.png" class="md-image">](https://sass-lang.com/)
 
+> [!TIP]
 > To get started with SASS check of their [guide](https://sass-lang.com/guide).
 
 Sass has several very cool features including nesting and *mixins*. Mixins allow you define reusable pieces of CSS that you can include in your Sass files (`.scss`).
@@ -115,7 +117,8 @@ You can host your site on any GitHub repository you have access to by simply cre
 
 You can add CI tests for your website on [Travis CI](https://travis-ci.org/) by adding a `.travis.yml` file following the steps on the [Jekyll website](https://jekyllrb.com/docs/continuous-integration/travis-ci/).
 
-> Note: If you have any trouble getting `htmlproofer` to work with arguments try the following.
+> [!TIP]
+> If you have any trouble getting `htmlproofer` to work with arguments try the following.
 
 ```yaml
 install:

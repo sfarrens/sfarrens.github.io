@@ -1,0 +1,99 @@
+# Papers are displayed newest-first as thumbnail cards on the publications page.
+# Each entry links directly to arXiv (or doi/ads if arxiv is absent).
+# No individual post pages are generated from this file.
+
+- title: "ShapePipe: A new shape measurement pipeline and weak-lensing application to UNIONS/CFIS data"
+  image: shapepipe_e1.png
+  year: 2022
+  journal: A&A
+  authors: "A. Guinot, M. Kilbinger, S. Farrens, et al."
+  arxiv: https://arxiv.org/abs/2204.04798
+  ads: https://ui.adsabs.harvard.edu/abs/2022A%26A...666A.162G/abstract
+  pdf: https://arxiv.org/pdf/2204.04798
+  bibtex: https://ui.adsabs.harvard.edu/abs/2022A%26A...666A.162G/exportcitation
+  doi: https://doi.org/10.1051/0004-6361/202141847
+  excerpt: "First weak-lensing analysis of CFIS r-band data over 1,700 deg² yielding shapes for 40 million galaxies."
+
+- title: "ShapePipe: A modular weak-lensing processing and analysis pipeline"
+  image: shapepipe_mask.png
+  year: 2022
+  journal: A&A
+  authors: "S. Farrens, A. Guinot, M. Kilbinger, et al."
+  arxiv: https://arxiv.org/abs/2206.14689
+  ads: https://ui.adsabs.harvard.edu/abs/2022arXiv220614689F/abstract
+  pdf: https://arxiv.org/pdf/2206.14689
+  bibtex: https://ui.adsabs.harvard.edu/abs/2022arXiv220614689F/exportcitation
+  doi: https://doi.org/10.1051/0004-6361/202243970
+  excerpt: "First public release of ShapePipe, an open-source modular weak-lensing measurement and analysis pipeline written in Python."
+
+- title: "AMICO galaxy clusters in KiDS-DR3: measurement of the halo bias and power spectrum normalization from a stacked weak lensing analysis"
+  image: amico_cvsm.jpg
+  year: 2022
+  journal: MNRAS
+  authors: "L. Ingoglia, G. Covone, M. Sereno, ..., S. Farrens, et al."
+  arxiv: https://arxiv.org/abs/2201.01545
+  ads: https://ui.adsabs.harvard.edu/abs/2022MNRAS.511.1484I/abstract
+  pdf: https://arxiv.org/pdf/2201.01545
+  bibtex: https://ui.adsabs.harvard.edu/abs/2022MNRAS.511.1484I/exportcitation
+  doi: https://ui.adsabs.harvard.edu/link_gateway/2022MNRAS.511.1484I/doi:10.1093/mnras/stac046
+  excerpt: "Observational analysis of the halo bias-mass relation from ~7,000 AMICO galaxy cluster candidates in KiDS-DR3."
+
+- title: "Deep transfer learning for blended source identification in galaxy survey data"
+  image: blendhunter.png
+  year: 2021
+  journal: A&A
+  authors: "S. Farrens, A. Lacan, A. Guinot, A. Z. Vitorelli"
+  arxiv: https://arxiv.org/abs/2110.08180
+  ads: https://ui.adsabs.harvard.edu/abs/2021arXiv211008180F/abstract
+  pdf: https://arxiv.org/pdf/2110.08180
+  bibtex: https://ui.adsabs.harvard.edu/abs/2021arXiv211008180F/exportcitation
+  doi: https://doi.org/10.1051/0004-6361/202141166
+  excerpt: "BlendHunter: a deep-transfer-learning approach for automated identification of blended sources in galaxy survey data."
+
+- title: "PySAP: Python Sparse Data Analysis Package for multidisciplinary image processing"
+  image: pysap.png
+  year: 2020
+  journal: Astronomy and Computing
+  authors: "S. Farrens, A. Grigis, L. El Gueddari, et al."
+  arxiv: https://arxiv.org/abs/1910.08465
+  ads: https://ui.adsabs.harvard.edu/abs/2020A%26C....3200402F/abstract
+  pdf: https://arxiv.org/pdf/1910.08465.pdf
+  bibtex: https://ui.adsabs.harvard.edu/abs/2020A%26C....3200402F/exportcitation
+  doi: https://www.doi.org/10.1016/j.ascom.2020.100402
+  excerpt: "PySAP provides flexible tools for compressed sensing and image reconstruction in astrophysics and MRI."
+
+- title: "Euclid preparation. III. Galaxy cluster detection in the wide photometric survey, performance and algorithm selection"
+  image: euclid_sfof.png
+  year: 2019
+  journal: A&A
+  authors: "Euclid Collaboration; R. Adam, M. Vannier, ..., S. Farrens, et al."
+  arxiv: https://arxiv.org/abs/1906.04707
+  ads: https://ui.adsabs.harvard.edu/abs/2019A%26A...627A..23E/abstract
+  pdf: https://www.aanda.org/articles/aa/pdf/2019/07/aa35088-19.pdf
+  bibtex: https://ui.adsabs.harvard.edu/abs/2019A%26A...627A..23E/exportcitation
+  doi: https://www.doi.org/10.1051/0004-6361/201935088
+  excerpt: "Final results of the Euclid Cluster Finder Challenge selecting AMICO and PZWav for the Euclid pipeline."
+
+- title: "Space variant deconvolution of galaxy survey images"
+  image: deconv.png
+  year: 2017
+  journal: A&A
+  authors: "S. Farrens, J.-L. Starck, F. Ngolè Mboula"
+  arxiv: https://arxiv.org/abs/1703.02305
+  ads: https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..66F/abstract
+  pdf: https://www.aanda.org/articles/aa/pdf/2017/05/aa29709-16.pdf
+  bibtex: https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..66F/exportcitation
+  doi: https://www.doi.org/10.1051/0004-6361/201629709
+  excerpt: "Low-rank matrix approximation as regularisation prior for space-variant PSF deconvolution of galaxy images."
+
+- title: "Friends-of-friends groups and clusters in the 2SLAQ catalogue"
+  image: cluster.png
+  year: 2011
+  journal: MNRAS
+  authors: "S. Farrens, F. B. Abdalla, E. S. Cypriano, C. Sabiu, C. Blake"
+  arxiv: https://arxiv.org/abs/1106.5687
+  ads: https://ui.adsabs.harvard.edu/abs/2011MNRAS.417.1402F/abstract
+  pdf: https://ui.adsabs.harvard.edu/link_gateway/2011MNRAS.417.1402F/PUB_PDF
+  bibtex: https://ui.adsabs.harvard.edu/abs/2011MNRAS.417.1402F/exportcitation
+  doi: https://www.doi.org/10.1111/j.1365-2966.2011.19356.x
+  excerpt: "A catalogue of 313 galaxy groups and clusters from the 2SLAQ survey using a friends-of-friends algorithm."

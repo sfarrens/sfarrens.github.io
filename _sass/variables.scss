@@ -1,105 +1,124 @@
-// Breakpoints
-$mobile-breakpoint: 1000px !default;
+// ── Font stacks ───────────────────────────────────────────────────────────────
+// System-UI gives Inter on modern macOS, Segoe UI on Windows, Roboto on Android
+// — identical quality to a web font, zero external dependency.
+$font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+$font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
-// Navigation
-$nav-font-family: Gill Sans, sans-serif;
-$nav-font-size: 1.1rem;
-$nav-font-size-mobile: 3.1rem;
-$nav-font-weight: 300;
-$nav-bg-color: #FFFFFF !default;
-$nav-site-name-color: #353535 !default;
-$nav-site-font-weight: bold;
-$nav-line-color: #b5b4b4 !default;
-$nav-link-color: #646464 !default;
-$nav-link-hover-color: #eeafaf !default;
-$nav-border-color: #b5b4b4 !default;
+// ── Navigation ────────────────────────────────────────────────────────────────
+$nav-font-family:         $font-sans;
+$nav-font-size:           1.05rem;
+$nav-font-size-mobile:    1rem;
+$nav-font-weight:         400;
+$nav-bg-color:            #f5f3ef !default;
+$nav-site-name-color:     #1a1a1a !default;
+$nav-site-font-weight:    700;
+$nav-line-color:          #e4e1db !default;
+$nav-link-color:          #4a4744 !default;
+$nav-link-hover-color:    #c0584e !default;
+$nav-border-color:        #e4e1db !default;
 
-// Topic
-$topic-font-size: 1.5rem;
-$topic-font-size-mobile: 3.2rem;
-$topic-font-weight: 400;
+// ── Topic cards ───────────────────────────────────────────────────────────────
+$topic-font-size:         1.4rem;
+$topic-font-size-mobile:  1.1rem;
+$topic-font-weight:       500;
 
-// Text
-$h1-color: #000000 !default;
-$h1-font-size: 2.5rem;
-$h1-font-size-mobile: 3.5rem;
-$h1-font-weight: 300;
-$h1-underline-color: #db6e6e !default;
-$h2-font-size: 2.3rem;
-$h2-font-size-mobile: 4.1rem;
-$h3-font-size: 1.6rem;
-$h3-font-size-mobile: 3.4rem;
-$h5-color: #819198 !default;
-$h5-font-size: 1.3rem;
-$h5-font-size-mobile: 3.1rem;
-$h5-font-family: Georgia, serif;
-$h5-font-style: italic;
-$h5-font-weight: 300;
-$heading-color: #494c4e !default;
-$heading-font-weight: 300;
-$heading-small-font-weight: 400;
-$heading-underline-color: #db6e6e !default;
+// ── Heading type scale ────────────────────────────────────────────────────────
+$h1-color:               #1a1a1a !default;
+$h1-font-size:           2.2rem;
+$h1-font-size-tablet:    1.8rem;
+$h1-font-size-mobile:    1.6rem;
+$h1-font-weight:         600;
+$h1-underline-color:     #c0584e !default;
 
-// Body
-$body-font-family: Gill Sans, sans-serif;
-$body-font-size: 1.3rem;
-$body-font-size-mobile: 3.1rem;
-$body-font-weight: 300;
-$body-text-color: #494c4e !default;
-$body-link-color: #7394ce !default;
-$body-link-hover-color: #eeafaf !default;
-$strong-font-weight: 500;
+$h2-font-size:           1.9rem;
+$h2-font-size-tablet:    1.6rem;
+$h2-font-size-mobile:    1.4rem;
 
-// Markdown
-$blockquote-text-color: #819198 !default;
-$blockquote-font-style: italic;
-$blockquote-font-weight: 300;
-$blockquote-line-color: #db6e6e !default;
+$h3-font-size:           1.45rem;
+$h3-font-size-tablet:    1.3rem;
+$h3-font-size-mobile:    1.15rem;
 
-// Footer
-$footer-text-color: #a2a2a2 !default;
-$footer-bg-color: #353535 !default;
-$footer-font-size: 1.0rem;
-$footer-font-size-mobile: 2.0rem;
-$footer-font-weight: 300;
+$h5-color:               #7a7068 !default;   // muted warm gray for pull-quotes
+$h5-font-size:           1.2rem;
+$h5-font-size-mobile:    1.05rem;
+$h5-font-family:         Georgia, serif;
+$h5-font-style:          italic;
+$h5-font-weight:         400;
 
-// Code
-$code-font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-$code-font-size: 1rem;
-$code-font-size-mobile: 3rem;
-$code-bg-color: #f3f6fa !default;
-$code-text-color: #567482 !default;
-$code-text-color: #FF0000 !default;
+$heading-color:          #1a1a1a !default;
+$heading-font-weight:    500;
+$heading-small-font-weight: 500;
+$heading-underline-color: #c0584e !default;
 
-// Borders
-// $border-color: #adacac !default;
-$border-color: #606c71 !default;
-$table-border-color: #e9ebec !default;
-$hr-border-color: #eff0f1 !default;
+// ── Body ──────────────────────────────────────────────────────────────────────
+$body-font-family:       $font-sans;
+$body-font-size:         1.15rem;
+$body-font-size-tablet:  1.05rem;
+$body-font-size-mobile:  0.975rem;
+$body-font-weight:       400;
+$body-text-color:        #2c2825 !default;
+$body-link-color:        #c0584e !default;
+$body-link-hover-color:  #9e403a !default;
+$strong-font-weight:     600;
 
-// Posts
-$post-font-family: Gill Sans, sans-serif;
-$post-title-font-weight: 500;
-$post-title-color: #000000;
-$post-title-font-size: 1.3rem;
-$post-title-font-size-mobile: 3.1rem;
-$post-font-size: 1rem;
-$post-font-size-mobile: 3rem;
-$post-tag-color: #FFFFFF;
-$post-tag-font-size: 1.1rem;
-$post-tag-font-weight: 300;
-$post-tag-bg-color: #646464 !default;
+// ── Markdown / blockquotes ───────────────────────────────────────────────────
+$blockquote-text-color:  #6a6460 !default;
+$blockquote-font-style:  italic;
+$blockquote-font-weight: 400;
+$blockquote-line-color:  #c0584e !default;
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+$footer-text-color:      #9a9088 !default;
+$footer-bg-color:        #2c2825 !default;
+$footer-font-size:       0.9rem;
+$footer-font-size-mobile: 0.85rem;
+$footer-font-weight:     400;
+
+// ── Code ──────────────────────────────────────────────────────────────────────
+$code-font-family:       $font-mono;
+$code-font-size:         0.9rem;
+$code-font-size-mobile:  0.82rem;
+$code-bg-color:          #f4f6f9 !default;
+$code-text-color:        #476582 !default;
+
+// ── Borders ───────────────────────────────────────────────────────────────────
+$border-color:           #606c71 !default;
+$table-border-color:     #e8eaec !default;
+$hr-border-color:        #e8eaec !default;
+
+// ── Post cards ───────────────────────────────────────────────────────────────
+$post-font-family:       $font-sans;
+$post-title-font-weight: 600;
+$post-title-color:       #1a1a1a;
+$post-title-font-size:   1.05rem;
+$post-title-font-size-mobile: 0.975rem;
+$post-font-size:         0.9rem;
+$post-font-size-mobile:  0.875rem;
+$post-tag-color:         #FFFFFF;
+$post-tag-font-size:     0.8rem;
+$post-tag-font-weight:   500;
+$post-tag-bg-color:      #4a4744 !default;
 $in-post-info-font-weight: 600;
-$post-hover-color: #f0f0f0;
+$post-hover-color:       #f5f3ef;
 
-// Publications
-$pub-font-family: Gill Sans, sans-serif;
-$pub-font-weight: 300;
-$pub-author-color: #9e9e9e;
-$pub-author-font-size: 1.0rem;
-$pub-author-font-size-mobile: 2.5rem;
-$pub-year-color: #9e9e9e;
-$pub-year-font-size: 1.0rem;
-$pub-year-font-size-mobile: 2.5rem;
-$pub-excerpt-font-size: 1.0rem;
-$pub-excerpt-font-size-mobile: 2.5rem;
+// ── Dark mode palette ─────────────────────────────────────────────────────────
+$dm-bg:      #282c36 !default;   // dark slate body
+$dm-surface: #31353f !default;   // cards / panels
+$dm-hover:   #3b3f4c !default;   // hover state
+$dm-nav:     #1f222b !default;   // nav bar
+$dm-text:    #e8e4d8 !default;   // warm off-white text
+$dm-muted:   #9a96a6 !default;   // muted labels / meta
+$dm-accent:  #e0705a !default;   // terracotta accent
+
+// ── Publications ─────────────────────────────────────────────────────────────
+$pub-font-family:        $font-sans;
+$pub-font-weight:        400;
+$pub-author-color:       #7a7068;
+$pub-author-font-size:   0.9rem;
+$pub-author-font-size-mobile: 0.85rem;
+$pub-year-color:         #767676;
+$pub-year-font-size:     0.9rem;
+$pub-year-font-size-mobile: 0.85rem;
+$pub-excerpt-font-size:  0.9rem;
+$pub-excerpt-font-size-mobile: 0.85rem;

@@ -28,9 +28,10 @@ In this post I will share my opinions on Star Wars: The Clone Wars, which are en
 [Star Wars: The Clone Wars](https://en.wikipedia.org/wiki/Star_Wars%3A_The_Clone_Wars_(2008_TV_series)) is a computer animated TV series set in the Star Wars universe that follows on from the [2008 film of the same name](https://en.wikipedia.org/wiki/Star_Wars%3A_The_Clone_Wars_(film)) (for sake of this post I will treat the film as episode 0 of the TV series). The show takes place between [Star Wars: Episode II – Attack of the Clones](https://en.wikipedia.org/wiki/Star_Wars:_Episode_II_%E2%80%93_Attack_of_the_Clones) (22 BBY) and [Star Wars: Episode III – Revenge of the Sith
 ](https://en.wikipedia.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith) (19 BBY), and is centred around the conflict between the Galactic Republic and the Confederacy of Independent Systems (or Separatists).
 
+> [!NOTE]
 > BBY = Before the Battle of Yavin, *i.e.* the final act of [Star Wars: Episode IV – A New Hope](https://en.wikipedia.org/wiki/Star_Wars_(film)).
 
-<img src="https://starwarsblog.starwars.com/wp-content/uploads/2020/01/the-clone-wars-final-season-tall.jpg" class="in-post-content-image" alt="Star Wars: The Clone Wars">
+<img src="https://upload.wikimedia.org/wikipedia/en/7/72/Star_wars_the_clone_wars.jpg" class="in-post-content-image" alt="Star Wars: The Clone Wars">
 
 The show primarily follows the adventures of established characters from the prequel trilogy (such as Anakin Skywalker, Padmé Amidala and Obi-Wan Kenobi) and some characters created for the show (such as Ahsoka Tano, Captain Rex and Asajj Ventress). Overall, the narrative aims to fill in the gaps from the start of the clone wars until the events surrounding Order 66 (*i.e.* the execution of the Jedi knights).
 
@@ -42,7 +43,7 @@ The series ran for 6 continuous seasons from 2008 till 2014 and was only recentl
 
 Let's start on a positive note and talk about what is good about this series.
 
-##### As a whole I think it's good and I really enjoyed it. - Me
+> As a whole I think it's good and I really enjoyed it. - Me
 
 <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/TheMandalorian.jpg" class="in-post-content-image" alt="Din Djarin">
 
@@ -110,7 +111,7 @@ Not all of the bounty hunters that show up in the Clone Wars make much of impact
 
 #### Asajj Ventress
 
-<img src="https://upload.wikimedia.org/wikipedia/en/4/40/AsajjVentress.jpg" class="in-post-content-image" alt="Asajj Ventress">
+<img src="https://upload.wikimedia.org/wikipedia/en/1/18/Asajj_Ventress_CW.png" class="in-post-content-image" alt="Asajj Ventress">
 
 Ventress made her first appearance back in the [2003 2D animated Clone Wars series](https://en.wikipedia.org/wiki/Star_Wars:_Clone_Wars_(2003_TV_series)) (perhaps a topic for another post) and was a recurring character throughout the Clone Wars. Initially I was not a fan as she seemed to be just another one-dimensional villain and an excuse to have more random lightsaber duels in the series. This all changed in season 3 episodes 12-14, written by Katie Lucas (who wrote a lot of my favourite arcs). In this arc Ventress is on the run from her former master Dooku and takes refuge on her homeworld of Dathomir with the Nightsisters. This arc provided a backstory for Ventress and started a new more interesting path for the character to follow, which allowed her to evolve throughout the series and become one of my favourites from the show.
 

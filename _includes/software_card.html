@@ -1,0 +1,32 @@
+{% assign link = software.github | default: software.docs %}
+<div class="data-card software-card" data-language="{{ software.language }}">
+  <a href="{{ link }}" target="_blank" class="data-card-image-link">
+    <img src="{{ site.image_path }}/{{ software.image | default: 'default.svg' }}" alt="{{ software.title }}" class="data-card-image" loading="lazy">
+  </a>
+  <div class="data-card-body">
+    <a href="{{ link }}" target="_blank" class="data-card-title">{{ software.title }}</a>
+    {% if software.language %}
+    <span class="data-card-lang">{{ software.language }}</span>
+    {% endif %}
+    {% if software.description %}
+    <p class="data-card-excerpt">{{ software.description }}</p>
+    {% endif %}
+    <div class="data-card-links">
+      {% if software.github %}
+      <a href="{{ software.github }}" target="_blank" title="GitHub">
+        <img src="{{ site.image_path }}/github.png" class="data-card-icon" alt="GitHub" loading="lazy">
+      </a>
+      {% endif %}
+      {% if software.docs %}
+      <a href="{{ software.docs }}" target="_blank" title="Documentation">
+        <img src="{{ site.image_path }}/sphinx.png" class="data-card-icon" alt="Docs" loading="lazy">
+      </a>
+      {% endif %}
+      {% if software.pypi %}
+      <a href="{{ software.pypi }}" target="_blank" title="PyPI">
+        <img src="{{ site.image_path }}/pypi.png" class="data-card-icon" alt="PyPI" loading="lazy">
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

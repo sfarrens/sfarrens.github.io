@@ -1,6 +1,7 @@
 ---
 title: EuroSciPy Astronomical Image Processing
 category: tutor
+tag: Signal Processing
 image: euroscipy.jpg
 github: https://github.com/sfarrens/euroscipy
 binder: https://mybinder.org/v2/gh/sfarrens/euroscipy/master

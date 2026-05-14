@@ -1,6 +1,7 @@
 ---
 title: Python Optimisation and Memory Management
 category: tutor
+tag: Python
 image: python.png
 github: https://github.com/CosmoStat/Tutorials/tree/profiling
 layout: post-tutor

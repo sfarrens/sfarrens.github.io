@@ -1,12 +1,271 @@
 @import "size";
 @import "variables";
 
+// ── Flag icons ────────────────────────────────────────────────────────────────
+
 .flag {
   object-position: 0 3px;
+  vertical-align: middle;
+
+  @include desktoptab { height: 1.3rem; }
+  @include mobile     { height: 1.1rem; }
+}
+
+// ── Basic info card ───────────────────────────────────────────────────────────
+
+.cv-info-card {
+  background: linear-gradient(135deg, #fdf6f6 0%, #f5f8fd 100%);
+  border: 1px solid $hr-border-color;
+  border-radius: 0.6rem;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
   @include desktoptab {
-    height: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem 2.5rem;
   }
+
   @include mobile {
-    height: 3.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
   }
 }
+
+.cv-info-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.cv-info-icon {
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @include desktop { width: 2.4rem; height: 2.4rem; }
+  @include tablet  { width: 2.1rem; height: 2.1rem; }
+  @include mobile  { width: 2rem;   height: 2rem; }
+}
+
+// Unicode symbol variant (✉ ☎ ⌂)
+.cv-info-icon--sym {
+  color: $h1-underline-color;
+  line-height: 1;
+
+  @include desktop { font-size: 1.2rem; }
+  @include tablet  { font-size: 1.05rem; }
+  @include mobile  { font-size: 1rem; }
+}
+
+.cv-flag {
+  height: 1.2rem;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.cv-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  min-width: 0;
+}
+
+.cv-info-label {
+  font-weight: 600;
+  color: $pub-author-color;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  line-height: 1;
+
+  @include desktop { font-size: 0.75rem; }
+  @include tablet  { font-size: 0.72rem; }
+  @include mobile  { font-size: 0.7rem; }
+}
+
+.cv-info-value {
+  color: $body-text-color;
+  line-height: 1.35;
+  word-break: break-word;
+
+  @include desktop { font-size: 1.05rem; }
+  @include tablet  { font-size: 0.95rem; }
+  @include mobile  { font-size: 0.9rem; }
+}
+
+// ── Timeline ─────────────────────────────────────────────────────────────────
+
+.cv-timeline {
+  position: relative;
+  margin: 1rem 0 2rem;
+  padding-left: 1.75rem;
+
+  // Vertical line
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0.45rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: linear-gradient(to bottom, $h1-underline-color, lighten($h1-underline-color, 20%));
+    border-radius: 1px;
+  }
+}
+
+.cv-timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+
+  &:last-child { margin-bottom: 0; }
+}
+
+.cv-timeline-dot {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.35rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: $h1-underline-color;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px $h1-underline-color;
+}
+
+.cv-timeline-content {
+  padding: 0.85rem 1.1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border-left: 3px solid lighten($h1-underline-color, 25%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07), 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: border-left-color 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    border-left-color: $h1-underline-color;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.cv-timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.cv-timeline-dates {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: $pub-author-color;
+  letter-spacing: 0.02em;
+}
+
+.cv-timeline-org {
+  font-weight: 500;
+  font-size: 0.95em;
+  margin: 0 0 0.15rem;
+  color: $body-text-color;
+}
+
+.cv-timeline-role {
+  font-size: 0.9em;
+  margin: 0 0 0.15rem;
+  color: $heading-color;
+  font-style: italic;
+}
+
+.cv-timeline-detail {
+  font-size: 0.82rem;
+  color: $pub-author-color;
+  margin: 0;
+}
+
+// ── Collapsible supervision subsections ──────────────────────────────────────
+
+.cv-collapsible {
+  margin-bottom: 0.5rem;
+  border: none;
+}
+
+.cv-collapsible-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: $h3-font-size;
+  font-weight: $heading-font-weight;
+  color: $heading-color;
+  padding: 0.4rem 0;
+  list-style: none;
+  user-select: none;
+
+  &::-webkit-details-marker { display: none; }
+
+  &::before {
+    content: "▾";
+    display: inline-block;
+    color: $h1-underline-color;
+    font-size: 0.85em;
+    transition: transform 0.2s;
+    width: 1em;
+    text-align: center;
+  }
+
+  @include tablet  { font-size: $h3-font-size-tablet; }
+  @include mobile  { font-size: $h3-font-size-mobile; }
+}
+
+.cv-collapsible:not([open]) .cv-collapsible-header::before {
+  transform: rotate(-90deg);
+}
+
+// ── Dark mode ─────────────────────────────────────────────────────────────────
+
+body.dark-mode .cv-timeline::before {
+  background: linear-gradient(to bottom, $dm-accent, lighten($dm-accent, 15%));
+}
+
+body.dark-mode .cv-timeline-dot {
+  background: $dm-accent;
+  box-shadow: 0 0 0 2px $dm-accent;
+  border-color: $dm-surface;
+}
+
+body.dark-mode .cv-timeline-content {
+  background: $dm-surface;
+  border-left-color: $dm-hover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .cv-timeline-content:hover {
+  border-left-color: $dm-accent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .cv-timeline-org,
+body.dark-mode .cv-timeline-role  { color: $dm-text; }
+body.dark-mode .cv-timeline-dates,
+body.dark-mode .cv-timeline-detail { color: $dm-muted; }
+body.dark-mode .cv-info-card {
+  background: linear-gradient(135deg, $dm-surface 0%, $dm-hover 100%);
+  border-color: $dm-hover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .cv-info-icon {
+  background: $dm-hover;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .cv-collapsible-header { color: $dm-text; }
+body.dark-mode .cv-info-icon--sym { color: $dm-accent; }
+body.dark-mode .cv-info-label     { color: $dm-muted; }
+body.dark-mode .cv-info-value     { color: $dm-text; }

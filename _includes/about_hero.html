@@ -1,0 +1,17 @@
+<div class="about-hero">
+  <div class="about-hero-image-wrap">
+    <img src="{{ site.image_path }}/{{ page.image }}" alt="{{ page.myname }}" class="about-hero-image">
+  </div>
+  <div class="about-hero-info">
+    <h2 class="about-hero-name">{{ page.myname }}</h2>
+    <p class="about-hero-tagline">{{ page.tagline }}</p>
+    <p class="about-hero-position">{{ page.position }}</p>
+    <div class="about-hero-icons">
+      {% for icon in site.data.icons %}
+      <a href="{{ icon.link }}" target="_blank" class="about-hero-icon-link">
+        <img src="{{ site.image_path }}/{{ icon.image }}" alt="{{ icon.alt }}" class="about-hero-icon{% if icon.zoom %} about-hero-icon--zoom{% endif %}">
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

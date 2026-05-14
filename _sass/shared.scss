@@ -13,10 +13,11 @@
   margin-right: auto;
 }
 
+// $height: desktop card height; $width: desktop card width
+// On tablet the card width adapts to ~45%; on phone it's full width.
 @mixin post-box($height, $height-mobile, $width, $text-align) {
   @include shadow;
   text-align: $text-align;
-  height: $height;
   border-radius: 0.3rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -30,14 +31,20 @@
     background-color: $post-hover-color;
   }
 
-  @include desktoptab {
+  @include desktop {
     height: $height;
     width: $width;
   }
 
+  @include tablet {
+    height: $height;
+    width: calc(50% - 3rem);
+    min-width: 220px;
+  }
+
   @include mobile {
-    height: $height-mobile;
-    width: 100%;
+    width: calc(100% - 3rem);
+    // fluid height: image fills top portion, text flows below
   }
 }
 

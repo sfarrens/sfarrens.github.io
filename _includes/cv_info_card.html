@@ -1,0 +1,17 @@
+<div class="cv-info-card">
+{% for row in include.info %}
+  <div class="cv-info-row">
+    {% if row.flag %}
+    <span class="cv-info-icon">
+      <img src="{{ site.image_path }}/{{ row.flag }}" class="cv-flag" alt="{{ row.label }}">
+    </span>
+    {% elsif row.sym %}
+    <span class="cv-info-icon cv-info-icon--sym">{{ row.sym }}</span>
+    {% endif %}
+    <div class="cv-info-text">
+      <span class="cv-info-label">{{ row.label }}</span>
+      <span class="cv-info-value">{{ row.value | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+    </div>
+  </div>
+{% endfor %}
+</div>

@@ -64,3 +64,196 @@
   }
 
 }
+
+// ── Publications page header ──────────────────────────────────────────────────
+
+.pub-header {
+  margin-bottom: 2rem;
+}
+
+.pub-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.pub-badge {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: 0.35rem;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s, transform 0.15s;
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+}
+
+.pub-badge-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.7rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pub-badge-icon {
+  height: 0.9rem;
+  width: 0.9rem;
+  display: block;
+  flex-shrink: 0;
+}
+
+.pub-badge-value {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.7rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  color: $body-text-color;
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+}
+
+.pub-badge--orcid .pub-badge-label {
+  background: #a6ce39;
+  color: #1a1a1a;
+}
+
+.pub-badge--ads .pub-badge-label {
+  background: #1b3a6b;
+  color: #ffffff;
+}
+
+.pub-badge--pdf .pub-badge-label {
+  background: $h1-underline-color;
+  color: #ffffff;
+}
+
+.pub-badge--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pub-badge--ads .pub-badge-value {
+  font-family: $font-sans;
+}
+
+.pub-badge--github .pub-badge-label {
+  background: #24292f;
+  color: #ffffff;
+}
+
+.pub-badge--github .pub-badge-value {
+  font-family: $font-mono;
+}
+
+// ── First-author filter ───────────────────────────────────────────────────────
+
+.pub-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-filter-label {
+  font-size: 0.85rem;
+  color: $pub-author-color;
+  font-weight: 500;
+}
+
+.pub-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.85rem;
+  border-radius: 2rem;
+  border: 1.5px solid $h1-underline-color;
+  background: transparent;
+  color: $h1-underline-color;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+
+  &:hover {
+    background: rgba(192, 88, 78, 0.08);
+  }
+
+  &.active {
+    background: $h1-underline-color;
+    color: #fff;
+  }
+}
+
+.data-cards-grid.filter-first-author .paper-card[data-first-author="false"] {
+  display: none;
+}
+
+// ── Disclaimer callout ────────────────────────────────────────────────────────
+
+.pub-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.8rem 1rem;
+  background: rgba(192, 88, 78, 0.05);
+  border-left: 3px solid $h1-underline-color;
+  border-radius: 0 0.35rem 0.35rem 0;
+
+  p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: $blockquote-text-color;
+    font-style: italic;
+    line-height: 1.55;
+  }
+}
+
+.pub-disclaimer-icon {
+  font-size: 1rem;
+  color: $h1-underline-color;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  font-style: normal;
+}
+
+// ── Dark mode ─────────────────────────────────────────────────────────────────
+
+body.dark-mode .pub-badge {
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+  &:hover { box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); }
+}
+
+body.dark-mode .pub-badge-value {
+  background: $dm-surface;
+  color: $dm-text;
+  border-left-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .pub-disclaimer {
+  background: rgba($dm-accent, 0.08);
+}
+
+body.dark-mode .pub-filter-label { color: $dm-muted; }
+
+body.dark-mode .pub-filter-btn {
+  border-color: $dm-accent;
+  color: $dm-accent;
+
+  &:hover { background: rgba($dm-accent, 0.12); }
+  &.active { background: $dm-accent; color: #fff; }
+}

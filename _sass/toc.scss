@@ -1,48 +1,93 @@
 @import "size";
 @import "variables";
 
-#markdown-toc {
+// ── Sticky pill navigation ────────────────────────────────────────────────────
+//
+// The TOC is injected into .main-content which has a horizontal padding
+// of 2rem (desktop/tablet) / 1.25rem (mobile). Negative margins
+// let the sticky bar bleed wall-to-wall across that padding zone.
 
+#markdown-toc {
   list-style: none;
-  display: inline-block;
+  margin: 0 0 2rem;
+
+  position: sticky;
+  top: var(--nav-height, 57px);
+  z-index: 500;
+
+  // Bleed past content padding so the bar spans edge-to-edge
+  @include desktop {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 0.55rem 2rem;
+  }
+  @include tablet {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 0.5rem 2rem;
+  }
+  @include mobile {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    padding: 0.45rem 1.25rem;
+  }
+
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid $hr-border-color;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+
+  // Kill old pipe-separator rules
+  li {
+    display: inline-block;
+    padding: 0 !important;
+    margin: 0;
+    border: none !important;
+  }
 
   a {
-    color: $body-link-color;
-    font-weight: $nav-font-weight;
+    display: inline-block;
+    padding: 0.22rem 0.7rem;
+    border-radius: 1rem;
+    background: #f0f0f0;
+    color: $nav-link-color;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
 
     &:hover {
-      color: $nav-link-hover-color;
-      text-decoration: none;
+      background: lighten($h1-underline-color, 15%);
+      color: #fff;
+    }
+
+    &.toc-active {
+      background: $h1-underline-color;
+      color: #fff;
     }
   }
+}
 
-  li {
-    @include desktoptab {
-      display:inline-block;
-      padding-right: 0.7rem;
+// ── Dark mode ─────────────────────────────────────────────────────────────────
 
-      &:not(:first-child) {
-        padding-left: 0.4rem;
-      }
+body.dark-mode #markdown-toc {
+  background: rgba($dm-nav, 0.97);
+  border-bottom-color: $dm-hover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 
-      &:not(:last-child) {
-        border-right: solid 1px $border-color;
-      }
-    }
-   @include mobile {
-     &:not(:last-child) {
-       margin-bottom: 0.6rem;
-     }
-   }
+  a {
+    background: $dm-hover;
+    color: $dm-text;
+
+    &:hover        { background: darken($dm-accent, 8%); color: #fff; }
+    &.toc-active   { background: $dm-accent; color: #fff; }
   }
-
-  .toc-entry.toc-h1,
-  .toc-entry.toc-h2,
-  .toc-entry.toc-h3,
-  .toc-entry.toc-h4,
-  .toc-entry.toc-h5,
-  .toc-entry.toc-h6 {
-    display: none;
-  }
-
 }

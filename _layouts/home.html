@@ -8,11 +8,9 @@ layout: default
   </div>
   <div class="icon-container">
     {% for item in site.data.icons %}
-    <div>
-      <a href="{{ item.link }}" target="_blank">
-        <img src="{{ site.image_path }}/{{ item.image }}" class="home-icon-pad">
-      </a>
-    </div>
+    <a href="{{ item.link }}" target="_blank" class="home-icon-link" title="{{ item.alt }}">
+      <img src="{{ site.image_path }}/{{ item.image }}" alt="{{ item.alt }}" class="home-icon{% if item.zoom %} home-icon--zoom{% endif %}">
+    </a>
     {% endfor %}
   </div>
 </div>

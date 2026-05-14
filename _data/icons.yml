@@ -1,12 +1,19 @@
 - link: http://www.cosmostat.org/people/sfarrens
   image: cosmostat.png
+  alt: CosmoStat
+  zoom: true
 - link: https://github.com/sfarrens
-  image: github.png
-- link: https://twitter.com/Sam_Farrens
-  image: twitter.png
+  image: github.svg
+  alt: GitHub
+- link: https://x.com/Sam_Farrens
+  image: x.svg
+  alt: X
 - link: https://www.linkedin.com/in/samuel-farrens-7849316b/
-  image: linkedin.png
+  image: linkedin.svg
+  alt: LinkedIn
 - link: https://orcid.org/0000-0002-9594-9387
-  image: id.png
-- link: https://anchor.fm/cosmic-sloth
-  image: podcast.png
+  image: orcid.svg
+  alt: ORCID
+- link: https://www.goodreads.com/user/show/31639065-sam-farrens
+  image: goodreads.svg
+  alt: Goodreads

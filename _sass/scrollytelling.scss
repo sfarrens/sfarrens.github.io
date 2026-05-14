@@ -1,0 +1,90 @@
+@import "variables";
+@import "size";
+
+// ── Scrollytelling container ───────────────────────────────────────────────────
+
+.scrollytelling {
+  // Generous vertical breathing room between elements
+  p, h2, h3, h4, h5, h6, ul, ol, blockquote, pre, img, figure, table {
+    margin-top: 1.75em;
+    margin-bottom: 1.75em;
+  }
+
+  // Full-width images inside the scrollytelling area
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0.4rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  // Scene separator: styled horizontal rule
+  hr {
+    border: none;
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include desktop { width: 60%; }
+    @include tablet  { width: 80%; }
+    @include mobile  { width: 95%; }
+
+    &::before {
+      content: "· · ·";
+      font-size: 1.5rem;
+      letter-spacing: 0.5em;
+      color: $h1-underline-color;
+      font-weight: 300;
+    }
+  }
+
+  // Blockquotes as pull-quotes
+  blockquote {
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid $h1-underline-color;
+    background: linear-gradient(135deg, #fdf6f6 0%, #f9f9f9 100%);
+    border-radius: 0 0.4rem 0.4rem 0;
+    font-style: italic;
+    color: $blockquote-text-color;
+  }
+
+  // Drop-cap for the first paragraph
+  > p:first-of-type::first-letter {
+    float: left;
+    font-size: 3.5em;
+    line-height: 0.75;
+    margin: 0.1em 0.12em 0 0;
+    color: $h1-underline-color;
+    font-weight: 600;
+  }
+}
+
+// ── Scroll-triggered fade-in ───────────────────────────────────────────────────
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// Stagger siblings slightly so they don't all pop at once
+.scroll-fade:nth-child(2) { transition-delay: 0.05s; }
+.scroll-fade:nth-child(3) { transition-delay: 0.08s; }
+.scroll-fade:nth-child(4) { transition-delay: 0.11s; }
+
+// ── Dark mode ─────────────────────────────────────────────────────────────────
+
+body.dark-mode .scrollytelling blockquote {
+  background: linear-gradient(135deg, #1e2124 0%, #23272a 100%);
+  color: #b0b0b0;
+}

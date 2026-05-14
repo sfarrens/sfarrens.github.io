@@ -1,0 +1,43 @@
+{% assign link = paper.arxiv | default: paper.doi | default: paper.ads %}
+{% assign first_author = paper.authors | split: ',' | first | strip %}
+{% if first_author == 'S. Farrens' %}{% assign is_first = 'true' %}{% else %}{% assign is_first = 'false' %}{% endif %}
+<div class="data-card paper-card" data-first-author="{{ is_first }}">
+  <a href="{{ link }}" target="_blank" class="data-card-image-link">
+    <img src="{{ site.image_path }}/{{ paper.image | default: 'default.svg' }}" alt="{{ paper.title }}" class="data-card-image" loading="lazy">
+  </a>
+  <div class="data-card-body">
+    <a href="{{ link }}" target="_blank" class="data-card-title">{{ paper.title }}</a>
+    <p class="data-card-authors">{{ paper.authors }}</p>
+    <p class="data-card-meta">{{ paper.journal }} &middot; {{ paper.year }}</p>
+    {% if paper.excerpt %}
+    <p class="data-card-excerpt">{{ paper.excerpt }}</p>
+    {% endif %}
+    <div class="data-card-links">
+      {% if paper.ads %}
+      <a href="{{ paper.ads }}" target="_blank" title="NASA ADS">
+        <img src="{{ site.image_path }}/nasa.png" class="data-card-icon" alt="ADS" loading="lazy">
+      </a>
+      {% endif %}
+      {% if paper.arxiv %}
+      <a href="{{ paper.arxiv }}" target="_blank" title="arXiv">
+        <img src="{{ site.image_path }}/arxiv.png" class="data-card-icon" alt="arXiv" loading="lazy">
+      </a>
+      {% endif %}
+      {% if paper.pdf %}
+      <a href="{{ paper.pdf }}" target="_blank" title="PDF">
+        <img src="{{ site.image_path }}/pdf.png" class="data-card-icon" alt="PDF" loading="lazy">
+      </a>
+      {% endif %}
+      {% if paper.bibtex %}
+      <a href="{{ paper.bibtex }}" target="_blank" title="BibTeX">
+        <img src="{{ site.image_path }}/bibtex.png" class="data-card-icon" alt="BibTeX" loading="lazy">
+      </a>
+      {% endif %}
+      {% if paper.doi %}
+      <a href="{{ paper.doi }}" target="_blank" title="DOI">
+        <img src="{{ site.image_path }}/doi.png" class="data-card-icon" alt="DOI" loading="lazy">
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

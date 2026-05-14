@@ -15,7 +15,7 @@ nav {
 
   &.scrolled {
     opacity: 0.8;
-    
+
     &:hover {
       opacity: 1;
     }
@@ -48,7 +48,7 @@ nav {
       color: $nav-link-color;
       text-decoration: none;
       padding: 0.5rem 1rem;
-      font-size: 1.3rem;
+      font-size: $nav-font-size;
       transition: color 0.3s;
 
       &:hover {
@@ -57,21 +57,8 @@ nav {
     }
   }
 
-  .nav-dark-toggle {
-    background: none;
-    border: none;
-    font-size: 1.4rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: all 0.3s;
-    color: $nav-link-color;
+  .theme-switch {
     margin-left: 1rem;
-
-    &:hover {
-      color: $nav-link-hover-color;
-      transform: scale(1.1);
-    }
   }
 
   .icon {
@@ -84,10 +71,10 @@ nav {
   }
 }
 
-// Mobile styles
-@media screen and (max-width: 1000px) {
+// Tablet and mobile: show hamburger, hide inline nav
+@media screen and (max-width: #{$tablet-max}) {
   nav {
-    padding: 1rem 0;
+    padding: 0.75rem 0;
   }
 
   .topnav {
@@ -95,36 +82,35 @@ nav {
     padding: 0 1rem;
 
     .site-name {
-      font-size: 2rem;
-      padding: 1rem 0;
+      font-size: 1.4rem;
+      padding: 0.75rem 0;
     }
 
     .nav-links {
       display: none;
     }
 
-    .nav-dark-toggle {
+    .theme-switch {
       display: none;
     }
 
     .icon {
       display: block;
-      font-size: 2.5rem;
-      padding: 1rem;
+      font-size: 2rem;
+      padding: 0.75rem;
     }
 
     &.responsive {
       flex-direction: column;
       align-items: stretch;
       background-color: $nav-bg-color;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 0;
 
       .site-name {
         text-align: center;
-        padding: 2rem;
-        border-bottom: 2px solid $nav-line-color;
-        font-size: 2.2rem;
+        padding: 1.25rem;
+        font-size: 1.5rem;
       }
 
       .nav-links {
@@ -135,9 +121,9 @@ nav {
 
         a {
           display: block;
-          padding: 2.5rem 3rem;
+          padding: 1.25rem 2rem;
           text-align: left;
-          font-size: 2.2rem;
+          font-size: 1.2rem;
           font-weight: 500;
 
           &:last-child {
@@ -146,37 +132,107 @@ nav {
         }
       }
 
-      .nav-dark-toggle {
-        display: block;
-        margin: 2rem auto;
-        font-size: 2.2rem;
-        padding: 1rem;
+      .theme-switch {
+        display: inline-flex;
+        margin: 1rem auto;
       }
 
       .icon {
         position: absolute;
         right: 1rem;
-        top: 1rem;
-        font-size: 2.5rem;
+        top: 0.75rem;
+        font-size: 2rem;
       }
     }
   }
 }
 
-// Specific fix for 980px width
-@media screen and (max-width: 980px) {
+// Phone: slightly larger tap targets
+@include mobile {
   .topnav {
-    .nav-links {
-      display: none;
+    .site-name {
+      font-size: 1.2rem;
     }
-    
-    .nav-dark-toggle {
-      display: none;
-    }
-    
-    .icon {
-      display: block;
+
+    &.responsive {
+      .nav-links a {
+        padding: 1.5rem 2rem;
+        font-size: 1.1rem;
+      }
     }
   }
 }
 
+// ── Theme toggle switch ────────────────────────────────────────────────────────
+
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.theme-switch-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.theme-switch-track {
+  position: relative;
+  width: 52px;
+  height: 26px;
+  background: $nav-line-color;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  transition: background 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.theme-switch-sun,
+.theme-switch-moon {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.3s, color 0.3s;
+  flex-shrink: 0;
+}
+
+.theme-switch-sun  { color: $nav-link-hover-color; opacity: 1; }
+.theme-switch-moon { color: #b0a898; opacity: 0.5; }
+
+.theme-switch-thumb {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: left 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+// Checked state (dark mode active)
+.theme-switch-input:checked + .theme-switch-track {
+  background: $dm-hover;
+
+  .theme-switch-sun  { opacity: 0.3; color: $dm-muted; }
+  .theme-switch-moon { opacity: 1; color: $dm-accent; }
+  .theme-switch-thumb { left: calc(100% - 23px); }
+}
+
+// Also drive via body class (prevents flash on load before JS fires)
+body.dark-mode .theme-switch-track {
+  background: $dm-hover;
+
+  .theme-switch-sun  { opacity: 0.3; color: $dm-muted; }
+  .theme-switch-moon { opacity: 1; color: $dm-accent; }
+  .theme-switch-thumb { left: calc(100% - 23px); }
+}

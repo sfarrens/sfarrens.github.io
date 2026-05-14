@@ -2,22 +2,19 @@
 title: About Me
 image: office_wave.jpg
 myname: Samuel Farrens
-tagline: Cosmologist and Python enthusiast
+tagline: Cosmologist & Python enthusiast
+position: Research Director · CEA Paris-Saclay
 layout: default
 ---
+
+{% include about_hero.html %}
 
 * Table of Contents
 {:toc}
 
-<div class="about-image-container">
-  <img src="{{ site.image_path }}/{{ page.image }}" class="about-image">
-  <span class="about-name">{{ page.myname }}</span><br>
-  <span class="about-tag">{{ page.tagline }}</span><br>
-</div>
-
 ## Where I work
 
-I have been very fortunate to end up working in a very diverse and exciting team called **[CosmoStat](http://www.cosmostat.org/)**. CosmoStat is a *lab* based in the [astrophysics department](http://irfu.cea.fr/dap/en/index.php) at [CEA Paris-Saclay](http://www.cea.fr), just south-east of Paris.
+I have been very fortunate to end up working in a very diverse and exciting team called **[CosmoStat](http://www.cosmostat.org/)**. CosmoStat is a *lab* based in the [astrophysics department](https://irfu.cea.fr/dap/) at [CEA Paris-Saclay](http://www.cea.fr), just south-east of Paris.
 
 [![]({{ site.image_path }}/cosmostat_logo.jpg){:.about-cs-logo}](http://www.cosmostat.org/)
 
@@ -41,14 +38,12 @@ I am currently managing the development of an end-to-end galaxy shape measuremen
 
 ### Image Reconstruction Software
 
-I co-leading, in collaboration with the team at NeuroSpin, the development of a software package called [PySAP](/soft/2020/02/29/pysap.html). This package is a image reconstruction and analysis toolbox that can be applied to imaging problems in various domains such as MRI, astrophysics, microscopy and electron tomography. My main contribution has been a package called [ModOpt](/soft/2020/02/29/modopt.html) that provides a modular framework for implementing optimisation algorithms needed for solving inverse problems.
+I co-leading, in collaboration with the team at NeuroSpin, the development of a software package called [PySAP](https://github.com/CEA-COSMIC/pysap). This package is a image reconstruction and analysis toolbox that can be applied to imaging problems in various domains such as MRI, astrophysics, microscopy and electron tomography. My main contribution has been a package called [ModOpt](https://github.com/CEA-COSMIC/ModOpt) that provides a modular framework for implementing optimisation algorithms needed for solving inverse problems.
 
+> [!TIP]
 > What to know more? Check out this video from a keynote I gave at [EuroScipy](https://www.euroscipy.org/) in 2019.
 
-<div class="about-iframe-container">
-  <iframe src="https://www.youtube.com/embed/AktERyTXww0" frameborder="0" allowfullscreen
-    class="about-iframe"></iframe>
-</div>
+{% include youtube.html id="AktERyTXww0" title="EuroScipy 2019 keynote" %}
 
 ### Machine Learning
 
@@ -60,7 +55,7 @@ Finally, I spend a good fraction of my time trying help others plan, manage and 
 
 ## What I used to do
 
-Prior to joining the CosmoStat team my work was primarily focused on the optical detection and analysis of clusters of galaxies using photometric redshifts. During my PhD I developed a prototype [friends-of-friends optical cluster detection algorithm](/soft/2020/02/29/sfof.html) that was further developed and optimised during postdoc positions in Barcelona and Trieste. I also developed serval [metrics](/soft/2020/02/29/pycymatch.html) and [analysis codes](/soft/2020/02/29/cluster_profile.html) designed to compare the relative performance of various different cluster detection codes on Euclid mock galaxy simulations.
+Prior to joining the CosmoStat team my work was primarily focused on the optical detection and analysis of clusters of galaxies using photometric redshifts. During my PhD I developed a prototype [friends-of-friends optical cluster detection algorithm](https://github.com/sfarrens/sfof) that was further developed and optimised during postdoc positions in Barcelona and Trieste. I also developed several [metrics](https://github.com/sfarrens/pycymatch) and [analysis codes](https://github.com/sfarrens/cluster_profile) designed to compare the relative performance of various different cluster detection codes on Euclid mock galaxy simulations.
 
 ## What I like
 

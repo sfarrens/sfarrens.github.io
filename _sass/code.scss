@@ -3,37 +3,161 @@
 @import "size";
 
 pre {
+  position: relative;
   color: $body-text-color;
-  padding: 0.8rem;
+  padding: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: $code-font-family;
-  // background-color: $code-bg-color;
-  border: solid 1px $border-color;
-  border-radius: 0.3rem;
-  font-size: 1.0rem;
-  overflow-x: scroll;
-
-  @include desktoptab{
-    font-size: $code-font-size;
-  }
-
-  @include mobile {
-    font-size: $code-font-size-mobile;
-  }
-
-}
-
-code {
-
-}
-
-.highlight {
-}
-
-.highlighter-rouge {
-  color: #c7254e;
   background-color: $code-bg-color;
-  border-radius: 0.3rem;
-  margin-top: 1rem;
+  border: 1px solid $nav-border-color;
+  border-top: 2px solid rgba($h1-underline-color, 0.18);
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  font-size: 1.0rem;
+  overflow-x: auto;
+
+  @include desktoptab { font-size: $code-font-size; }
+  @include mobile     { font-size: $code-font-size-mobile; }
+
+  &:hover .code-copy-btn { opacity: 1; }
+}
+
+body.dark-mode pre {
+  background-color: $dm-surface;
+  border-color: rgba(255, 255, 255, 0.08);
+  border-top-color: rgba($dm-accent, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  color: #abb2bf;
+}
+
+// ── Inline code ───────────────────────────────────────────────────────────────
+code {
+  font-family: $code-font-family;
+}
+
+code.highlighter-rouge {
+  color: #c0584e;
+  background-color: rgba($h1-underline-color, 0.08);
+  border-radius: 0.25rem;
+  padding: 0.1em 0.35em;
+  font-size: 0.9em;
+}
+
+body.dark-mode code.highlighter-rouge {
+  color: $dm-accent;
+  background-color: rgba($dm-accent, 0.12);
+}
+
+// ── Language label ────────────────────────────────────────────────────────────
+pre.has-lang-label {
+  padding-top: 2.4rem;
+}
+
+.code-lang-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.3rem 0.75rem;
+  font-family: $body-font-family;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba($body-text-color, 0.5);
+  letter-spacing: 0.04em;
+  background: rgba($h1-underline-color, 0.05);
+  border-bottom: 1px solid $nav-border-color;
+  border-radius: 0.4rem 0.4rem 0 0;
+  line-height: 1.6;
+  pointer-events: none;
+  user-select: none;
+}
+
+body.dark-mode .code-lang-label {
+  color: rgba(#abb2bf, 0.65);
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+// ── Copy button ───────────────────────────────────────────────────────────────
+.code-copy-btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: rgba($body-text-color, 0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.15s ease, color 0.15s ease;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background: rgba($h1-underline-color, 0.1);
+    color: $body-link-color;
+    opacity: 1;
+  }
+
+  &.copied {
+    opacity: 1;
+    color: #4caf50;
+  }
+}
+
+body.dark-mode .code-copy-btn {
+  color: rgba(#abb2bf, 0.5);
+
+  &:hover {
+    background: rgba($dm-accent, 0.15);
+    color: $dm-accent;
+  }
+
+  &.copied { color: #66bb6a; }
+}
+
+// ── Dark mode syntax highlighting (One Dark palette) ──────────────────────────
+body.dark-mode .highlight {
+  // comments
+  .cm, .c1, .c, .cd, .cs, .cp { color: #5c6370; font-style: italic; }
+  // keywords
+  .k, .kd, .kn, .kp, .kr, .kv, .kc { color: #c678dd; font-weight: bold; }
+  // type keywords
+  .kt { color: #4ec9b0; font-weight: bold; }
+  // strings
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx { color: #98c379; }
+  .sr { color: #56b6c2; }   // regex
+  .ss { color: #e5c07b; }   // symbol
+  // numbers
+  .m, .mb, .mf, .mh, .mi, .mo, .mx, .il { color: #d19a66; }
+  // names
+  .n, .nb { color: #e06c75; }
+  .nc     { color: #e5c07b; font-weight: bold; }  // class
+  .nf     { color: #61afef; font-weight: bold; }  // function
+  .nd     { color: #e5c07b; font-weight: bold; }  // decorator
+  .ni     { color: #c678dd; }                     // name intrinsic
+  .nt     { color: #e06c75; }                     // tag
+  .nn     { color: #abb2bf; }                     // namespace
+  .bp     { color: #e5c07b; }                     // builtin
+  // variables / attributes
+  .na, .no, .vc, .vg, .vi, .nv { color: #9cdcfe; }
+  // operators
+  .o, .ow { color: #56b6c2; font-weight: bold; }
+  // punctuation / generic
+  .w      { color: #4b5263; }
+  .err    { color: #f44747; background: transparent; }
+  .gd     { color: #f44747; background: transparent; }
+  .gi     { color: #98c379; background: transparent; }
+  .gp     { color: #5c6370; }
 }
