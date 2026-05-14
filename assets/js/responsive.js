@@ -1,21 +1,34 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("topnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+(function () {
+  var hamburger = document.getElementById('nav-hamburger');
+  var navLinks  = document.getElementById('nav-links');
+  if (!hamburger || !navLinks) return;
 
-// Close mobile menu when clicking outside
-document.addEventListener('click', function(event) {
-  var topnav = document.getElementById("topnav");
-  var icon = document.querySelector('.icon');
-  
-  if (topnav.classList.contains('responsive') && 
-      !topnav.contains(event.target) && 
-      !icon.contains(event.target)) {
-    topnav.className = "topnav";
+  function open() {
+    navLinks.classList.add('open');
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
   }
-});
+
+  function close() {
+    navLinks.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+
+  hamburger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    navLinks.classList.contains('open') ? close() : open();
+  });
+
+  // Close when clicking/tapping outside the nav
+  document.addEventListener('click', function (e) {
+    if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+      close();
+    }
+  });
+
+  // Close when a nav link is tapped (important for same-page anchors)
+  navLinks.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', close);
+  });
+})();

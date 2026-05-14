@@ -354,18 +354,16 @@ body.dark-mode .dropdown:hover .dropbtn {
   color: $dm-accent !important;
 }
 
-// Mobile navigation dark mode styles
-body.dark-mode .topnav.responsive {
-  background-color: $dm-nav !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+// Mobile navigation dark mode
+body.dark-mode .nav-hamburger {
+  .hamburger-bar { background: $dm-text; }
+  &:hover { background: rgba($dm-accent, 0.12); }
 }
 
-body.dark-mode .topnav.responsive a {
-  color: $dm-text !important;
-}
-
-body.dark-mode .topnav.responsive a:first-child {
-  color: #fff !important;
+body.dark-mode .nav-links {
+  a {
+    border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+  }
 }
 
 // Heading dark mode styles
@@ -520,5 +518,16 @@ body.dark-mode #back-to-top {
 
   &:hover {
     background: lighten($dm-accent, 8%);
+  }
+}
+
+@include mobile {
+  #back-to-top {
+    bottom: 1.25rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+
+    svg { width: 18px; height: 18px; }
   }
 }
