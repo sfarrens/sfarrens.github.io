@@ -29,7 +29,7 @@ layout: default
 </div>
 
 > [!DISCLAIMER]
-> The ADS list includes various collaboration papers to which I may have contributed little or no direct work. For all the publications listed below I led the work or made significant contributions.
+> The ADS list includes all papers on record, including collaboration papers where my contribution may have been indirect. The publications listed below are those where I led the work or made significant contributions.
 
 <div class="pub-filter-bar">
   <span class="pub-filter-label">Filter:</span>

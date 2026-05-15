@@ -1,0 +1,364 @@
+% ============================================================
+%  Samuel Farrens — Curriculum Vitae  (2026)
+% ============================================================
+\documentclass[a4paper,10pt]{article}
+
+% ── Packages ──────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage[a4paper, top=1.8cm, bottom=1.8cm, left=1.8cm, right=1.8cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage{orcidlink}
+
+% ── Accent colour ─────────────────────────────────────────
+\definecolor{accent}{RGB}{180,90,70}   % terracotta
+\definecolor{muted}{RGB}{100,100,110}
+\definecolor{rule}{RGB}{210,180,170}
+
+% ── Section headings ──────────────────────────────────────
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}
+  {0pt}
+  {}
+  [\color{rule}\titlerule]
+\titlespacing{\section}{0pt}{10pt}{4pt}
+
+% ── CV entry macros ───────────────────────────────────────
+% date column width
+\newlength{\cvdatew}
+\setlength{\cvdatew}{5.5em}
+
+% \cventry{dates}{org/venue}{role/title}{detail}
+\newcommand{\cventry}[4]{%
+  \vspace{3pt}%
+  \noindent\begin{minipage}[t]{\cvdatew}%
+    \raggedright\small\color{muted}#1%
+  \end{minipage}%
+  \hspace{0.6em}%
+  \begin{minipage}[t]{\dimexpr\linewidth-\cvdatew-0.6em\relax}%
+    {\bfseries #2}\newline
+    \textit{#3}%
+    \ifx&#4&\else\newline{\small\color{muted}#4}\fi
+  \end{minipage}%
+  \vspace{3pt}%
+}
+
+% \cvline{dates}{content}
+\newcommand{\cvline}[2]{%
+  \vspace{2pt}%
+  \noindent\begin{minipage}[t]{\cvdatew}%
+    \raggedright\small\color{muted}#1%
+  \end{minipage}%
+  \hspace{0.6em}%
+  \begin{minipage}[t]{\dimexpr\linewidth-\cvdatew-0.6em\relax}%
+    #2%
+  \end{minipage}%
+  \vspace{2pt}%
+}
+
+% ── Subsection heading (for supervision groups) ───────────
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{muted}}
+  {}{0pt}{}
+\titlespacing{\subsection}{0pt}{6pt}{2pt}
+
+% ── Helpers ───────────────────────────────────────────────
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\link}[2]{\href{#1}{#2}}
+
+% ── No page numbers ───────────────────────────────────────
+\pagestyle{empty}
+
+% =============================================================
+\begin{document}
+
+% ── Header ───────────────────────────────────────────────────
+\begin{center}
+  {\huge\bfseries Samuel Farrens}\\[6pt]
+  {\large\color{muted} Research Director, CEA Paris-Saclay}\\[8pt]
+  \color{muted}
+  \faIcon{envelope}~\email{samuel.farrens@cea.fr}\quad
+  \faIcon{phone}~+33 01 69 08 83 77\quad
+  \faIcon{globe}~\href{https://sfarrens.github.io}{sfarrens.github.io}\quad
+  \orcidlink{0000-0001-8202-9372}~\href{https://orcid.org/0000-0001-8202-9372}{0000-0001-8202-9372}\\[4pt]
+  D\'epartement d'Astrophysique, CEA Paris-Saclay, Orme des Merisiers,
+  Building 709, F-91191 Gif-sur-Yvette, France\\[4pt]
+  \textbf{Nationality:} Irish\quad
+  \textbf{Languages:} English (Native), Spanish (Fluent), French (B2/C1), Italian (Basic)
+\end{center}
+
+\vspace{4pt}
+\color{rule}\hrule\color{black}
+\vspace{8pt}
+
+% ── Work Experience ──────────────────────────────────────────
+\section{Work Experience}
+
+\cventry{Jan 2026 -- present}
+  {Commissariat \`a l'\'Energie Atomique (CEA) Paris-Saclay, France}
+  {Research Director}
+  {Projects: Euclid, AstroDeep, TITAN, TOSCA, UNIONS | Management: Euclid OU-LE3 co-lead; 3x2pt Pipeline Group co-lead}
+
+\cventry{Dec 2017 -- Dec 2025}
+  {Commissariat \`a l'\'Energie Atomique (CEA) Paris-Saclay, France}
+  {Staff Researcher}
+  {Projects: Euclid, ARGOS, AstroDeep, COSMIC, DEDALE, TITAN, TOSCA, UNIONS | Management: Euclid OU-LE3 WL co-lead, COMB-CL lead, 3x2pt Pipeline Group co-lead; ARGOS WP7 lead; COSMIC/UNIONS software maintainer}
+
+\cventry{Oct 2015 -- Nov 2017}
+  {Commissariat \`a l'\'Energie Atomique (CEA) Paris-Saclay, France}
+  {Postdoctoral Researcher}
+  {Funding: DEDALE FET H2020 | Projects: DEDALE, Euclid | Lead developer: PySAP, ModOpt}
+
+\cventry{Nov 2013 -- Sep 2015}
+  {Osservatorio Astronomico di Trieste (INAF-OATS), Italy}
+  {Postdoctoral Researcher}
+  {Funding: ASI -- Euclid | Projects: Euclid}
+
+\cventry{Dec 2010 -- Oct 2013}
+  {Institut de Ci\`encies de L'Espai (ICE-IEEC), Spain}
+  {Postdoctoral Researcher}
+  {Funding: CosmoComp FP7 ITN Fellowship (Marie Curie Actions) | Projects: DES, Euclid, PAU}
+
+% ── Education ────────────────────────────────────────────────
+\section{Education}
+
+\cventry{Dec 2024}
+  {Universit\'e Paris-Saclay (UPS), France}
+  {Habilitation \`a Diriger des Recherches (HDR)}
+  {Thesis: \textit{``Advanced tools and software development for cosmology''}}
+
+\cventry{Oct 2007 -- Nov 2010}
+  {University College London (UCL), UK}
+  {PhD in Astrophysics}
+  {Thesis: \textit{``Optical Detection of Galaxy Clusters''}}
+
+\cventry{Sep 2003 -- Jun 2007}
+  {University College London (UCL), UK}
+  {MSci in Astrophysics --- \textit{First Class}}
+  {Thesis: \textit{``Finding Clusters with $10^6$ Luminous Red Galaxies''}}
+
+\cventry{Sep 2002 -- Jun 2003}
+  {Birkbeck College, University of London, UK}
+  {Foundation Degree in Mathematics and Physics --- \textit{Distinction}}
+  {}
+
+\cventry{Jan 1999 -- Dec 2001}
+  {Liceo de Atenas, Costa Rica}
+  {International Baccalaureate Diploma --- \textit{Distinction}}
+  {}
+
+% ── Select Presentations ─────────────────────────────────────
+\section{Select Presentations}
+
+\cvline{Dec 2025}{\textbf{[Invited]} University of Turin Seminar, Turin, Italy\\
+  {\small\color{muted}``Probing the Dark Universe with Euclid''}}
+
+\cvline{Sep 2025}{\textbf{[Invited]} ASTRODAT, Durham, UK\\
+  {\small\color{muted}``Scientific Software Development''}}
+
+\cvline{May 2025}{\textbf{[Invited]} BDL3, Paris, France\\
+  {\small\color{muted}``Using AI to Probe the Invisible Universe''}}
+
+\cvline{Apr 2023}{\textbf{[Invited]} ADA X, Hersonissos, Greece\\
+  {\small\color{muted}``Scientific Software Development''}}
+
+\cvline{Apr 2023}{\textbf{[Invited]} ICDSS, Hefei, China\\
+  {\small\color{muted}``ShapePipe: Open source weak lensing for modern surveys''}}
+
+\cvline{Jul 2022}{EuroPython, Dublin, Ireland\\
+  {\small\color{muted}``ShapePipe: A modular weak-lensing pipeline''}}
+
+\cvline{Sep 2021}{\textbf{[Invited]} Artificial Intelligence 2021 (remote)\\
+  {\small\color{muted}``Python Sparse data Analysis Package''}}
+
+\cvline{May 2021}{\textbf{[Invited]} Where the Earth Meets the Sky (remote)\\
+  {\small\color{muted}``Hands-On Image Processing with PySAP''}}
+
+\cvline{Nov 2020}{\textbf{[Invited]} ADASS XXX, Granada, Spain (remote)\\
+  {\small\color{muted}``PySAP: From Galaxies to Brains and Beyond''}}
+
+\cvline{Sep 2019}{\textbf{[Keynote]} EuroScipy, Bilbao, Spain\\
+  {\small\color{muted}``From Galaxies to Brains! -- Image processing with Python''}}
+
+\cvline{May 2017}{\textbf{[Invited]} Universit\'e Clermont Auvergne Seminar, Clermont-Ferrand, France\\
+  {\small\color{muted}``Regularisation techniques for solving inverse problems''}}
+
+% ── Supervision ──────────────────────────────────────────────
+\section{Supervision}
+
+\subsection{PhD Students}
+
+\cvline{Jan 2026 -- present}{\textbf{Sammy Sharief}\\
+  {\small\color{muted}Co-supervised with Fran\c{c}ois Lanusse and Tobias Liaudat}}
+
+\cvline{Oct 2023 -- present}{\textbf{Ezequiel Centofanti}\\
+  {\small\color{muted}Projects: ARGOS, Euclid |Thesis: \textit{``Machine learning methods for radio and optical imaging in astronomy''} |Co-supervised with Jean-Luc Starck}}
+
+\subsection{Postdoctoral Researchers}
+
+\cvline{Oct 2024 -- present}{\textbf{Emma Ay\c{c}oberry}\\
+  {\small\color{muted}Projects: ARGOS, Euclid}}
+
+\cvline{Oct 2024 -- present}{\textbf{Cail Daley}\\
+  {\small\color{muted}Projects: Euclid, SPT, TOSCA, UNIONS\quad Co-supervised with Martin Kilbinger}}
+
+\cvline{Oct 2024 -- present}{\textbf{Calum Murray}\\
+  {\small\color{muted}Projects: Euclid, UNIONS\quad Co-supervised with Martin Kilbinger}}
+
+\cvline{Feb 2022 -- May 2024}{\textbf{Lucie Baumont}\\
+  {\small\color{muted}Projects: Euclid, Rubin LSST, UNIONS |Co-supervised with Fran\c{c}ois Lanusse and Martin Kilbinger}}
+
+\cvline{Nov 2020 -- Aug 2022}{\textbf{Andr\'e Zamorano Vitorelli}\\
+  {\small\color{muted}Projects: Euclid, UNIONS |Co-supervised with Fran\c{c}ois Lanusse and Martin Kilbinger}}
+
+\subsection{Research Engineers}
+
+\cvline{Mar 2025 -- present}{\textbf{Chaitanya Chawak}\\
+  {\small\color{muted}Project: Euclid |Topic: Euclid OU-LE3 data model management and data-driven PSF model}}
+
+\cvline{Nov 2023 -- present}{\textbf{Nada Moukaddem}\\
+  {\small\color{muted}Project: Euclid |Topic: Euclid data-driven PSF model and cluster mass estimation}}
+
+\cvline{Nov 2022 -- present}{\textbf{Jennifer Pollack}\\
+  {\small\color{muted}Project: Euclid |Topic: PSF model integration into Euclid Science Ground Segment}}
+
+\cvline{Apr 2021 -- Apr 2024}{\textbf{Sergio Miranda La Hera}\\
+  {\small\color{muted}Project: Euclid |Topic: Euclid OU-LE3 data model management and software}}
+
+\subsection{Master's Students}
+
+\cvline{Apr--Sep 2026}{\textbf{Maxime Ronceray}\quad
+  {\small\color{muted}\textit{``Automatically Differentiable Image Simulations for Euclid''} |Co-supervised with Fran\c{c}ois Lanusse}}
+
+\cvline{Apr--Sep 2026}{\textbf{Vincent Brunet}\quad
+  {\small\color{muted}\textit{``Galaxy shape inference with machine learning methods''} |Co-supervised with Emma Ay\c{c}oberry}}
+
+\cvline{Mar--Aug 2025}{\textbf{Manal Bensahli}\quad
+  {\small\color{muted}\textit{``Machine Learning for Radio Interferometric Array Design''} |Co-supervised with Ezequiel Centofanti}}
+
+\cvline{Mar--Aug 2023}{\textbf{Alex Szapiro}\quad
+  {\small\color{muted}\textit{``Star Selection for PSF Modelling with Deep Learning''}}}
+
+\cvline{Apr--Aug 2021}{\textbf{Olivier Roth}\quad
+  {\small\color{muted}\textit{``Unsupervised learning for galaxy cluster membership assignment''} |Co-supervised with Joana Frontera Pons}}
+
+\cvline{Sep 2019 -- Feb 2020}{\textbf{Sophie Starck}\quad
+  {\small\color{muted}\textit{``PySAP Software Development and Data Science''}}}
+
+\cvline{Jul--Dec 2019}{\textbf{Alice Lacan}\quad
+  {\small\color{muted}\textit{``Deep Learning for Multiclass Classification of Blended Galaxy Images''}}}
+
+\cvline{Jul--Dec 2019}{\textbf{Jo\"el Gehin}\quad
+  {\small\color{muted}\textit{``Euclid Data Processing''}}}
+
+\cvline{Apr--Sep 2018}{\textbf{Alexandre Bruckert}\quad
+  {\small\color{muted}\textit{``Machine Learning and Image Deblending for Astrophysical Data''}}}
+
+\cvline{Nov 2017 -- Apr 2018}{\textbf{Hugo De Bouard}\quad
+  {\small\color{muted}\textit{``D\'econvolution d'images de galaxies''}}}
+
+\cvline{Jul--Dec 2017}{\textbf{Xinyu Wang}\quad
+  {\small\color{muted}\textit{``Identification of Blended Galaxy Images''} |Co-supervised with Jean-Luc Starck}}
+
+\cvline{Apr--Sep 2017}{\textbf{Peipei Ran}\quad
+  {\small\color{muted}\textit{``Deconvolution of astrophysical images with space variant instrumental response''} |Co-supervised with Jean-Luc Starck}}
+
+% ── Teaching ─────────────────────────────────────────────────
+\section{Teaching}
+
+\cvline{Jan 2023 -- present}{UE PRAT M2 Master's Course, Sorbonne Universit\'e, Paris, France\\
+  {\small\color{muted}Lecture: \textit{``A practical introduction to signal processing in astrophysics''} (3.5\,h/year)}}
+
+\cvline{Aug 2023 -- present}{\'Ecole d'\'et\'e Rodolphe Cl\'edassou, France\\
+  {\small\color{muted}Lecture: \textit{``Scientific Software Development for Euclid''} (3\,h/year)}}
+
+\cvline{Jul 2021}{EuroPython (remote)\\
+  {\small\color{muted}Tutorial: \textit{``The Anatomy of a Python Class''} (1.5\,h)}}
+
+\cvline{Nov 2019}{Euclid C++/Python Workshop, Paris, France\\
+  {\small\color{muted}Tutorials on Python and Make/CMake (10\,h)}}
+
+\cvline{Sep 2019}{EuroScipy, Bilbao, Spain\\
+  {\small\color{muted}Tutorial on Astronomical Image Processing (1.5\,h)}}
+
+\cvline{May 2018}{ADAIX Summer School, Valencia, Spain\\
+  {\small\color{muted}Tutorial on Sparsity (5\,h)}}
+
+\cvline{May 2016}{ADA8 Summer School, Chania, Greece\\
+  {\small\color{muted}Tutorial on Sparsity (3\,h)}}
+
+\cvline{Jan \& May 2011}{ICE, Barcelona, Spain\\
+  {\small\color{muted}Lectures on cosmology for master's students (5\,h)}}
+
+\cvline{Oct 2008 -- Apr 2010}{UCL, London, UK\\
+  {\small\color{muted}Marking: 1st Year Classical Mechanics, Thermodynamics, 3rd Year Practical Physics}}
+
+\cvline{Oct 2008 -- Apr 2009}{UCL, London, UK\\
+  {\small\color{muted}Tutoring undergraduate Maths and Physics}}
+
+% ── Event Organisation ───────────────────────────────────────
+\section{Event Organisation}
+
+\cvline{Jan 2026}{Euclid OU-LE3 Meeting, Bologna, Italy --- {\small\color{muted}Role: SOC}}
+\cvline{Jun 2025}{COLOURS, Orsay, France --- {\small\color{muted}Role: Primary organiser, SOC and LOC}}
+\cvline{May 2025}{Euclid 3x2pt Meeting, Paris, France --- {\small\color{muted}Role: LOC}}
+\cvline{Jun 2024}{Euclid Consortium Meeting, Rome, Italy --- {\small\color{muted}Role: SOC}}
+\cvline{May 2024}{COSMO21 Conference, Chania, Greece --- {\small\color{muted}Role: LOC}}
+\cvline{Jan 2024}{Euclid France Meeting, Saclay, France --- {\small\color{muted}Role: LOC}}
+\cvline{Sep 2023}{ADA X Summer School, Hersonissos, Greece --- {\small\color{muted}Role: LOC}}
+\cvline{Mar 2023}{DAp GPU Half-Day, Saclay, France --- {\small\color{muted}Role: SOC and LOC}}
+\cvline{May 2018}{ADA IX Summer School, Valencia, Spain --- {\small\color{muted}Role: Primary organiser, SOC and LOC}}
+\cvline{May 2018}{COSMO21 Conference, Valencia, Spain --- {\small\color{muted}Role: LOC}}
+
+% ── Community Activities ──────────────────────────────────────
+\section{Community Activities}
+
+\cvline{Ongoing}{Peer Review: Astronomy \& Astrophysics (A\&A), MNRAS, Computing in Science and Engineering}
+\cvline{Apr 2024}{PhD Jury --- External \textit{vocal} reviewer, Universitat Aut\`onoma de Barcelona (Computer Science)}
+\cvline{2018--2020}{Project Review --- Swiss National Science Foundation}
+
+% ── Computing Skills ──────────────────────────────────────────
+\section{Computing Skills}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+  \small\bfseries\color{muted}Programming &
+    Python, C/C++, TensorFlow, Matlab/Octave, IDL, HTML, CSS/SASS \\[3pt]
+  \small\bfseries\color{muted}Build \& DevOps &
+    Make, CMake, pyproject.toml, GitHub Actions, GitLab CI/CD, Docker, Singularity \\[3pt]
+  \small\bfseries\color{muted}HPC \& Databases &
+    MPI, OpenMP, PBS, Slurm, GPU Computing, SQL \\[3pt]
+  \small\bfseries\color{muted}Machine Learning &
+    Neural Networks, CNNs, SVMs \\[3pt]
+  \small\bfseries\color{muted}Distribution &
+    PyPI, Conda, Homebrew \\[3pt]
+  \small\bfseries\color{muted}Docs \& Testing &
+    Sphinx, Doxygen, \LaTeX, PyTest, Catch2 \\
+\end{tabularx}
+
+% ── Observing ─────────────────────────────────────────────────
+\section{Observing}
+
+\cvline{Sep 2007}{Australian Astronomical Observatory (AAO)\\
+  {\small\color{muted}Instruments: 3.9m telescope with the AAOmega spectrograph}}
+
+\cvline{Feb 2006}{Observatoire de Haute-Provence (OHP)\\
+  {\small\color{muted}Instruments: 1.52m + AURELIE spectrograph; 1.2m + CCD camera}}
+
+% ── Outreach ──────────────────────────────────────────────────
+\section{Outreach}
+
+\cvline{Dec 2015}{Workshop on Galaxy Zoo at Les Savanturiers, France}
+\cvline{Mar 2010}{Demonstrator at Your Universe, UCL festival of astronomy, UK}
+
+\end{document}

@@ -32,11 +32,22 @@
     padding: 0.5rem 1.25rem;
   }
 
-  background: rgba(255, 255, 255, 0.97);
+  background: rgba($card-bg-color, 0.97);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid $hr-border-color;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: opacity 0.3s ease;
+
+  &.toc-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.toc-scrolled {
+    opacity: 0.72;
+    &:hover { opacity: 1; }
+  }
 
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +66,7 @@
     display: inline-block;
     padding: 0.28rem 0.75rem;
     border-radius: 1rem;
-    background: #f0f0f0;
+    background: $toc-pill-bg;
     color: $nav-link-color;
     font-size: 0.78rem;
     font-weight: 500;

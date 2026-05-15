@@ -107,37 +107,60 @@
 </script>
 
 <script>
-// Navigation scroll effect for desktop
+// Direction-aware scroll: hide nav+TOC on scroll-down, reveal on scroll-up
 (function() {
-  const nav = document.querySelector('nav');
-  let lastScrollTop = 0;
-  const scrollThreshold = 50; // Start effect after scrolling 50px
+  var nav = document.querySelector('nav');
+  var toc = document.getElementById('markdown-toc');
+  var navLinks = document.getElementById('nav-links');
+  var lastScrollTop = 0;
+  var ticking = false;
+  var MOBILE_MAX = 960;
+  var HIDE_THRESHOLD = 80;   // mobile: hide after scrolling 80px down
+  var FADE_THRESHOLD = 50;   // desktop: fade after scrolling 50px down
 
-  function handleScroll() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    // Only apply effect on desktop (screen width > 1000px)
-    if (window.innerWidth > 1000) {
-      if (scrollTop > scrollThreshold) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-    } else {
-      // Remove scrolled class on mobile
-      nav.classList.remove('scrolled');
-    }
-    
-    lastScrollTop = scrollTop;
+  function isMenuOpen() {
+    return navLinks && navLinks.classList.contains('open');
   }
 
-  // Add scroll event listener
-  window.addEventListener('scroll', handleScroll);
+  function handleScroll() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var isMobile = window.innerWidth <= MOBILE_MAX;
+    var scrollingDown = scrollTop > lastScrollTop;
 
-  // Handle window resize
+    if (isMobile) {
+      if (scrollTop > HIDE_THRESHOLD && scrollingDown && !isMenuOpen()) {
+        nav.classList.add('nav-hidden');
+        if (toc) toc.classList.add('toc-hidden');
+      } else if (!scrollingDown || scrollTop <= HIDE_THRESHOLD) {
+        nav.classList.remove('nav-hidden');
+        if (toc) toc.classList.remove('toc-hidden');
+      }
+      nav.classList.remove('scrolled');
+      if (toc) toc.classList.remove('toc-scrolled');
+    } else {
+      nav.classList.remove('nav-hidden');
+      if (toc) toc.classList.remove('toc-hidden');
+      if (scrollTop > FADE_THRESHOLD && scrollingDown) {
+        nav.classList.add('scrolled');
+        if (toc) toc.classList.add('toc-scrolled');
+      } else if (!scrollingDown) {
+        nav.classList.remove('scrolled');
+        if (toc) toc.classList.remove('toc-scrolled');
+      }
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(handleScroll);
+      ticking = true;
+    }
+  });
+
   window.addEventListener('resize', handleScroll);
-
-  // Initial check
   handleScroll();
 })();
 </script>
@@ -247,6 +270,18 @@
 </script>
 
 <script>
+// Open all external links in a new tab
+(function() {
+  document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+    if (!link.hasAttribute('target')) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+})();
+</script>
+
+<script>
 (function() {
   var CLIPBOARD_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
   var CHECK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
@@ -269,6 +304,38 @@
       });
     });
     pre.appendChild(btn);
+  });
+})();
+</script>
+
+<script>
+// Reading mode toggle (desktop only)
+(function() {
+  var btn = document.getElementById('reading-mode-btn');
+  if (!btn) return;
+
+  var iconEnter = document.getElementById('rm-icon-enter');
+  var iconExit  = document.getElementById('rm-icon-exit');
+
+  function setMode(active) {
+    document.body.classList.toggle('reading-mode', active);
+    if (iconEnter) iconEnter.style.display = active ? 'none'  : '';
+    if (iconExit)  iconExit.style.display  = active ? ''      : 'none';
+    localStorage.setItem('reading-mode', active ? '1' : '0');
+  }
+
+  // Restore on load
+  if (localStorage.getItem('reading-mode') === '1') setMode(true);
+
+  btn.addEventListener('click', function() {
+    setMode(!document.body.classList.contains('reading-mode'));
+  });
+
+  // Exit reading mode on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.body.classList.contains('reading-mode')) {
+      setMode(false);
+    }
   });
 })();
 </script>

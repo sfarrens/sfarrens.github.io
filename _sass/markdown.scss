@@ -1,20 +1,7 @@
 @import "size";
 @import "variables";
 
-// ── Alert type colours ────────────────────────────────────────────────────────
-$bq-note-color:       #0969da;
-$bq-tip-color:        #1a7f37;
-$bq-important-color:  #8250df;
-$bq-warning-color:    #9a6700;
-$bq-caution-color:    #c0584e; // matches site accent
-$bq-disclaimer-color: #0e7490; // teal
-
-$bq-note-dm:          #4493f8;
-$bq-tip-dm:           #3fb950;
-$bq-important-dm:     #a371f7;
-$bq-warning-dm:       #d29922;
-$bq-caution-dm:       #e0705a; // matches site dm accent
-$bq-disclaimer-dm:    #22d3ee; // cyan
+// Alert type colours are defined in variables.scss
 
 // ── Base blockquote = pull-quote (no border, no indent) ───────────────────────
 blockquote {

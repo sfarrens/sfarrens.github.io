@@ -11,7 +11,7 @@
   margin-bottom: 2.5rem;
   padding: 1.5rem;
   border-radius: 0.6rem;
-  background: linear-gradient(135deg, #fdf6f6 0%, #f5f8fd 100%);
+  background: $surface-gradient;
   @include shadow;
 
   @include mobile {
@@ -88,7 +88,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #fff;
+  background: $card-bg-color;
   @include shadow;
   transition: transform 0.2s, box-shadow 0.2s;
   overflow: hidden;
@@ -150,10 +150,22 @@
 
 // ── Inline content elements ───────────────────────────────────────────────────
 
-.about-cs-logo {
-  @include desktop { width: 450px; }
-  @include tablet  { width: 340px; }
-  @include mobile  { width: 100%; }
+.about-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.about-org-logo {
+  display: block;
+  object-fit: contain;
+  height: auto;
+
+  @include desktop { max-width: 260px; max-height: 80px; }
+  @include tablet  { max-width: 200px; max-height: 65px; }
+  @include mobile  { max-width: 160px; max-height: 55px; }
 }
 
 .about-iframe-container {

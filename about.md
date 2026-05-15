@@ -12,51 +12,46 @@ layout: default
 * Table of Contents
 {:toc}
 
+## Bio
+
+Sam Farrens is a Research Director in the CosmoStat team of the Astrophysics Department (AIM) at CEA Paris-Saclay. His research focuses on cosmology, machine learning, signal processing, and scientific software development. He has been a member of the Euclid Consortium since 2012, holding Builder status, and contributes to various aspects of the Science Ground Segment, including co-leading OU-LE3 and the 3×2pt pipeline group. He is a strong advocate for open science and actively supports early-career researchers. He holds a PhD in Astrophysics from University College London and an HDR from Université Paris-Saclay.
+
 ## Where I work
 
-I have been very fortunate to end up working in a very diverse and exciting team called **[CosmoStat](http://www.cosmostat.org/)**. CosmoStat is a *lab* based in the [astrophysics department](https://irfu.cea.fr/dap/) at [CEA Paris-Saclay](http://www.cea.fr), just south-east of Paris.
+I have been very fortunate to end up working in a very diverse and exciting team called **[CosmoStat](http://www.cosmostat.org/)**. CosmoStat is a lab based in the [astrophysics department](https://irfu.cea.fr/dap/) at [CEA Paris-Saclay](http://www.cea.fr), just south-east of Paris.
 
-[![]({{ site.image_path }}/cosmostat_logo.jpg){:.about-cs-logo}](http://www.cosmostat.org/)
+<div class="about-logos">
+  <a href="https://irfu.cea.fr/" target="_blank" rel="noopener noreferrer"><img src="{{ site.image_path }}/cea_irfu.png" class="about-org-logo" alt="CEA IRFU"></a>
+  <a href="https://irfu.cea.fr/dap/" target="_blank" rel="noopener noreferrer"><img src="{{ site.image_path }}/aim_logo.png" class="about-org-logo" alt="AIM"></a>
+  <a href="http://www.cosmostat.org/" target="_blank" rel="noopener noreferrer"><img src="{{ site.image_path }}/cosmostat_logo.jpg" class="about-org-logo" alt="CosmoStat"></a>
+</div>
 
-The team is made up of researchers with either a background in astrophysics or signal-processing that work together on trying to solve the challenges in cosmology. The idea is to use the latest developments in statistics and data science and apply them to technical problems like measuring galaxy shapes or modelling the point spread function of an instrument in space.
-
-I also spend one day a week at [NeuroSpin](http://joliot.cea.fr/drf/joliot/Pages/Entites_de_recherche/NeuroSpin.aspx), a world leading biomedical imaging institute. I work with a team there aiming to improve the way in which we acquire and reconstruct brain images using Magnetic Resonance Imaging (MRI).
+The team is made up of researchers from astrophysics and signal processing backgrounds, working together to tackle the challenges in cosmology by applying the latest developments in statistics and data science to technical problems like measuring galaxy shapes or modelling the point spread function of an instrument in space.
 
 ## What I do
 
-Since joining CosmoStat I have been involved in various different projects.
-
-### Deconvolution
-
-I have worked on [galaxy image deconvolution](/pub/2017/03/17/deconvolution.html) using regularisation techniques such as sparsity and low-rank approximation. The idea being to remove the effects of a point spread function (PSF) that varies as function of position on the sky. This is beneficial for projects like [Euclid](https://www.euclid-ec.org/) that aim to measure galaxy shapes to good accuracy.
-
-> If you are not familiar with these topics why not check out the tutorials I have prepared on [sparisty](/tutor/2020/02/29/ada-sparsity.html) and [low-rank approximation](/tutor/2020/02/29/low-rank.html).
-
 ### Weak Gravitational Lensing
 
-I am currently managing the development of an end-to-end galaxy shape measurement pipeline that deals with source extraction, masking, PSF modelling and interpolation, shape measurement and calibration. We aim to use this pipeline to extract weak lensing information from [UNIONS-CFIS](http://www.cfht.hawaii.edu/Science/CFIS/) data in the near future.
+I work on weak gravitational lensing science and pipeline development, with a focus on PSF modelling, shape measurement, and end-to-end data processing. I co-lead OU-LE3 — the [Euclid Consortium](https://www.euclid-ec.org/) Science Ground Segment pipeline responsible for producing weak lensing and galaxy clustering data products for the [ESA Euclid mission](https://www.esa.int/Science_Exploration/Space_Science/Euclid) — and contribute to the [UNIONS](https://www.skysurvey.cc/) wide-field optical survey.
 
-### Image Reconstruction Software
+### Machine Learning & AI
 
-I co-leading, in collaboration with the team at NeuroSpin, the development of a software package called [PySAP](https://github.com/CEA-COSMIC/pysap). This package is a image reconstruction and analysis toolbox that can be applied to imaging problems in various domains such as MRI, astrophysics, microscopy and electron tomography. My main contribution has been a package called [ModOpt](https://github.com/CEA-COSMIC/ModOpt) that provides a modular framework for implementing optimisation algorithms needed for solving inverse problems.
+I work on applying machine learning and statistical signal processing to problems in observational cosmology, including image reconstruction, source detection, deblending, and the modelling of instrumental effects — primarily in the context of [Euclid](https://www.euclid-ec.org/).
 
-> [!TIP]
-> What to know more? Check out this video from a keynote I gave at [EuroScipy](https://www.euroscipy.org/) in 2019.
+### Scientific Software
 
-{% include youtube.html id="AktERyTXww0" title="EuroScipy 2019 keynote" %}
+I have a strong interest in building reliable, well-documented, open-source scientific software. I have led and contributed to several Python packages aimed at solving inverse problems and image reconstruction challenges across astrophysics and other imaging domains.
 
-### Machine Learning
+### Open Science
 
-I have also been working using deep learning, in particular deep transfer learning, for the problem of identifying blended galaxy images in survey data.
-
-### Software Consulting
-
-Finally, I spend a good fraction of my time trying help others plan, manage and develop scientific software projects following open-source principles.
+I am a strong advocate for open and reproducible science. I regularly contribute to community training, give tutorials at summer schools and conferences, and actively support early-career researchers in developing good software and data practices.
 
 ## What I used to do
 
-Prior to joining the CosmoStat team my work was primarily focused on the optical detection and analysis of clusters of galaxies using photometric redshifts. During my PhD I developed a prototype [friends-of-friends optical cluster detection algorithm](https://github.com/sfarrens/sfof) that was further developed and optimised during postdoc positions in Barcelona and Trieste. I also developed several [metrics](https://github.com/sfarrens/pycymatch) and [analysis codes](https://github.com/sfarrens/cluster_profile) designed to compare the relative performance of various different cluster detection codes on Euclid mock galaxy simulations.
+Prior to joining the CosmoStat team my work was primarily focused on the optical detection and analysis of clusters of galaxies using photometric redshifts. During my PhD I developed a prototype [friends-of-friends optical cluster detection algorithm](https://github.com/sfarrens/sfof) that was further developed and optimised during postdoc positions in Barcelona and Trieste. I also developed several [metrics](https://github.com/sfarrens/pycymatch) and [analysis codes](https://github.com/sfarrens/cluster_profile) designed to compare the relative performance of various cluster detection codes on Euclid mock galaxy simulations.
+
+In the past I also spent time at [NeuroSpin](http://joliot.cea.fr/drf/joliot/Pages/Entites_de_recherche/NeuroSpin.aspx), a world-leading biomedical imaging institute, where I worked with a team aiming to improve the acquisition and reconstruction of brain images using Magnetic Resonance Imaging (MRI).
 
 ## What I like
 
-If you are curious to find out about some of my non-academic pursuits have a look a my [blog](/blog.html) where I talk about other things that interest me.
+If you are curious to find out about some of my non-academic pursuits have a look at my [blog](/blog.html) where I talk about other things that interest me.

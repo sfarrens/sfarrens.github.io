@@ -3,6 +3,9 @@ title: Blog
 layout: default
 ---
 
+> [!DISCLAIMER]
+> Posts here cover a mix of research updates, conference highlights, and personal interests. Opinions expressed are my own.
+
 <div class="pub-filter-bar" id="blog-filter-bar">
   <span class="pub-filter-label">Filter:</span>
   {% assign blog_posts = site.posts | where: 'category', 'blog' %}

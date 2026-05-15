@@ -4,8 +4,8 @@
 // ── Flag icons ────────────────────────────────────────────────────────────────
 
 .flag {
-  object-position: 0 3px;
-  vertical-align: middle;
+  display: block;
+  object-fit: contain;
 
   @include desktoptab { height: 1.3rem; }
   @include mobile     { height: 1.1rem; }
@@ -14,7 +14,7 @@
 // ── Basic info card ───────────────────────────────────────────────────────────
 
 .cv-info-card {
-  background: linear-gradient(135deg, #fdf6f6 0%, #f5f8fd 100%);
+  background: $surface-gradient;
   border: 1px solid $hr-border-color;
   border-radius: 0.6rem;
   padding: 1.1rem 1.4rem;
@@ -42,7 +42,7 @@
 
 .cv-info-icon {
   border-radius: 50%;
-  background: #fff;
+  background: $card-bg-color;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
   display: flex;
@@ -55,14 +55,24 @@
   @include mobile  { width: 2rem;   height: 2rem; }
 }
 
-// Unicode symbol variant (✉ ☎ ⌂)
+// Unicode symbol / short-text variant (✉ ☎ ⌂ iD @ Aa)
 .cv-info-icon--sym {
   color: $h1-underline-color;
   line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 
-  @include desktop { font-size: 1.2rem; }
-  @include tablet  { font-size: 1.05rem; }
-  @include mobile  { font-size: 1rem; }
+  @include desktop { font-size: 1rem; }
+  @include tablet  { font-size: 0.9rem; }
+  @include mobile  { font-size: 0.85rem; }
+}
+
+.flag-emoji {
+  font-style: normal;
+  line-height: 1;
+
+  @include desktoptab { font-size: 1.1rem; }
+  @include mobile     { font-size: 0.95rem; }
 }
 
 .cv-flag {
@@ -136,13 +146,14 @@
   height: 0.65rem;
   border-radius: 50%;
   background: $h1-underline-color;
-  border: 2px solid #fff;
+  border: 2px solid $card-bg-color;
   box-shadow: 0 0 0 2px $h1-underline-color;
+
 }
 
 .cv-timeline-content {
   padding: 0.85rem 1.1rem;
-  background: #fff;
+  background: $card-bg-color;
   border-radius: 0.5rem;
   border-left: 3px solid lighten($h1-underline-color, 25%);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07), 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -227,6 +238,85 @@
   transform: rotate(-90deg);
 }
 
+// ── Talk / presentation type badge ────────────────────────────────────────────
+
+.cv-type-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 0.25rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+
+  &--keynote {
+    background: rgba($badge-keynote-bg, 0.1);
+    color: $badge-keynote-text;
+    border: 1px solid rgba($badge-keynote-bg, 0.22);
+  }
+
+  &--invited {
+    background: rgba($h1-underline-color, 0.09);
+    color: darken($h1-underline-color, 8%);
+    border: 1px solid rgba($h1-underline-color, 0.22);
+  }
+
+  &--talk {
+    background: rgba($pub-author-color, 0.08);
+    color: $pub-author-color;
+    border: 1px solid rgba($pub-author-color, 0.18);
+  }
+}
+
+// ── Computing skills grid ─────────────────────────────────────────────────────
+
+.cv-skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0.25rem 0 1rem;
+}
+
+.cv-skills-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.cv-skills-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: $pub-author-color;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 0.22rem;
+
+  @include desktop { min-width: 9rem; }
+  @include tablet  { min-width: 8rem; }
+  @include mobile  { min-width: 0; width: 100%; }
+}
+
+.cv-skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cv-skill-tag {
+  display: inline-block;
+  padding: 0.18rem 0.6rem;
+  border-radius: 1rem;
+  background: rgba($h1-underline-color, 0.06);
+  border: 1px solid rgba($h1-underline-color, 0.14);
+  color: $body-text-color;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 // ── Dark mode ─────────────────────────────────────────────────────────────────
 
 body.dark-mode .cv-timeline::before {
@@ -269,3 +359,26 @@ body.dark-mode .cv-collapsible-header { color: $dm-text; }
 body.dark-mode .cv-info-icon--sym { color: $dm-accent; }
 body.dark-mode .cv-info-label     { color: $dm-muted; }
 body.dark-mode .cv-info-value     { color: $dm-text; }
+
+body.dark-mode .cv-type-badge--keynote {
+  background: rgba($badge-keynote-dm, 0.15);
+  color: $badge-keynote-text-dm;
+  border-color: rgba($badge-keynote-dm, 0.3);
+}
+body.dark-mode .cv-type-badge--invited {
+  background: rgba($dm-accent, 0.15);
+  color: $dm-accent;
+  border-color: rgba($dm-accent, 0.3);
+}
+body.dark-mode .cv-type-badge--talk {
+  background: rgba($dm-muted, 0.1);
+  color: $dm-muted;
+  border-color: rgba($dm-muted, 0.2);
+}
+
+body.dark-mode .cv-skill-tag {
+  background: $dm-hover;
+  border-color: rgba($dm-accent, 0.18);
+  color: $dm-text;
+}
+body.dark-mode .cv-skills-label { color: $dm-muted; }

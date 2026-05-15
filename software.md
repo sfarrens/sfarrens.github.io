@@ -27,6 +27,9 @@ layout: default
 
 </div>
 
+> [!DISCLAIMER]
+> The software packages listed below are those where I led the work or made significant contributions. I have also made contributions to private Euclid software not listed here.
+
 <div class="pub-filter-bar" id="soft-filter-bar">
   <span class="pub-filter-label">Filter:</span>
   {% assign langs = site.data.software | map: 'language' | uniq | sort %}

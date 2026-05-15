@@ -24,6 +24,14 @@ nav {
       &:hover { opacity: 1; }
     }
   }
+
+  // Hide on scroll-down — mobile/tablet only (JS adds .nav-hidden class)
+  &.nav-hidden {
+    @include tabletmobile {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 }
 
 // ── Topnav row ────────────────────────────────────────────────────────────────
@@ -206,7 +214,7 @@ nav {
 }
 
 .theme-switch-sun  { color: $nav-link-hover-color; opacity: 1; }
-.theme-switch-moon { color: #b0a898; opacity: 0.5; }
+.theme-switch-moon { color: $nav-moon-color; opacity: 0.5; }
 
 .theme-switch-thumb {
   position: absolute;

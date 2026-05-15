@@ -2,6 +2,42 @@
 # Each entry links directly to arXiv (or doi/ads if arxiv is absent).
 # No individual post pages are generated from this file.
 
+- title: "Breaking the degeneracy in stellar spectral classification from single wide-band images"
+  image: 
+  year: 2025
+  journal: A&A
+  authors: "E. Centofanti, S. Farrens, J.-L. Starck, et al."
+  arxiv: https://arxiv.org/abs/2501.16151
+  ads: https://ui.adsabs.harvard.edu/abs/2025A%26A...694A.228C/abstract
+  pdf: https://arxiv.org/pdf/2501.16151
+  bibtex: https://ui.adsabs.harvard.edu/abs/2025A%26A...694A.228C/exportcitation
+  doi: https://doi.org/10.1051/0004-6361/202452224
+  excerpt: "Deep learning approach for breaking the stellar/galaxy degeneracy in single wide-band photometric images, applied to Euclid-like survey data."
+
+- title: "Euclid preparation: Determining the weak lensing mass accuracy and precision for galaxy clusters"
+  image: 
+  year: 2025
+  journal: A&A
+  authors: "Euclid Collaboration; L. Ingoglia, M. Sereno, S. Farrens, et al."
+  arxiv: https://arxiv.org/abs/2409.02783
+  ads: https://ui.adsabs.harvard.edu/abs/2025A%26A...695A.280E/abstract
+  pdf: https://arxiv.org/pdf/2409.02783
+  bibtex: https://ui.adsabs.harvard.edu/abs/2025A%26A...695A.280E/exportcitation
+  doi: https://doi.org/10.1051/0004-6361/202452122
+  excerpt: "Validation of Euclid OU-LE3 weak-lensing mass measurements for galaxy clusters using simulations and multi-survey observational data."
+
+- title: "Euclid preparation. XLII. A unified catalogue-level reanalysis of weak lensing by galaxy clusters in five imaging surveys"
+  image: 
+  year: 2024
+  journal: A&A
+  authors: "Euclid Collaboration; M. Sereno, S. Farrens, L. Ingoglia, et al."
+  arxiv: https://arxiv.org/abs/2404.08036
+  ads: https://ui.adsabs.harvard.edu/abs/2024A%26A...689A.252E/abstract
+  pdf: https://arxiv.org/pdf/2404.08036
+  bibtex: https://ui.adsabs.harvard.edu/abs/2024A%26A...689A.252E/exportcitation
+  doi: https://doi.org/10.1051/0004-6361/202348680
+  excerpt: "Unified weak-lensing reanalysis of galaxy cluster catalogues across five major imaging surveys, providing consistent mass calibration ahead of Euclid."
+
 - title: "ShapePipe: A new shape measurement pipeline and weak-lensing application to UNIONS/CFIS data"
   image: shapepipe_e1.png
   year: 2022

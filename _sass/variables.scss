@@ -5,6 +5,12 @@ $font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
             "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 $font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
+// ── Surfaces & backgrounds ────────────────────────────────────────────────────
+$body-bg-color:           #faf9f7 !default;   // page background
+$card-bg-color:           #ffffff !default;   // card / panel background
+$card-image-bg:           #f5f5f5 !default;   // card image placeholder
+$surface-gradient:        linear-gradient(135deg, #fdf6f6 0%, #f5f8fd 100%) !default;
+
 // ── Navigation ────────────────────────────────────────────────────────────────
 $nav-font-family:         $font-sans;
 $nav-font-size:           1.05rem;
@@ -17,6 +23,7 @@ $nav-line-color:          #e4e1db !default;
 $nav-link-color:          #4a4744 !default;
 $nav-link-hover-color:    #c0584e !default;
 $nav-border-color:        #e4e1db !default;
+$nav-moon-color:          #b0a898 !default;   // moon icon in theme toggle
 
 // ── Topic cards ───────────────────────────────────────────────────────────────
 $topic-font-size:         1.4rem;
@@ -110,6 +117,34 @@ $dm-nav:     #1f222b !default;   // nav bar
 $dm-text:    #e8e4d8 !default;   // warm off-white text
 $dm-muted:   #9a96a6 !default;   // muted labels / meta
 $dm-accent:  #e0705a !default;   // terracotta accent
+
+// ── TOC ───────────────────────────────────────────────────────────────────────
+$toc-pill-bg:             #f0f0f0 !default;
+
+// ── Service / brand badge colours ─────────────────────────────────────────────
+$badge-orcid-color:       #a6ce39 !default;
+$badge-ads-color:         #1b3a6b !default;
+$badge-github-color:      #24292f !default;
+$badge-keynote-bg:        #b87a10 !default;
+$badge-keynote-text:      #8a5c08 !default;
+$badge-keynote-dm:        #e0a030 !default;
+$badge-keynote-text-dm:   #d4a040 !default;
+
+// ── Alert blockquote colours (light) ──────────────────────────────────────────
+$bq-note-color:           #0969da !default;
+$bq-tip-color:            #1a7f37 !default;
+$bq-important-color:      #8250df !default;
+$bq-warning-color:        #9a6700 !default;
+$bq-caution-color:        #c0584e !default;   // matches site accent
+$bq-disclaimer-color:     #0e7490 !default;   // teal
+
+// ── Alert blockquote colours (dark) ───────────────────────────────────────────
+$bq-note-dm:              #4493f8 !default;
+$bq-tip-dm:               #3fb950 !default;
+$bq-important-dm:         #a371f7 !default;
+$bq-warning-dm:           #d29922 !default;
+$bq-caution-dm:           #e0705a !default;   // matches site dm accent
+$bq-disclaimer-dm:        #22d3ee !default;   // cyan
 
 // ── Publications ─────────────────────────────────────────────────────────────
 $pub-font-family:        $font-sans;

@@ -20,8 +20,8 @@ layout: default
   {% endfor %}
 </div>
 
-<div class="data-cards-grid" id="tutor-grid">
-{% assign tutorials = site.posts | where: 'category', 'tutor' | sort %}
+<div class="data-cards-grid data-cards-grid--list" id="tutor-grid">
+{% assign tutorials = site.posts | where: 'category', 'tutor' | sort: 'date' | reverse %}
 {% for post in tutorials %}
   {% include tutorial_card.html post=post %}
 {% endfor %}

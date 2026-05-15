@@ -1,0 +1,12 @@
+<div class="cv-skills-grid">
+{% for group in include.skills %}
+  <div class="cv-skills-row">
+    <span class="cv-skills-label">{{ group.category }}</span>
+    <div class="cv-skills-tags">
+      {% for item in group.items %}
+      <span class="cv-skill-tag">{{ item }}</span>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+</div>

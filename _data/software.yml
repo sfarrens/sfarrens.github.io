@@ -1,6 +1,23 @@
 # Software projects displayed as thumbnail cards on the software page.
 # Each entry links to GitHub (or docs if github is absent).
 
+- title: argosim
+  language: Python
+  github: https://github.com/ARGOS-telescope/argosim
+  description: "Radio telescope array simulation and image reconstruction software for the ARGOS project."
+
+- title: SHINE
+  language: Python
+  github: https://github.com/CosmoStat/SHINE
+  docs: https://cosmostat.github.io/SHINE/
+  description: "JAX-powered framework for probabilistic shear estimation in weak gravitational lensing."
+
+- title: BlendHunter
+  image: blendhunter.png
+  language: Python
+  github: https://github.com/sfarrens/BlendHunter
+  description: "Deep learning tool for identifying blended galaxy images in wide-field survey data."
+
 - title: ShapePipe
   image: shapepipe_mask.png
   language: Python

@@ -6,9 +6,10 @@
       {% if item.dates or item.flag %}
       <div class="cv-timeline-header">
         {% if item.dates %}<span class="cv-timeline-dates">{{ item.dates }}</span>{% endif %}
-        {% if item.flag %}<img src="{{ site.image_path }}/{{ item.flag }}" class="flag" alt="">{% endif %}
+        {% if item.flag %}<img src="{{ site.image_path }}/{{ item.flag }}" class="flag" alt="">{% elsif item.emoji %}<span class="flag-emoji">{{ item.emoji }}</span>{% endif %}
       </div>
       {% endif %}
+      {% if item.type %}<span class="cv-type-badge cv-type-badge--{{ item.type }}">{% if item.type == 'keynote' %}Keynote{% elsif item.type == 'invited' %}Invited{% else %}{{ item.type | capitalize }}{% endif %}</span>{% endif %}
       {% if item.org %}<p class="cv-timeline-org">{{ item.org | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
       {% if item.role %}<p class="cv-timeline-role">{{ item.role | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
       {% if item.detail %}<p class="cv-timeline-detail">{{ item.detail | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}

@@ -30,7 +30,7 @@ html {
 body {
   font-family: $body-font-family;
   color: $body-text-color;
-  background-color: #faf9f7;
+  background-color: $body-bg-color;
   padding: 0;
   margin: 0;
   line-height: 1.65;
@@ -206,7 +206,7 @@ body.dark-mode {
       position: absolute;
       left: -20px;
       top: -20px;
-      color: #7a7a7a;
+      color: $h5-color;
     }
 
     @include desktoptab { font-size: $h5-font-size; }
@@ -531,3 +531,57 @@ body.dark-mode #back-to-top {
     svg { width: 18px; height: 18px; }
   }
 }
+
+// ── Reading mode button (desktop only) ────────────────────────────────────────
+
+#reading-mode-btn {
+  @include tabletmobile { display: none !important; }
+
+  background: none;
+  border: none;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: $nav-link-color;
+  opacity: 0.5;
+  transition: opacity 0.2s, background 0.2s, color 0.2s;
+  line-height: 1;
+  flex-shrink: 0;
+
+  svg { width: 17px; height: 17px; display: block; }
+
+  &:hover { opacity: 1; background: rgba($h1-underline-color, 0.08); }
+}
+
+// Reading mode
+body.reading-mode {
+  // Nav fades out but stays hoverable (no pointer-events change)
+  nav {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  // Hovering the invisible nav area reveals everything
+  nav:hover { opacity: 1; }
+
+  // TOC at rest in reading mode: waits for nav to finish fading (delay = nav duration),
+  // then fades itself — this gives states: nav fading/TOC visible → both gone
+  #markdown-toc {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease 0.3s;
+  }
+
+  // While nav is hovered: TOC stays/snaps back to fully visible
+  nav:hover ~ .main-content #markdown-toc {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.15s ease 0s;
+  }
+
+  #back-to-top      { opacity: 0 !important; pointer-events: none !important; }
+  #reading-mode-btn { opacity: 0.85; color: $h1-underline-color; }
+}
+
+body.dark-mode #reading-mode-btn { color: $dm-muted; }
+body.dark-mode.reading-mode #reading-mode-btn { color: $dm-accent; }
