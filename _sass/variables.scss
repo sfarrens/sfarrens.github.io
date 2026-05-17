@@ -69,6 +69,10 @@ $body-link-color:        #c0584e !default;
 $body-link-hover-color:  #9e403a !default;
 $strong-font-weight:     600;
 
+// ── Mark / highlight ─────────────────────────────────────────────────────────
+$mark-bg:    rgba(255, 200, 30, 0.42) !default;   // warm amber on cream
+$dm-mark-bg: rgba(255, 195, 30, 0.20) !default;   // softer gold on dark slate
+
 // ── Markdown / blockquotes ───────────────────────────────────────────────────
 $blockquote-text-color:  #6a6460 !default;
 $blockquote-font-style:  italic;

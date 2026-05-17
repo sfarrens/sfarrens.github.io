@@ -264,6 +264,68 @@ body.dark-mode {
     background-color: $nav-line-color;
     border: 0;
   }
+
+  // ── Collapsible blocks — use <details markdown="block"> in markdown ─────────
+  details {
+    border: 1px solid $nav-line-color;
+    border-radius: 0.4rem;
+    margin: 1.75em 0;
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.7rem 1rem;
+      font-weight: 500;
+      color: $h1-underline-color;
+      background: $surface-gradient;
+      border-radius: 0.4rem;
+      user-select: none;
+
+      &::-webkit-details-marker { display: none; }
+
+      &::before {
+        content: "▶";
+        font-size: 0.65em;
+        transition: transform 0.2s ease;
+        flex-shrink: 0;
+      }
+    }
+
+    &[open] > summary {
+      border-radius: 0.4rem 0.4rem 0 0;
+      border-bottom: 1px solid $nav-line-color;
+      &::before { transform: rotate(90deg); }
+    }
+
+    > *:not(summary):first-of-type { margin-top: 1rem; }
+    > *:not(summary):last-child     { margin-bottom: 1rem; }
+
+    > *:not(summary) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  // ── Inline highlighter — use <mark>...</mark> in markdown ─────────────────
+  // Works for plain text, inline math \(...\), and display math $$...$$.
+  // When wrapping display math, the mark auto-promotes to block via :has().
+  mark {
+    background: $mark-bg;
+    color: inherit;
+    border-radius: 0.2em;
+    padding: 0.05em 0.25em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &:has(mjx-container[display="true"]) {
+      display: block;
+      border-radius: 0.4rem;
+      padding: 0.4rem 1rem;
+    }
+  }
 }
 
 // DARK MODE STYLES
@@ -276,6 +338,23 @@ body.dark-mode {
 
 body.dark-mode a {
   color: $dm-accent;
+}
+
+body.dark-mode details {
+  border-color: $dm-hover;
+
+  summary {
+    color: $dm-accent;
+    background: linear-gradient(135deg, $dm-surface 0%, $dm-hover 100%);
+  }
+
+  &[open] > summary {
+    border-bottom-color: $dm-hover;
+  }
+}
+
+body.dark-mode mark {
+  background: $dm-mark-bg;
 }
 
 body.dark-mode a:hover {

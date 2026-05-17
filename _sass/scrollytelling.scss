@@ -4,14 +4,15 @@
 // ── Scrollytelling container ───────────────────────────────────────────────────
 
 .scrollytelling {
-  // Generous vertical breathing room between elements
+
   p, h2, h3, h4, h5, h6, ul, ol, blockquote, pre, img, figure, table {
     margin-top: 1.75em;
     margin-bottom: 1.75em;
   }
 
-  // Full-width images inside the scrollytelling area
-  img {
+  // Full-width images (only in full / no-layout cells)
+  > .scroll-step[data-layout="full"] img,
+  > .scroll-step:not([data-layout]) img {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -19,7 +20,7 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   }
 
-  // Scene separator: styled horizontal rule
+  // Scene separator (shown when JS is off)
   hr {
     border: none;
     margin: 4rem auto;
@@ -27,10 +28,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    @include desktop { width: 60%; }
-    @include tablet  { width: 80%; }
-    @include mobile  { width: 95%; }
 
     &::before {
       content: "· · ·";
@@ -41,19 +38,21 @@
     }
   }
 
-  // Blockquotes as pull-quotes
   blockquote {
     font-size: 1.2em;
     line-height: 1.6;
     padding: 1.5rem 2rem;
     border-left: 4px solid $h1-underline-color;
-    background: linear-gradient(135deg, #fdf6f6 0%, #f9f9f9 100%);
+    background: $surface-gradient;
     border-radius: 0 0.4rem 0.4rem 0;
     font-style: italic;
     color: $blockquote-text-color;
   }
 
-  // Drop-cap for the first paragraph
+  // Drop-cap on first paragraph of first step
+  .scroll-step:first-child .step-text > p:first-of-type::first-letter,
+  .scrolly-run:first-child .scroll-step:first-child .step-text > p:first-of-type::first-letter,
+  .scroll-step:first-child > p:first-of-type::first-letter,
   > p:first-of-type::first-letter {
     float: left;
     font-size: 3.5em;
@@ -64,27 +63,243 @@
   }
 }
 
-// ── Scroll-triggered fade-in ───────────────────────────────────────────────────
+// ── Standalone steps ───────────────────────────────────────────────────────────
 
-.scroll-fade {
-  opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+.scroll-step {
+  padding: 3rem 0;
 }
 
-.scroll-visible {
+// Split layout for standalone image cells
+.scroll-step[data-layout="split-left"],
+.scroll-step[data-layout="split-right"] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+
+  @include tabletmobile { grid-template-columns: 1fr; }
+}
+
+.scroll-step[data-layout="full-graphic"] {
+  .step-graphic {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+// ── Run wrapper — shared sticky graphic for consecutive state cells ─────────────
+
+.scrolly-run {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;    // required: lets the sticky child outlive its natural height
+
+  @include tabletmobile { display: block; }
+}
+
+.scrolly-run--left,
+.scrolly-run--right { grid-template-columns: 1fr 1fr; }
+
+.scrolly-run-steps {
+  min-width: 0;
+}
+
+.scrolly-run-graphic {
+  min-width: 0;
+  align-self: start;   // sticky only works when align-self is start in a grid
+  position: sticky;
+  top: calc(var(--nav-height, 64px) + 1.5rem);
+  // Height is set by the graphic script via inline aspect-ratio so the panel
+  // matches the SVG's natural proportions; max-height caps at viewport.
+  max-height: calc(100vh - var(--nav-height, 64px) - 3rem);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  @include tabletmobile {
+    position: relative;
+    top: auto;
+    aspect-ratio: unset !important;
+    min-height: 220px;
+    max-height: 380px;
+    overflow: hidden;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+// ── Text and graphic columns (standalone split cells) ──────────────────────────
+
+.step-text {
+  min-width: 0;
+
+  p, h2, h3, h4, h5, h6, ul, ol, blockquote, pre, figure, table {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+}
+
+.step-graphic {
+  min-width: 0;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  @include tabletmobile {
+    min-height: 200px;
+    order: -1 !important;
+  }
+
+  svg  { width: 100%; height: auto; display: block; }
+  img  { width: 100%; height: auto; display: block;
+         border-radius: 0.4rem; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); }
+}
+
+// ── JS-driven dimming ─────────────────────────────────────────────────────────
+
+.scrollytelling.js-ready .scroll-step {
+  opacity: 0.12;
+  filter: blur(0.6px);
+  transition: opacity 0.45s ease, filter 0.45s ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+.scrollytelling.js-ready .scroll-step.active {
   opacity: 1;
-  transform: translateY(0);
+  filter: none;
+  pointer-events: auto;
+  user-select: auto;
 }
 
-// Stagger siblings slightly so they don't all pop at once
-.scroll-fade:nth-child(2) { transition-delay: 0.05s; }
-.scroll-fade:nth-child(3) { transition-delay: 0.08s; }
-.scroll-fade:nth-child(4) { transition-delay: 0.11s; }
+// The run graphic panel dims with its steps; undimmed when any step in the run is active
+.scrollytelling.js-ready .scrolly-run-graphic {
+  opacity: 0.12;
+  filter: blur(0.6px);
+  transition: opacity 0.45s ease, filter 0.45s ease;
+  pointer-events: none;
+}
+
+.scrollytelling.js-ready .scrolly-run.has-active .scrolly-run-graphic {
+  opacity: 1;
+  filter: none;
+  pointer-events: auto;
+}
+
+// ── Progress dots (desktop only) ──────────────────────────────────────────────
+
+.scroll-progress {
+  position: fixed;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  z-index: 200;
+
+  @include tabletmobile { display: none; }
+}
+
+.scroll-progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: rgba($h1-underline-color, 0.22);
+  cursor: pointer;
+  transition: background 0.25s, transform 0.25s;
+
+  &.active              { background: $h1-underline-color; transform: scale(1.5); }
+  &:hover:not(.active)  { background: rgba($h1-underline-color, 0.55); transform: scale(1.2); }
+}
+
+// ── Overlay scene ─────────────────────────────────────────────────────────────
+
+.scrolly-overlay-scene {
+  position: relative;
+}
+
+.scrolly-overlay-backdrop {
+  position: sticky;
+  top: var(--nav-height, 64px);
+  height: calc(100vh - var(--nav-height, 64px));
+  overflow: hidden;
+  // Stretch content to fill the locked viewport slice
+  > * { height: 100%; }
+}
+
+.scroll-step[data-layout="overlay"] {
+  position: relative;   // must be positioned so it paints above the sticky backdrop
+  min-height: calc(100vh - var(--nav-height, 64px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.scrolly-overlay-box {
+  background: $card-bg-color;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+  padding: 2rem 2.5rem;
+  width: 90%;
+  max-width: 580px;
+  max-height: 70vh;
+  overflow-y: auto;
+
+  img { width: 100%; height: auto; display: block; border-radius: 0.3rem; }
+
+  &--image {
+    padding: 0.5rem;
+    overflow: hidden;
+    img { border-radius: 0; margin: 0; }
+  }
+
+  @include tabletmobile {
+    padding: 1.5rem;
+    max-height: 65vh;
+  }
+}
+
+// Backdrop content stays fully visible — the dimming rules must not reach it
+.scrollytelling.js-ready .scrolly-overlay-backdrop .scroll-step,
+.scrollytelling.js-ready .scrolly-overlay-backdrop .scrolly-run {
+  opacity: 1;
+  filter: none;
+  pointer-events: auto;
+  user-select: auto;
+}
+
+.scrollytelling.js-ready .scrolly-overlay-backdrop .scrolly-run-graphic {
+  opacity: 1;
+  filter: none;
+  pointer-events: auto;
+}
 
 // ── Dark mode ─────────────────────────────────────────────────────────────────
 
 body.dark-mode .scrollytelling blockquote {
-  background: linear-gradient(135deg, #1e2124 0%, #23272a 100%);
-  color: #b0b0b0;
+  background: linear-gradient(135deg, $dm-surface 0%, $dm-hover 100%);
+  color: $dm-muted;
+}
+
+body.dark-mode .scroll-progress-dot {
+  background: rgba($dm-accent, 0.25);
+
+  &.active              { background: $dm-accent; }
+  &:hover:not(.active)  { background: rgba($dm-accent, 0.55); }
+}
+
+body.dark-mode .scrolly-overlay-box {
+  background: $dm-surface;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 }
