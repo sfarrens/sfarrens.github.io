@@ -19,7 +19,7 @@
     align-items: center;
     text-align: center;
     gap: 1.5rem;
-    padding: 1.25rem;
+    padding: 2rem 1.25rem;
   }
 }
 
@@ -27,7 +27,7 @@
   flex-shrink: 0;
   border-radius: 0.5rem;
   overflow: hidden;
-  @include shadow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 
   @include desktop { width: 200px; height: 220px; }
   @include tablet  { width: 170px; height: 190px; }
@@ -53,10 +53,9 @@
   font-weight: 600;
   color: $h1-color;
   margin: 0;
-
-  // Suppress the underline decoration from .main-content h2
-  &:after { display: none; }
 }
+
+.main-content .about-hero-name:after { display: none; }
 
 .about-hero-tagline {
   font-size: clamp(1rem, 2vw, 1.15rem);
@@ -89,13 +88,13 @@
   height: 36px;
   border-radius: 50%;
   background: $card-bg-color;
-  @include shadow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
   transition: transform 0.2s, box-shadow 0.2s;
   overflow: hidden;
 
   &:hover {
     transform: scale(1.15);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.10);
   }
 }
 
@@ -202,7 +201,11 @@ body.dark-mode .about-hero {
 body.dark-mode .about-hero-name     { color: #fff; }
 body.dark-mode .about-hero-tagline  { color: $dm-text; }
 body.dark-mode .about-hero-position { color: $dm-muted; }
+body.dark-mode .about-hero-image-wrap {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
 body.dark-mode .about-hero-icon-link {
   background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }

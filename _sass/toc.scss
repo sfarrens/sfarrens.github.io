@@ -27,9 +27,18 @@
     padding: 0.5rem 2rem;
   }
   @include mobile {
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-    padding: 0.5rem 1.25rem;
+    position: static;
+    top: auto;
+    z-index: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.4rem 0;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: none;
+    box-shadow: none;
+    flex-wrap: wrap;
   }
 
   background: rgba($card-bg-color, 0.97);
@@ -47,6 +56,15 @@
   &.toc-scrolled {
     opacity: 0.72;
     &:hover { opacity: 1; }
+  }
+
+  // Must come after toc-hidden/toc-scrolled to win the cascade
+  @include mobile {
+    &.toc-hidden,
+    &.toc-scrolled {
+      opacity: 1;
+      pointer-events: auto;
+    }
   }
 
   display: flex;

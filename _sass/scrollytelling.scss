@@ -270,16 +270,16 @@
   }
 }
 
-// Backdrop content stays fully visible — the dimming rules must not reach it
-.scrollytelling.js-ready .scrolly-overlay-backdrop .scroll-step,
-.scrollytelling.js-ready .scrolly-overlay-backdrop .scrolly-run {
+// Backdrop content is undimmed only while its overlay scene is in view (is-active toggled by JS)
+.scrollytelling.js-ready .scrolly-overlay-scene.is-active .scrolly-overlay-backdrop .scroll-step,
+.scrollytelling.js-ready .scrolly-overlay-scene.is-active .scrolly-overlay-backdrop .scrolly-run {
   opacity: 1;
   filter: none;
   pointer-events: auto;
   user-select: auto;
 }
 
-.scrollytelling.js-ready .scrolly-overlay-backdrop .scrolly-run-graphic {
+.scrollytelling.js-ready .scrolly-overlay-scene.is-active .scrolly-overlay-backdrop .scrolly-run-graphic {
   opacity: 1;
   filter: none;
   pointer-events: auto;

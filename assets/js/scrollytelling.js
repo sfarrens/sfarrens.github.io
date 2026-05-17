@@ -155,7 +155,10 @@
         var prevSep = separators[group._originalIdx - 1];
         if (prevSep && prevSep.parentNode) prevSep.parentNode.removeChild(prevSep);
 
-        steps.push({ el: ovEl, meta: meta, runPanel: null });
+        // Tag both the backdrop step and the overlay step with the scene element so
+        // update() can toggle is-active on the scene (undims backdrop only while in view)
+        prevEntry.scene = scene;
+        steps.push({ el: ovEl, meta: meta, runPanel: null, scene: scene });
         return;
       }
 
@@ -304,6 +307,12 @@
     });
     var activePanel = steps[idx].runPanel;
     if (activePanel) activePanel.parentElement.classList.add('has-active');
+
+    // Undim backdrop content only while its overlay scene is being viewed
+    var activeScene = steps[idx].scene || null;
+    document.querySelectorAll('.scrolly-overlay-scene').forEach(function (sc) {
+      sc.classList.toggle('is-active', sc === activeScene);
+    });
 
     // Fire graphic callback when a state step becomes active
     var activeMeta = steps[idx].meta;
