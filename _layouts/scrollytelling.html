@@ -8,5 +8,7 @@ layout: default
 
 <script src="{{ site.baseurl }}/assets/js/scrollytelling.js"></script>
 {% if page.graphic_script %}
-<script src="{{ page.graphic_script }}"></script>
+{% unless page.graphic_script contains "://" %}
+<script src="{{ page.graphic_script | relative_url }}"></script>
+{% endunless %}
 {% endif %}
