@@ -33,6 +33,7 @@ visited_countries:
   - Luxembourg
   - Malta
   - Mexico
+  - Moldova
   - Monaco
   - Montenegro
   - Netherlands
