@@ -6,7 +6,7 @@ visited_countries:
   - Andorra
   - Australia
   - Austria
-  - Bahamas
+  - The Bahamas
   - Belgium
   - Bosnia and Herzegovina
   - Brazil
