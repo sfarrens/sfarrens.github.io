@@ -2,11 +2,13 @@
 # Each entry links to GitHub (or docs if github is absent).
 
 - title: argosim
+  image: argosim_preview.png
   language: Python
   github: https://github.com/ARGOS-telescope/argosim
   description: "Radio telescope array simulation and image reconstruction software for the ARGOS project."
 
 - title: SHINE
+  image: shine_preview.png
   language: Python
   github: https://github.com/CosmoStat/SHINE
   docs: https://cosmostat.github.io/SHINE/

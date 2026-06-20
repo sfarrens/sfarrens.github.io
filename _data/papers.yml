@@ -3,7 +3,7 @@
 # No individual post pages are generated from this file.
 
 - title: "Breaking the degeneracy in stellar spectral classification from single wide-band images"
-  image: 
+  image: centofanti2025_stellar_classification.png
   year: 2025
   journal: A&A
   authors: "E. Centofanti, S. Farrens, J.-L. Starck, et al."
@@ -15,7 +15,7 @@
   excerpt: "Deep learning approach for breaking the stellar/galaxy degeneracy in single wide-band photometric images, applied to Euclid-like survey data."
 
 - title: "Euclid preparation: Determining the weak lensing mass accuracy and precision for galaxy clusters"
-  image: 
+  image: euclid2025_wl_mass_bias.png
   year: 2025
   journal: A&A
   authors: "Euclid Collaboration; L. Ingoglia, M. Sereno, S. Farrens, et al."
@@ -27,7 +27,7 @@
   excerpt: "Validation of Euclid OU-LE3 weak-lensing mass measurements for galaxy clusters using simulations and multi-survey observational data."
 
 - title: "Euclid preparation. XLII. A unified catalogue-level reanalysis of weak lensing by galaxy clusters in five imaging surveys"
-  image: 
+  image: euclid2024_combcl_mass_comparison.png
   year: 2024
   journal: A&A
   authors: "Euclid Collaboration; M. Sereno, S. Farrens, L. Ingoglia, et al."
@@ -39,7 +39,7 @@
   excerpt: "Unified weak-lensing reanalysis of galaxy cluster catalogues across five major imaging surveys, providing consistent mass calibration ahead of Euclid."
 
 - title: "ShapePipe: A new shape measurement pipeline and weak-lensing application to UNIONS/CFIS data"
-  image: shapepipe_e1.png
+  image: shapepipe2022_cluster_shear_profile.png
   year: 2022
   journal: A&A
   authors: "A. Guinot, M. Kilbinger, S. Farrens, et al."
@@ -63,7 +63,7 @@
   excerpt: "First public release of ShapePipe, an open-source modular weak-lensing measurement and analysis pipeline written in Python."
 
 - title: "AMICO galaxy clusters in KiDS-DR3: measurement of the halo bias and power spectrum normalization from a stacked weak lensing analysis"
-  image: amico_cvsm.jpg
+  image: ingoglia2022_halo_bias_mass.png
   year: 2022
   journal: MNRAS
   authors: "L. Ingoglia, G. Covone, M. Sereno, ..., S. Farrens, et al."
@@ -75,7 +75,7 @@
   excerpt: "Observational analysis of the halo bias-mass relation from ~7,000 AMICO galaxy cluster candidates in KiDS-DR3."
 
 - title: "Deep transfer learning for blended source identification in galaxy survey data"
-  image: blendhunter.png
+  image: blendhunter2021_accuracy_vs_separation.png
   year: 2021
   journal: A&A
   authors: "S. Farrens, A. Lacan, A. Guinot, A. Z. Vitorelli"
@@ -87,7 +87,7 @@
   excerpt: "BlendHunter: a deep-transfer-learning approach for automated identification of blended sources in galaxy survey data."
 
 - title: "PySAP: Python Sparse Data Analysis Package for multidisciplinary image processing"
-  image: pysap.png
+  image: pysap2020_galaxy_deconvolution.png
   year: 2020
   journal: Astronomy and Computing
   authors: "S. Farrens, A. Grigis, L. El Gueddari, et al."
@@ -99,7 +99,7 @@
   excerpt: "PySAP provides flexible tools for compressed sensing and image reconstruction in astrophysics and MRI."
 
 - title: "Euclid preparation. III. Galaxy cluster detection in the wide photometric survey, performance and algorithm selection"
-  image: euclid_sfof.png
+  image: euclid2019_cluster_purity_completeness.png
   year: 2019
   journal: A&A
   authors: "Euclid Collaboration; R. Adam, M. Vannier, ..., S. Farrens, et al."
@@ -111,7 +111,7 @@
   excerpt: "Final results of the Euclid Cluster Finder Challenge selecting AMICO and PZWav for the Euclid pipeline."
 
 - title: "Space variant deconvolution of galaxy survey images"
-  image: deconv.png
+  image: farrens2017_deconv_ellipticity_error.png
   year: 2017
   journal: A&A
   authors: "S. Farrens, J.-L. Starck, F. Ngolè Mboula"
@@ -123,7 +123,7 @@
   excerpt: "Low-rank matrix approximation as regularisation prior for space-variant PSF deconvolution of galaxy images."
 
 - title: "Friends-of-friends groups and clusters in the 2SLAQ catalogue"
-  image: cluster.png
+  image: farrens2011_cluster_2pcf.png
   year: 2011
   journal: MNRAS
   authors: "S. Farrens, F. B. Abdalla, E. S. Cypriano, C. Sabiu, C. Blake"
