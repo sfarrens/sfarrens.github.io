@@ -2,6 +2,28 @@
 # Each entry links directly to arXiv (or doi/ads if arxiv is absent).
 # No individual post pages are generated from this file.
 
+- title: "Point spread function wavefront recovery from in-focus stellar observations"
+  image: centofanti2026_wfe_recovery.png
+  year: 2026
+  journal: arXiv preprint
+  authors: "E. Centofanti, S. Farrens, J.-L. Starck, T. Liaudat"
+  arxiv: https://arxiv.org/abs/2607.01032
+  ads: https://ui.adsabs.harvard.edu/abs/2026arXiv260701032C/abstract
+  pdf: https://arxiv.org/pdf/2607.01032
+  bibtex: https://ui.adsabs.harvard.edu/abs/2026arXiv260701032C/exportcitation
+  excerpt: "WaveDiff-based semi-parametric wavefront error recovery from noisy, undersampled, in-focus-only polychromatic observations, reducing WFE from ~30% to ~3%."
+
+- title: "argosim: a Python package for radio interferometric simulations"
+  image: centofanti2026_argosim_imaging.png
+  year: 2026
+  journal: arXiv preprint
+  authors: "E. Centofanti, E. Ayçoberry, S. Farrens, et al."
+  arxiv: https://arxiv.org/abs/2606.25573
+  ads: https://ui.adsabs.harvard.edu/abs/2026arXiv260625573C/abstract
+  pdf: https://arxiv.org/pdf/2606.25573
+  bibtex: https://ui.adsabs.harvard.edu/abs/2026arXiv260625573C/exportcitation
+  excerpt: "A modular, JAX-based Python package for simulating radio interferometric observations, from antenna configuration to CLEAN image reconstruction, developed for the ARGOS telescope project."
+
 - title: "Breaking the degeneracy in stellar spectral classification from single wide-band images"
   image: centofanti2025_stellar_classification.png
   year: 2025
