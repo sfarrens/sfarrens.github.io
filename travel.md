@@ -47,6 +47,7 @@ visited_countries:
   - San Marino
   - Slovakia
   - Slovenia
+  - South Korea
   - Spain
   - Sweden
   - Switzerland
