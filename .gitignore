@@ -3,3 +3,8 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 Gemfile.dev.lock
+
+# LaTeX build artefacts
+*.aux
+*.log
+*.out

@@ -14,12 +14,3 @@ layout: default
     {% endfor %}
   </div>
 </div>
-
-<div class="topic-container">
-  {% for item in site.data.topics %}
-    <div class="topic" onclick="location.href='{{ item.link }}';">
-      <img src="{{ site.image_path }}/{{ item.image }}" class="topic-image">
-      <span class="topic-title">{{ item.name }}</span>
-    </div>
-  {% endfor %}
-</div>

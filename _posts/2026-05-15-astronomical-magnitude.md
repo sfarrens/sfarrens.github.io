@@ -11,11 +11,11 @@ graphic_script: /assets/js/graphics/magnitude-scale.js
 
 > [!WARNING] This post is a work in progress. I am still building the scrollytelling features to bring the content to life.
 
-## Measuring Bringtness
+## Measuring Brightness
 
-The astronomical magnitude system is probably not the most intuitive convention one could imagine. In this post let's try to break it down and get a better grasp on how bright objects in the night's sky are.
+The astronomical magnitude system is probably not the most intuitive convention one could imagine. In this post let's try to break it down and get a better grasp on how bright objects in the night sky are.
 
-> [!NOTE] There are many more indepth resources on this topic, for example the [Wikipedia page](https://en.wikipedia.org/wiki/Magnitude_(astronomy)) is quite good. This post aims to break down the main concepts into some bite size pieces.
+> [!NOTE] There are many more in-depth resources on this topic, for example the [Wikipedia page](https://en.wikipedia.org/wiki/Magnitude_(astronomy)) is quite good. This post aims to break down the main concepts into some bite-sized pieces.
 
 ---
 

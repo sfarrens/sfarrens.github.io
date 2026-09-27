@@ -6,7 +6,6 @@
 @import "about";
 @import "cards";
 @import "scrollytelling";
-@import "blog";
 @import "code";
 @import "cv";
 @import "footer";
@@ -34,7 +33,9 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.65;
-
+  // Full-bleed elements (sticky TOC) use 100vw, which includes the scrollbar on
+  // some platforms; clip (unlike hidden) doesn't break position: sticky.
+  overflow-x: clip;
 }
 
 a {
@@ -227,11 +228,6 @@ body.dark-mode {
     margin-bottom: 1em;
   }
 
-
-  ul.special {
-    list-style-type: circle;
-  }
-
   ol {
     margin-top: 0;
   }
@@ -362,30 +358,7 @@ body.dark-mode a:hover {
 }
 
 
-body.dark-mode .blog,
-body.dark-mode .blog-container,
-body.dark-mode .post-container,
-body.dark-mode .about-image-container,
-body.dark-mode .about-iframe-container {
-  background: $dm-surface !important;
-  color: $dm-text !important;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.3);
-}
-
 body.dark-mode .main-content {
-  color: $dm-text !important;
-}
-
-body.dark-mode .blog:hover,
-body.dark-mode .post-container:hover,
-body.dark-mode .about-image-container:hover {
-  background: $dm-hover !important;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 12px 40px 0 rgba(0,0,0,0.4) !important;
-}
-
-body.dark-mode .blog-tag,
-body.dark-mode .post-tag {
-  background: $dm-hover !important;
   color: $dm-text !important;
 }
 
@@ -398,16 +371,6 @@ body.dark-mode .in-post-date { color: $dm-muted !important; }
 
 body.dark-mode .site-footer-content {
   color: $dm-muted !important;
-}
-
-body.dark-mode .blog-excerpt,
-body.dark-mode .post-excerpt-container {
-  color: $dm-muted !important;
-}
-
-body.dark-mode .blog-image,
-body.dark-mode .post-image {
-  filter: brightness(0.85) contrast(1.05);
 }
 
 // Navigation dark mode styles
@@ -428,8 +391,7 @@ body.dark-mode .topnav a:first-child {
   color: #fff !important;
 }
 
-body.dark-mode .topnav a:hover,
-body.dark-mode .dropdown:hover .dropbtn {
+body.dark-mode .topnav a:hover {
   color: $dm-accent !important;
 }
 
@@ -476,79 +438,12 @@ body.dark-mode h5:before {
   color: lighten($dm-nav, 20%) !important;
 }
 
-// Post, pub, software, blog card dark mode styles
-body.dark-mode .post-title,
-body.dark-mode .pub-title,
-body.dark-mode .soft-title,
-body.dark-mode .tutor-title,
-body.dark-mode .blog-title {
-  color: $dm-text !important;
-}
-
-body.dark-mode .post-title:hover,
-body.dark-mode .pub-title:hover,
-body.dark-mode .soft-title:hover,
-body.dark-mode .tutor-title:hover,
-body.dark-mode .blog-title:hover {
-  color: $dm-accent !important;
-}
-
-body.dark-mode .post-excerpt,
-body.dark-mode .pub-excerpt,
-body.dark-mode .soft-excerpt,
-body.dark-mode .tutor-excerpt,
-body.dark-mode .blog-excerpt {
-  color: $dm-muted !important;
-}
-
-body.dark-mode .pub-authors,
-body.dark-mode .pub-journal,
-body.dark-mode .pub-year {
-  color: $dm-muted !important;
-}
-
-body.dark-mode .pub-authors:hover,
-body.dark-mode .pub-journal:hover,
-body.dark-mode .pub-year:hover {
-  color: $dm-accent !important;
-}
-
-body.dark-mode .post-tag,
-body.dark-mode .pub-tag,
-body.dark-mode .soft-tag,
-body.dark-mode .tutor-tag,
-body.dark-mode .blog-tag {
-  background: $dm-hover !important;
-  color: $dm-text !important;
-}
-
-body.dark-mode .topic-title {
-  color: $dm-text !important;
-}
-
-body.dark-mode .topic-title:hover {
-  color: $dm-accent !important;
-}
-
-body.dark-mode .about-name,
-body.dark-mode .about-tag {
-  color: $dm-text !important;
-}
-
-body.dark-mode .about-name:hover,
-body.dark-mode .about-tag:hover {
-  color: $dm-accent !important;
-}
-
 // Link hover dark mode
-body.dark-mode .blog a:hover,
-body.dark-mode .post-container a:hover,
 body.dark-mode .main-content a:hover {
   color: lighten($dm-accent, 12%) !important;
 }
 
-body.dark-mode .site-footer a:hover,
-body.dark-mode .toc a:hover {
+body.dark-mode .site-footer a:hover {
   color: $dm-accent !important;
 }
 

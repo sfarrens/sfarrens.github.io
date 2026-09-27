@@ -22,4 +22,18 @@ defaults:
 kramdown:
    toc_levels: 1..2
 
-exclude: [vendor]
+# Setting exclude replaces Jekyll's defaults, so list everything that must not be published.
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile.dev
+  - Gemfile.dev.lock
+  - sf_theme.gemspec
+  - serve.sh
+  - scripts
+  - notebooks
+  - "CV 2026"
+  - CLAUDE.md
+  - README.md
+  - LICENSE

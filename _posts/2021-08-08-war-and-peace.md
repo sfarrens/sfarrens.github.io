@@ -4,6 +4,7 @@ category: blog
 image: napoleon.jpg
 tag: Books
 visibility: private
+published: false
 layout: post
 blurb: "My piece on War and Peace"
 excerpt_separator: <!--more-->

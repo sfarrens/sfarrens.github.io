@@ -116,6 +116,14 @@ body.dark-mode .code-lang-label {
   }
 }
 
+// With a language label, sit the button inside the label bar, vertically
+// centred on the label text (bar height = 2 × 0.3rem padding + 0.7rem × 1.6).
+pre.has-lang-label .code-copy-btn {
+  top: 0;
+  right: 0.35rem;
+  height: calc(0.6rem + 0.7rem * 1.6);
+}
+
 body.dark-mode .code-copy-btn {
   color: rgba(#abb2bf, 0.5);
 

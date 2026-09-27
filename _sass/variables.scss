@@ -25,11 +25,6 @@ $nav-link-hover-color:    #c0584e !default;
 $nav-border-color:        #e4e1db !default;
 $nav-moon-color:          #b0a898 !default;   // moon icon in theme toggle
 
-// ── Topic cards ───────────────────────────────────────────────────────────────
-$topic-font-size:         1.4rem;
-$topic-font-size-mobile:  1.1rem;
-$topic-font-weight:       500;
-
 // ── Heading type scale ────────────────────────────────────────────────────────
 $h1-color:               #1a1a1a !default;
 $h1-font-size:           2.2rem;
@@ -102,16 +97,7 @@ $hr-border-color:        #e8eaec !default;
 $post-font-family:       $font-sans;
 $post-title-font-weight: 600;
 $post-title-color:       #1a1a1a;
-$post-title-font-size:   1.05rem;
-$post-title-font-size-mobile: 0.975rem;
-$post-font-size:         0.9rem;
-$post-font-size-mobile:  0.875rem;
-$post-tag-color:         #FFFFFF;
-$post-tag-font-size:     0.8rem;
-$post-tag-font-weight:   500;
-$post-tag-bg-color:      #4a4744 !default;
 $in-post-info-font-weight: 600;
-$post-hover-color:       #f5f3ef;
 
 // ── Dark mode palette ─────────────────────────────────────────────────────────
 $dm-bg:      #282c36 !default;   // dark slate body
@@ -151,13 +137,5 @@ $bq-caution-dm:           #e0705a !default;   // matches site dm accent
 $bq-disclaimer-dm:        #22d3ee !default;   // cyan
 
 // ── Publications ─────────────────────────────────────────────────────────────
-$pub-font-family:        $font-sans;
-$pub-font-weight:        400;
 $pub-author-color:       #7a7068;
-$pub-author-font-size:   0.9rem;
-$pub-author-font-size-mobile: 0.85rem;
 $pub-year-color:         #767676;
-$pub-year-font-size:     0.9rem;
-$pub-year-font-size-mobile: 0.85rem;
-$pub-excerpt-font-size:  0.9rem;
-$pub-excerpt-font-size-mobile: 0.85rem;

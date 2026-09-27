@@ -134,12 +134,12 @@ cv_supervision:
       - dates: "Jan 2026 - Present"
         role: Sammy Sharief
         detail: "Co-supervised with François Lanusse and Tobias Liaudat"
-      - dates: "Oct 2023 – Present"
+      - dates: "Oct 2023 – Oct 2026"
         role: Ezequiel Centofanti
         detail: "Projects: ARGOS, Euclid · Thesis: *\"Machine learning methods for radio and optical imaging in astronomy\"* · Co-supervised with Jean-Luc Starck"
   - title: Postdoctoral Researchers
     items:
-      - dates: "Oct 2024 - Present"
+      - dates: "Oct 2024 - Oct 2026"
         role: Emma Ayçoberry
         detail: "Projects: ARGOS, Euclid"
       - dates: "Oct 2024 - Present"
@@ -291,8 +291,10 @@ cv_events:
     detail: "Role: LOC"
 
 cv_community:
+  - dates: "2026 - Present"
+    role: "Member of the Scientific Committee for [DataIA Paris-Saclay Institute](https://www.dataia.eu/index.php/en)"
   - dates: "Ongoing"
-    role: "Peer Review: [A&A](https://www.aanda.org/), [MNRAS](https://academic.oup.com/mnras), Computing in Science and Engineering"
+    role: "Peer Review: [A&A](https://www.aanda.org/), [MNRAS](https://academic.oup.com/mnras), [Nature](https://www.nature.com/), Computing in Science and Engineering"
   - dates: "Apr 2024"
     role: "PhD Jury — External *vocal* reviewer, Universitat Autònoma de Barcelona (Computer Science)"
   - dates: "2018 – 2020"

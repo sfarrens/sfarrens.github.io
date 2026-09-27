@@ -2,54 +2,6 @@
 @import "variables";
 @import "shared";
 
-.post-container {
-  @include shadow;
-  border-radius: 0.3rem;
-  width: 100%;
-  overflow: hidden;
-
-  &:hover {
-    opacity: 0.9;
-    background-color: $post-hover-color;
-  }
-}
-
-.post-image-container {
-  @include desktoptab {
-    float: right;
-    width: 120px;
-    height: 120px;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  @include mobile {
-    float: none;
-    margin-top: 0;
-    margin-right: 0;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-  }
-}
-
-.post-image {
-  height: 100%;
-  width: 100%;
-  display: block;
-
-  @include desktoptab {
-    border-radius: 0.3rem;
-    transition: transform 0.5s ease;
-    &:hover { transform: scale(1.5); }
-  }
-
-  @include mobile {
-    object-fit: cover;
-  }
-}
-
 .in-post-image-container {
   margin-left: auto;
   margin-right: auto;
@@ -89,66 +41,6 @@
   @include desktop { height: 400px; }
   @include tablet  { max-width: 80%; }
   @include mobile  { max-width: 95%; }
-}
-
-.post-title-container {
-  vertical-align: top;
-
-  @include desktoptab {
-    margin-top: 2rem;
-    margin-left: 2rem;
-    max-width: 69%;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  @include mobile {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 1rem;
-    display: block;
-  }
-}
-
-.post-icon-container {
-  display: block;
-  margin-left: 2rem;
-}
-
-.post-icon {
-  height: 28px;
-  padding-top: 8px;
-
-  &:hover { opacity: 0.4; }
-}
-
-.post-badge-container {
-  margin-top: 1rem;
-  display: block;
-  margin-left: 2rem;
-}
-
-.post-excerpt-container {
-  max-width: 70%;
-  vertical-align: top;
-  text-align: justify;
-  text-justify: inter-word;
-  overflow: hidden;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.post-title {
-  font-family: $post-font-family;
-  font-weight: $post-title-font-weight;
-  color: $post-title-color;
-  display: inline-block;
-
-  @include desktoptab { font-size: $post-title-font-size; }
-  @include mobile     { font-size: $post-title-font-size-mobile; padding-bottom: 0.2rem; }
 }
 
 // ── YouTube / video embed ─────────────────────────────────────────────────────

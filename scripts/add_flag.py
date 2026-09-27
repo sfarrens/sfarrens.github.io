@@ -1,45 +1,47 @@
 #!/usr/bin/env python3
-"""Download a country flag and apply the site's elliptical mask.
+"""Download a country flag in the site's style (Twemoji, 240x240 PNG).
+
+The existing flags in assets/images/ are Twemoji flags rendered at 240px.
+This fetches the Twemoji SVG and renders it with headless Chromium
+(requires: pip install playwright && playwright install chromium).
 
 Usage:
-    python3 add_flag.py <iso2_code> [<iso2_code> ...]
+    python3 add_flag.py <iso2_code>[:<file_name>] [...]
 
 Examples:
-    python3 add_flag.py dk
-    python3 add_flag.py dk us de jp
+    python3 add_flag.py jp:japan
+    python3 add_flag.py dk:denmark us:usa
 """
 
-import io
 import sys
 import urllib.request
 from pathlib import Path
 
-import numpy as np
-from PIL import Image
+from playwright.sync_api import sync_playwright
 
 ASSETS = Path(__file__).parent.parent / "assets" / "images"
-TEMPLATE = ASSETS / "france.png"
-FLAGPEDIA = "https://flagpedia.net/data/flags/w320/{code}.png"
+TWEMOJI = "https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/{cp}.svg"
+SIZE = 240
 
 
-def load_mask():
-    return np.array(Image.open(TEMPLATE))[:, :, 3]
+def twemoji_url(code: str) -> str:
+    # Flags are pairs of regional indicator symbols: 'a' -> U+1F1E6
+    cps = [format(0x1F1E6 + ord(c) - ord("a"), "x") for c in code.lower()]
+    return TWEMOJI.format(cp="-".join(cps))
 
 
-def download_flag(code: str, mask: np.ndarray):
-    url = FLAGPEDIA.format(code=code.lower())
+def render_flag(page, code: str, name: str) -> bool:
     try:
-        with urllib.request.urlopen(url, timeout=10) as r:
-            img = Image.open(io.BytesIO(r.read())).convert("RGBA")
+        with urllib.request.urlopen(twemoji_url(code), timeout=10) as r:
+            svg = r.read().decode()
     except Exception as e:
         print(f"  ERROR fetching '{code}': {e}", file=sys.stderr)
         return False
 
-    arr = np.array(img.resize((240, 240), Image.LANCZOS))
-    arr[:, :, 3] = mask
-
-    out = ASSETS / f"{code.lower()}.png"
-    Image.fromarray(arr).save(out)
+    svg = svg.replace("<svg", f'<svg width="{SIZE}" height="{SIZE}"', 1)
+    page.set_content(f'<body style="margin:0;background:transparent">{svg}</body>')
+    out = ASSETS / f"{name}.png"
+    page.screenshot(path=str(out), omit_background=True)
     print(f"  saved {out.name}")
     return True
 
@@ -49,10 +51,13 @@ def main():
         print(__doc__)
         sys.exit(0)
 
-    mask = load_mask()
-    codes = sys.argv[1:]
-    ok = sum(download_flag(code, mask) for code in codes)
-    print(f"\n{ok}/{len(codes)} flag(s) saved to {ASSETS}")
+    args = [a.split(":", 1) if ":" in a else (a, a.lower()) for a in sys.argv[1:]]
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page(viewport={"width": SIZE, "height": SIZE})
+        ok = sum(render_flag(page, code, name) for code, name in args)
+        browser.close()
+    print(f"\n{ok}/{len(args)} flag(s) saved to {ASSETS}")
 
 
 if __name__ == "__main__":

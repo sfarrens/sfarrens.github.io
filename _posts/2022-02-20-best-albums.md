@@ -1,7 +1,7 @@
 ---
 title: Best Albums of 2021
 category: blog
-image: bloodmoon-i.png
+image: bloodmoon-i.jpg
 tag: Music
 visibility: public
 layout: post

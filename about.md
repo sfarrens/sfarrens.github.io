@@ -14,7 +14,9 @@ layout: default
 
 ## Bio
 
+<div class="copy-block" data-copy-label="Short bio — free to copy for talks, events and proceedings" markdown="1">
 Sam Farrens is a Research Director in the CosmoStat team of the Astrophysics Department (AIM) at CEA Paris-Saclay. His research focuses on cosmology, machine learning, signal processing, and scientific software development. He has been a member of the Euclid Consortium since 2012, holding Builder status, and contributes to various aspects of the Science Ground Segment, including co-leading OU-LE3 and the 3×2pt pipeline group. He is a strong advocate for open science and actively supports early-career researchers. He holds a PhD in Astrophysics from University College London and an HDR from Université Paris-Saclay.
+</div>
 
 ## Where I work
 
@@ -46,12 +48,12 @@ I have a strong interest in building reliable, well-documented, open-source scie
 
 I am a strong advocate for open and reproducible science. I regularly contribute to community training, give tutorials at summer schools and conferences, and actively support early-career researchers in developing good software and data practices.
 
-## What I used to do
+## Previous Work
 
 Prior to joining the CosmoStat team my work was primarily focused on the optical detection and analysis of clusters of galaxies using photometric redshifts. During my PhD I developed a prototype [friends-of-friends optical cluster detection algorithm](https://github.com/sfarrens/sfof) that was further developed and optimised during postdoc positions in Barcelona and Trieste. I also developed several [metrics](https://github.com/sfarrens/pycymatch) and [analysis codes](https://github.com/sfarrens/cluster_profile) designed to compare the relative performance of various cluster detection codes on Euclid mock galaxy simulations.
 
 In the past I also spent time at [NeuroSpin](http://joliot.cea.fr/drf/joliot/Pages/Entites_de_recherche/NeuroSpin.aspx), a world-leading biomedical imaging institute, where I worked with a team aiming to improve the acquisition and reconstruction of brain images using Magnetic Resonance Imaging (MRI).
 
-## What I like
+## My Interests
 
 If you are curious to find out about some of my non-academic pursuits have a look at my [blog](/blog.html) where I talk about other things that interest me.

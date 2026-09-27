@@ -51,6 +51,86 @@ body.dark-mode blockquote {
   p { color: $dm-muted; }
 }
 
+// ── Copy blocks — ready-to-copy text (header + button added by JS) ───────────
+.copy-block {
+  margin: 1.25rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  background: $card-bg-color;
+  border: 1px dashed rgba($h1-underline-color, 0.45);
+  border-radius: 0.4rem;
+
+  > p:last-child { margin-bottom: 0; }
+}
+
+.copy-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: -1rem -1.25rem 1rem;
+  padding: 0.35rem 0.5rem 0.35rem 1.25rem;
+  background: rgba($h1-underline-color, 0.05);
+  border-bottom: 1px dashed rgba($h1-underline-color, 0.3);
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.copy-block-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba($body-text-color, 0.6);
+}
+
+.copy-block-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+  padding: 0.25rem 0.75rem;
+  border: 1.5px solid $h1-underline-color;
+  border-radius: 2rem;
+  background: transparent;
+  color: $h1-underline-color;
+  font-family: $body-font-family;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+
+  svg { width: 13px; height: 13px; }
+
+  &:hover { background: $h1-underline-color; color: #fff; }
+
+  &.copied,
+  &.copied:hover {
+    border-color: $bq-tip-color;
+    background: $bq-tip-color;
+    color: #fff;
+  }
+}
+
+body.dark-mode .copy-block {
+  background: $dm-surface;
+  border-color: rgba($dm-accent, 0.45);
+}
+
+body.dark-mode .copy-block-header {
+  background: rgba($dm-accent, 0.06);
+  border-bottom-color: rgba($dm-accent, 0.3);
+}
+
+body.dark-mode .copy-block-label { color: $dm-muted; }
+
+body.dark-mode .copy-block-btn {
+  border-color: $dm-accent;
+  color: $dm-accent;
+
+  &:hover { background: $dm-accent; color: #fff; }
+
+  &.copied,
+  &.copied:hover { border-color: $bq-tip-dm; background: $bq-tip-dm; color: #fff; }
+}
+
 // ── Alert blockquotes — reset pull-quote, apply alert style ───────────────────
 blockquote.bq-alert {
   padding: 0.6rem 1rem;

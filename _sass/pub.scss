@@ -2,69 +2,6 @@
 @import "size";
 @import "variables";
 
-@mixin pub-font {
-  font-family: $pub-font-family;
-  font-weight: $pub-font-weight;
-}
-
-.pub-authors {
-  @include pub-font;
-  color: $pub-author-color;
-
-  @include desktoptab {
-    font-size: $pub-author-font-size;
-  }
-
-  @include mobile {
-    font-size: $pub-author-font-size-mobile;
-    padding-right: 0.4rem;
-  }
-
-}
-
-.pub-journal {
-  @include pub-font;
-  color: $pub-year-color;
-
-  @include desktoptab {
-    font-size: $pub-year-font-size;
-  }
-
-  @include mobile {
-    font-size: $pub-year-font-size-mobile;
-    padding-left: 0.5rem;
-    border-left: solid 1px $border-color;
-  }
-
-}
-
-.pub-year {
-  @include pub-font;
-  color: $pub-year-color;
-
-  @include desktoptab {
-    font-size: $pub-year-font-size;
-  }
-
-  @include mobile {
-    font-size: $pub-year-font-size-mobile;
-  }
-}
-
-.pub-excerpt {
-  @include pub-font;
-  color: $body-text-color;
-
-  @include desktoptab {
-    font-size: $pub-excerpt-font-size;
-  }
-
-  @include mobile {
-    font-size: $pub-excerpt-font-size-mobile;
-  }
-
-}
-
 // ── Publications page header ──────────────────────────────────────────────────
 
 .pub-header {
@@ -202,34 +139,6 @@
   display: none;
 }
 
-// ── Disclaimer callout ────────────────────────────────────────────────────────
-
-.pub-disclaimer {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.7rem;
-  padding: 0.8rem 1rem;
-  background: rgba(192, 88, 78, 0.05);
-  border-left: 3px solid $h1-underline-color;
-  border-radius: 0 0.35rem 0.35rem 0;
-
-  p {
-    margin: 0;
-    font-size: 0.88rem;
-    color: $blockquote-text-color;
-    font-style: italic;
-    line-height: 1.55;
-  }
-}
-
-.pub-disclaimer-icon {
-  font-size: 1rem;
-  color: $h1-underline-color;
-  flex-shrink: 0;
-  margin-top: 0.1rem;
-  font-style: normal;
-}
-
 // ── Dark mode ─────────────────────────────────────────────────────────────────
 
 body.dark-mode .pub-badge {
@@ -243,10 +152,6 @@ body.dark-mode .pub-badge-value {
   background: $dm-surface;
   color: $dm-text;
   border-left-color: rgba(255, 255, 255, 0.1);
-}
-
-body.dark-mode .pub-disclaimer {
-  background: rgba($dm-accent, 0.08);
 }
 
 body.dark-mode .pub-filter-label { color: $dm-muted; }

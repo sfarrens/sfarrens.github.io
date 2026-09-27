@@ -4,8 +4,12 @@
 // ── Sticky pill navigation ────────────────────────────────────────────────────
 //
 // The TOC is injected into .main-content which has a horizontal padding
-// of 2rem (desktop/tablet) / 1.25rem (mobile). Negative margins
-// let the sticky bar bleed wall-to-wall across that padding zone.
+// of 2rem (desktop/tablet) / 1.25rem (mobile). At rest, negative margins let
+// the bar bleed across that padding zone. Once it sticks under the nav
+// (JS adds .toc-stuck), it bleeds out to the full viewport width so it lines
+// up with the nav bar; the matching padding keeps the pills aligned with the
+// page content. (Percentages resolve against .main-content's content width,
+// so 50vw - 50% is the gap between content edge and viewport edge.)
 
 #markdown-toc {
   list-style: none;
@@ -15,17 +19,21 @@
   top: var(--nav-height, 57px);
   z-index: 500;
 
-  // Bleed past content padding so the bar spans edge-to-edge
-  @include desktop {
+  @include desktoptab {
     margin-left: -2rem;
     margin-right: -2rem;
-    padding: 0.55rem 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &.toc-stuck {
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      padding-left: calc(50vw - 50%);
+      padding-right: calc(50vw - 50%);
+    }
   }
-  @include tablet {
-    margin-left: -2rem;
-    margin-right: -2rem;
-    padding: 0.5rem 2rem;
-  }
+  @include desktop { padding-top: 0.55rem; padding-bottom: 0.55rem; }
+  @include tablet  { padding-top: 0.5rem;  padding-bottom: 0.5rem; }
   @include mobile {
     position: static;
     top: auto;
